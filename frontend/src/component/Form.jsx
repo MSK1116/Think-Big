@@ -24,13 +24,14 @@ const Form = () => {
           <form action="https://formsubmit.co/contact@msmahato.com.np" method="POST" className="mx-auto mb-0 mt-8 max-w-md space-y-4">
             <input type="hidden" name="_cc" value="thinkbigbig18@gmail.com"></input>
             <input type="hidden" name="_template" value="table"></input>
+            <input type="hidden" name="_subject" value="New submission!"></input>
             <div>
               <label htmlFor="name" className="sr-only">
                 Name
               </label>
 
               <div className="relative">
-                <input required type="text" className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm" placeholder="Enter fullname" />
+                <input required name="fullname" type="text" className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm" placeholder="Enter fullname" />
 
                 <span className="absolute inset-y-0 end-0 grid place-content-center px-4">
                   <svg xmlns="http://www.w3.org/2000/svg" className="size-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -46,7 +47,7 @@ const Form = () => {
               </label>
 
               <div className="relative">
-                <input required type="text" className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm" placeholder="Enter Address" />
+                <input required name="address" type="text" className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm" placeholder="Enter Address" />
 
                 <span className="absolute inset-y-0 end-0 grid place-content-center px-4">
                   <svg xmlns="http://www.w3.org/2000/svg" className="size-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -61,7 +62,7 @@ const Form = () => {
               </label>
 
               <div className="relative">
-                <input required type="number" className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm" placeholder="Phone Number" />
+                <input required name="number" type="number" className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm" placeholder="Phone Number" />
 
                 <span className="absolute inset-y-0 end-0 grid place-content-center px-4">
                   <svg xmlns="http://www.w3.org/2000/svg" className="size-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -76,7 +77,7 @@ const Form = () => {
               </label>
 
               <div className="relative">
-                <input required type="text" className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm" placeholder="Grade & School (for eg: +2, CCRC) " />
+                <input required name="School_&_Grade" type="text" className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm" placeholder="Grade & School (for eg: +2, CCRC) " />
 
                 <span className="absolute inset-y-0 end-0 grid place-content-center px-4">
                   <svg xmlns="http://www.w3.org/2000/svg" className="size-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -92,7 +93,7 @@ const Form = () => {
               </label>
 
               <div className="relative">
-                <input required type="date" id="dateInput" className="w-full rounded-lg border-gray-200 p-4  text-sm shadow-sm" placeholder="Enter password" />
+                <input required name="DOB" type="date" id="dateInput" className="w-full rounded-lg border-gray-200 p-4  text-sm shadow-sm" placeholder="Enter password" />
               </div>
             </div>
 
