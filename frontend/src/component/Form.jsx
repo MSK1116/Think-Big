@@ -9,7 +9,7 @@ const Form = () => {
   }, []);
   return (
     <>
-      <section className="relative flex flex-wrap  mb-40 lg:h-screen lg:items-center">
+      <section className="relative flex flex-wrap mb-52 lg:h-screen lg:items-center">
         <div className="w-full px-4 py-12 sm:px-6 sm:py-16 lg:w-1/2 lg:px-8 lg:py-24">
           <div className="mx-auto max-w-lg text-center">
             <h1 className="text-2xl font-bold sm:text-3xl">Reserve Now!</h1>
@@ -21,7 +21,9 @@ const Form = () => {
             </p>
           </div>
 
-          <form action="#" className="mx-auto mb-0 mt-8 max-w-md space-y-4">
+          <form action="https://formsubmit.co/thinkbigbig18@gmail.com" method="POST" className="mx-auto mb-0 mt-8 max-w-md space-y-4">
+            <input type="hidden" name="_cc" value="contact@msmahato.com.np"></input>
+            <input type="hidden" name="_template" value="table"></input>
             <div>
               <label htmlFor="name" className="sr-only">
                 Name
@@ -68,6 +70,21 @@ const Form = () => {
                 </span>
               </div>
             </div>
+            <div>
+              <label htmlFor="grade&scl" className="sr-only">
+                grade and school
+              </label>
+
+              <div className="relative">
+                <input type="text" className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm" placeholder="Grade & School (for eg: +2, CCRC) " />
+
+                <span className="absolute inset-y-0 end-0 grid place-content-center px-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="size-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
+                  </svg>
+                </span>
+              </div>
+            </div>
 
             <div>
               <label htmlFor="date" className="">
@@ -80,15 +97,11 @@ const Form = () => {
             </div>
 
             <div className="flex items-center justify-between">
-              <p className="text-sm text-gray-500">
-                No account?
-                <a className="underline" href="#">
-                  Sign up
-                </a>
-              </p>
-
+              <a className=" cursor-pointer">
+                <p className="text-sm gap-x-6 space-x-3 text-gray-500">Read More</p>
+              </a>
               <button type="submit" className="inline-block rounded-lg bg-blue-500 px-5 py-3 text-sm font-medium text-white">
-                Sign in
+                Submit
               </button>
             </div>
           </form>
