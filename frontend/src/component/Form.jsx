@@ -21,8 +21,8 @@ const Form = () => {
             </p>
           </div>
 
-          <form action="https://formsubmit.co/thinkbigbig18@gmail.com" method="POST" className="mx-auto mb-0 mt-8 max-w-md space-y-4">
-            <input type="hidden" name="_cc" value="contact@msmahato.com.np"></input>
+          <form action="https://formsubmit.co/contact@msmahato.com.np" method="POST" className="mx-auto mb-0 mt-8 max-w-md space-y-4">
+            <input type="hidden" name="_cc" value="thinkbigbig18@gmail.com"></input>
             <input type="hidden" name="_template" value="table"></input>
             <div>
               <label htmlFor="name" className="sr-only">
