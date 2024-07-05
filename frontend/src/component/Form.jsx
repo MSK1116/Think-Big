@@ -9,7 +9,7 @@ const Form = () => {
   }, []);
   return (
     <>
-      <section className="relative flex flex-wrap mb-52 lg:h-screen lg:items-center">
+      <section className=" max-w-full p-3 relative flex flex-wrap md:mb-52 lg:h-screen lg:items-center">
         <div className="w-full px-4 py-12 sm:px-6 sm:py-16 lg:w-1/2 lg:px-8 lg:py-24">
           <div className="mx-auto max-w-lg text-center">
             <h1 className="text-2xl font-bold sm:text-3xl">Reserve Now!</h1>
