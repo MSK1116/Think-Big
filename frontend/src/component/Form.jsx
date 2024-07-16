@@ -12,7 +12,9 @@ const Form = () => {
       <section className=" max-w-full p-3 relative flex flex-wrap md:mb-52 lg:h-screen lg:items-center">
         <div className="w-full px-4 py-12 sm:px-6 sm:py-16 lg:w-1/2 lg:px-8 lg:py-24">
           <div className="mx-auto max-w-lg text-center">
-            <h1 className="text-2xl font-bold sm:text-3xl">Reserve Now!</h1>
+            <h1 className="text-2xl font-bold sm:text-3xl">
+              Tech Interaction<br></br>Reserve Now!
+            </h1>
 
             <p className="mt-4 text-gray-500">
               Our program aims to inspire and guide students in grade 12 and below to explore educational and career opportunities beyond their standard school curriculum. Through workshops, mentorship, and interactive learning experiences, we seek
