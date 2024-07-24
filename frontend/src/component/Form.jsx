@@ -9,7 +9,7 @@ const Form = () => {
   }, []);
   return (
     <>
-      <section className=" max-w-full p-3 relative flex flex-wrap md:mb-52 lg:h-screen lg:items-center">
+      <section className=" max-w-full p-3 mb-10 relative flex flex-wrap md:mb-52 lg:h-screen lg:items-center">
         <div className="w-full px-4 py-12 sm:px-6 sm:py-16 lg:w-1/2 lg:px-8 lg:py-24">
           <div className="mx-auto max-w-lg text-center">
             <h1 className="text-2xl font-bold sm:text-3xl">
@@ -114,7 +114,7 @@ const Form = () => {
         </div>
 
         <div className="relative h-64 w-full sm:h-96 lg:h-full lg:w-1/2">
-          <img alt="" src="https://i.postimg.cc/qvqSSngD/1097ede3-f292-42c9-bd9f-b60360993dc3.jpg" className="absolute inset-0 h-full w-full object-cover" />
+          <img alt="" src="https://th.bing.com/th/id/OIG2.wVyHRtvf7cPpvx7Fej5b?pid=ImgGn" className="absolute inset-0 h-full w-full object-cover" />
         </div>
       </section>
     </>
