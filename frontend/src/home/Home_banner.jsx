@@ -8,7 +8,7 @@ import Bee from "../component/Bee";
 const Home_banner = () => {
   return (
     <>
-      <div className="hidden md:block">
+      <div className="hidden md:block max-w-screen-2xl">
         <Bee />
       </div>
       <section className="max-w-screen-2xl  bg-gray-50 h-screen p-8 flex mt-8 flex-col items-center md:justify-center ">

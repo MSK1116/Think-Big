@@ -59,7 +59,7 @@ const Bee = () => {
     </svg>
   );
 
-  return <div className="relative">{Array.from({ length: 6 }).map((_, i) => beeSVG(`bee${i + 1}`))}</div>;
+  return <div className="relative ">{Array.from({ length: 6 }).map((_, i) => beeSVG(`bee${i + 1}`))}</div>;
 };
 
 export default Bee;
