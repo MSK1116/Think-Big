@@ -20,13 +20,11 @@ const Bee = () => {
           translateX: newX,
           translateY: newY,
           rotate: angle,
-          duration: anime.random(2000, 3000), // Faster rotation duration
+          duration: anime.random(2000, 3000),
           easing: "easeInOutQuad",
           complete: () => {
-            // Update lastX and lastY for the next move
             lastX = newX;
             lastY = newY;
-            // Start the next movement
             moveBee();
           },
         });
@@ -35,8 +33,9 @@ const Bee = () => {
       moveBee();
     };
 
-    // Add more bee elements
-    ["bee1", "bee2", "bee3", "bee4", "bee5", "bee6"].forEach(animateBee);
+    // Adjust number of bees based on screen width
+    const numBees = window.innerWidth < 600 ? 3 : 6;
+    Array.from({ length: numBees }).forEach((_, i) => animateBee(`bee${i + 1}`));
   }, []);
 
   const beeSVG = (id) => (
@@ -60,16 +59,7 @@ const Bee = () => {
     </svg>
   );
 
-  return (
-    <div className="relative max-h-screen ">
-      {beeSVG("bee1")}
-      {beeSVG("bee2")}
-      {beeSVG("bee3")}
-      {beeSVG("bee4")}
-      {beeSVG("bee5")}
-      {beeSVG("bee6")}
-    </div>
-  );
+  return <div className="relative">{Array.from({ length: 6 }).map((_, i) => beeSVG(`bee${i + 1}`))}</div>;
 };
 
 export default Bee;
