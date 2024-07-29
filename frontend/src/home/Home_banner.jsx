@@ -8,8 +8,10 @@ import Bee from "../component/Bee";
 const Home_banner = () => {
   return (
     <>
-      <Bee />
-      <section className="max-w-screen-2xl  bg-gray-50 h-screen p-8 flex flex-col items-center justify-center ">
+      <div className="hidden md:block">
+        <Bee />
+      </div>
+      <section className="max-w-screen-2xl  bg-gray-50 h-screen p-8 flex mt-8 flex-col items-center md:justify-center ">
         <div className=" w-full  flex flex-col items-center">
           <div className="">
             <img className=" w-56" src={Logo1}></img>
