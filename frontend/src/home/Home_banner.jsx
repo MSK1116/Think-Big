@@ -4,19 +4,17 @@ import img1 from "/Hope_Ai.jpeg";
 import Butterfly from "../component/Butterfly";
 import { ReactTyped } from "react-typed";
 import Bee from "../component/Bee";
-import Aos from "aos";
+import AOS from "aos";
 
 const Home_banner = () => {
   useEffect(() => {
-    Aos.init();
-    Aos.refresh();
+    AOS.init();
+    AOS.refresh();
   }, []);
   return (
     <>
-      <div className="hidden md:block max-w-screen-2xl">
-        <Bee />
-      </div>
-      <section className="max-w-screen-2xl  bg-gray-50 h-screen p-8 flex mt-8 flex-col items-center md:justify-center ">
+      <div className="hidden md:block max-w-screen-2xl">{/* <Bee /> */}</div>
+      <section className="max-w-screen-2xl  bg-gray-50 md:h-screen p-8 flex mt-8 flex-col items-center md:justify-center ">
         <div className=" w-full  flex flex-col items-center">
           <div data-aos="fade-down" className="">
             <img className=" w-56" src={Logo1}></img>

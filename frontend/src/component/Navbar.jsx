@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { IoNotificationsCircleSharp } from "react-icons/io5";
 import { Link } from "react-router-dom";
-// import Notification from "./Notification";
+import Aos from "aos";
 
 const Navbar = () => {
+  useEffect(() => {
+    Aos.init();
+    Aos.refresh();
+  }, []);
   const navItems = (
     <>
       <Link to="/">
