@@ -39,7 +39,7 @@ const Bee = () => {
   }, []);
 
   const beeSVG = (id) => (
-    <svg className="absolute max-w-12" id={id} viewBox="-10.9 -10.5 21 21">
+    <svg className="absolute max-w-12" key={id} id={id} viewBox="-10.9 -10.5 21 21">
       <g transform="rotate(90) translate(0 -4)">
         <g className="text-black" stroke="currentColor">
           <circle className="text" r="4" strokeWidth="2.5" />

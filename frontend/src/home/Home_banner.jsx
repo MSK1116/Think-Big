@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Logo1 from "/Logo_noBg.png";
 import img1 from "/Hope_Ai.jpeg";
 import Butterfly from "../component/Butterfly";
 import { ReactTyped } from "react-typed";
 import Bee from "../component/Bee";
+import Aos from "aos";
 
 const Home_banner = () => {
+  useEffect(() => {
+    Aos.init();
+    Aos.refresh();
+  }, []);
   return (
     <>
       <div className="hidden md:block max-w-screen-2xl">
@@ -13,7 +18,7 @@ const Home_banner = () => {
       </div>
       <section className="max-w-screen-2xl  bg-gray-50 h-screen p-8 flex mt-8 flex-col items-center md:justify-center ">
         <div className=" w-full  flex flex-col items-center">
-          <div className="">
+          <div data-aos="fade-down" className="">
             <img className=" w-56" src={Logo1}></img>
           </div>
           <div className="">
