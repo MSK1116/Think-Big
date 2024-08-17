@@ -4,7 +4,8 @@ import Footer from "../component/Footer";
 
 const Register = () => {
   useEffect(() => {
-    location.href = "https://calendar.app.google/nJUiAR4WSiWZWF4H8";
+    location.href = "https://calendar.app.google/bqpnkXrYCgSywpAD7";
+    document.title = "Redirecting...";
   });
   return (
     <>
