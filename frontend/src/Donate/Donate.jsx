@@ -3,6 +3,7 @@ import Navbar from "../component/Navbar";
 import Footer from "../component/Footer";
 
 const Donate = () => {
+  document.title = "Donate | Think Big Org";
   return (
     <>
       <Navbar />
