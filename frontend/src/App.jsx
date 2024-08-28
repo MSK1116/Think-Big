@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import Register from "./register/Register";
 import Aos from "aos";
 import Faces from "./Faces/Faces";
+import Events from "./Events/Events";
 
 const App = () => {
   useEffect(() => {
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/register" element={<Register />} />
         <Route path="/member" element={<Faces />} />
+        <Route path="/event" element={<Events />} />
       </Routes>
     </>
   );
