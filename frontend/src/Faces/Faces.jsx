@@ -6,6 +6,7 @@ import Faces_slider_card from "./Faces_slider_card";
 import Faces1 from "./Faces1";
 
 const Faces = () => {
+  document.title = "Faces | Think Big Org";
   return (
     <>
       <Navbar />

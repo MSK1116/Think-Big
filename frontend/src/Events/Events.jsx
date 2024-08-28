@@ -5,6 +5,7 @@ import Footer from "../component/Footer";
 import Events_banner2 from "./Events_banner2";
 
 const Events = () => {
+  document.title = "Events | Think Big Org";
   return (
     <>
       <Navbar />

@@ -7,6 +7,7 @@ import Home_banner2 from "./Home_banner2";
 import Impact from "../component/Impact";
 
 const Home = () => {
+  document.title = "Think Big Org";
   return (
     <>
       <Navbar />
