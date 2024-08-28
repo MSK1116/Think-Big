@@ -5,6 +5,8 @@ import Register from "./register/Register";
 import Aos from "aos";
 import Faces from "./Faces/Faces";
 import Events from "./Events/Events";
+import Donate from "./Donate/Donate";
+import Contact from "./Contact/Contact";
 
 const App = () => {
   useEffect(() => {
@@ -19,6 +21,8 @@ const App = () => {
         <Route path="/register" element={<Register />} />
         <Route path="/member" element={<Faces />} />
         <Route path="/event" element={<Events />} />
+        <Route path="/giveus" element={<Donate />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </>
   );
