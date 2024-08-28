@@ -22,13 +22,13 @@ const Home_banner = () => {
           <div data-aos="fade-down" className="">
             <img className=" w-56" src={Logo1}></img>
           </div>
-          <div data-aos="zoom-in-up" data-aos-duration="3000" className="">
+          <div data-aos="zoom-in-up" data-aos-duration="100" className="">
             <ReactTyped className="mt-0 text-green-600 font-extrabold text-2xl" strings={[" Lifelong Learner and Mentor"]} typeSpeed={40} />
           </div>
-          <Link to={"/register"} className="  mt-5 btn">
+          {/* <Link to={"/register"} className="  mt-5 btn">
             {" "}
             Register for Aug-24 webinar
-          </Link>
+          </Link> */}
         </div>
         <div></div>
       </section>
