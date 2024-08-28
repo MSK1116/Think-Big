@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Devendra Maharjan",
+    "post": "Former Principal",
+    "email": "dev@gmail.com",
+    "description": "I'm a good teacher",
+    "photo": "IMG_DIR/devmaharjan.jpg",
+    "slider": "true"
+  },
+  {
+    "id": 1,
+    "title": "Devendra Maharjan",
+    "post": "Former Principal",
+    "email": "dev@gmail.com",
+    "description": "I'm a good teacher",
+    "photo": "IMG_DIR/devmaharjan.jpg",
+    "slider": "true"
+  },
+  {
+    "id": 1,
+    "title": "Devendra Maharjan",
+    "post": "Former Principal",
+    "email": "dev@gmail.com",
+    "description": "I'm a good teacher",
+    "photo": "IMG_DIR/devmaharjan.jpg",
+    "slider": "true"
+  },
+  {
+    "id": 1,
+    "title": "Devendra Maharjan",
+    "post": "Former Principal",
+    "email": "dev@gmail.com",
+    "description": "I'm a good teacher",
+    "photo": "IMG_DIR/devmaharjan.jpg",
+    "slider": "true"
+  }
+]
