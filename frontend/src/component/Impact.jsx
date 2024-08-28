@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 import { FaPeopleGroup } from "react-icons/fa6";
+import { MdLocalActivity } from "react-icons/md";
+import { FaHandsHelping } from "react-icons/fa";
+import { FaPeopleCarry } from "react-icons/fa";
 
 const Impact = () => {
   const [counterState, setCounterState] = useState(false);
@@ -10,25 +13,41 @@ const Impact = () => {
       <div className="w-full md:p-11">
         <ScrollTrigger onEnter={() => setCounterState(true)} onExit={() => setCounterState(false)}>
           <div className="   text-center gap-y-10  grid md:grid-cols-4 md:grid-rows-1 grid-cols-2 grid-rows-2 place-items-center ">
-            <div className="">
-              <FaPeopleGroup className="m-auto w-16 h-16 text-gray-100" />
-              <h1 className="text-5xl font-extrabold text-gray-50">{counterState && <CountUp start={50} end={100} duration={3} />}+</h1>
-              <p className="text-sm text-gray-100">Members</p>
+            <div data-aos="fade-up " data-aos-duration="700">
+              <MdLocalActivity className="m-auto w-16 h-16 text-gray-100" />
+              <h1 data-aos="fade-up" aos-duration="1000" className="text-5xl font-extrabold text-gray-50">
+                {counterState && <CountUp start={4} end={12} duration={3} />}+
+              </h1>
+              <p data-aos="fade-up" aos-duration="1000" className="text-sm text-gray-100">
+                Programs
+              </p>
             </div>
-            <div>
-              <FaPeopleGroup className="m-auto w-16 h-16 text-gray-100" />
-              <h1 className="text-5xl font-extrabold text-gray-50">{counterState && <CountUp start={10} end={50} duration={3} />}+</h1>
-              <p className="text-sm text-gray-100">Students Helped</p>
+            <div data-aos="fade-up " data-aos-duration="700">
+              <FaHandsHelping className="m-auto w-16 h-16 text-gray-100" />
+              <h1 data-aos="fade-up" aos-duration="1000" className="text-5xl font-extrabold text-gray-50">
+                {counterState && <CountUp start={300} end={500} duration={3} />}+
+              </h1>
+              <p data-aos="fade-up" aos-duration="1000" className="text-sm text-gray-100">
+                Students Helped
+              </p>
             </div>
-            <div>
+            <div data-aos="fade-up " data-aos-duration="700">
               <FaPeopleGroup className="m-auto w-16 h-16 text-gray-100" />
-              <h1 className="text-5xl font-extrabold text-gray-50">{counterState && <CountUp start={50} end={90} duration={3} />}+</h1>
-              <p className="text-sm text-gray-100">Connected Cities</p>
-            </div>
-            <div>
-              <FaPeopleGroup className="m-auto w-16 h-16 text-gray-100" />
-              <h1 className="text-5xl font-extrabold text-gray-50">{counterState && <CountUp start={50} end={100} duration={3} />}+</h1>
-              <p className="text-sm text-gray-100">Program conducted</p>
+              <h1 data-aos="fade-up" aos-duration="1000" className="text-5xl font-extrabold text-gray-50">
+                {counterState && <CountUp start={13} end={31} duration={3} />}+
+              </h1>
+              <p data-aos="fade-up" aos-duration="1000" className="text-sm text-gray-100">
+                Member
+              </p>
+            </div>{" "}
+            <div data-aos="fade-up " data-aos-duration="700">
+              <FaPeopleCarry className="m-auto w-16 h-16 text-gray-100" />
+              <h1 data-aos="fade-up" aos-duration="1000" className="text-5xl font-extrabold text-gray-50">
+                {counterState && <CountUp start={1} end={3} duration={3} />}+
+              </h1>
+              <p data-aos="fade-up" aos-duration="1000" className="text-sm text-gray-100">
+                Social research
+              </p>
             </div>
           </div>
         </ScrollTrigger>
