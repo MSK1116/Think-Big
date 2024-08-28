@@ -1,38 +1,137 @@
 [
   {
     "id": 1,
-    "title": "Devendra Maharjan",
-    "post": "Former Principal",
-    "email": "dev@gmail.com",
-    "description": "I'm a good teacher",
-    "photo": "IMG_DIR/devmaharjan.jpg",
+    "title": "Ram Julum Yadav",
+    "post": "President",
+    "email": "r.jyadav4896@gmail.com",
+    "description": "At Think Big, we believe in the power of ideas and the strength of collaboration. Together, we transform dreams into reality, one bold step at a time.",
+    "photo": "faces/ram.jpg",
     "slider": "true"
   },
   {
-    "id": 1,
-    "title": "Devendra Maharjan",
-    "post": "Former Principal",
-    "email": "dev@gmail.com",
-    "description": "I'm a good teacher",
-    "photo": "IMG_DIR/devmaharjan.jpg",
+    "id": 2,
+    "title": "Abishek Yadav",
+    "post": "Vice President",
+    "email": "ydvabhishek85@gmail.com",
+    "description": "Joining Think Big means becoming part of a community where passion meets purpose. Here, we inspire each other to reach new heights and make a lasting impact.",
+    "photo": "faces/abishek.jpg",
     "slider": "true"
   },
   {
-    "id": 1,
-    "title": "Devendra Maharjan",
-    "post": "Former Principal",
-    "email": "dev@gmail.com",
-    "description": "I'm a good teacher",
-    "photo": "IMG_DIR/devmaharjan.jpg",
+    "id": 3,
+    "title": "Nandini Karna",
+    "post": "Director",
+    "email": "infinitebaral.777@gmail.com",
+    "description": "Think Big is more than a club—it's a movement. We challenge the status quo, explore new possibilities, and empower each other to create meaningful change.",
+    "photo": "faces/nandani.jpg",
     "slider": "true"
   },
   {
-    "id": 1,
-    "title": "Devendra Maharjan",
-    "post": "Former Principal",
-    "email": "dev@gmail.com",
-    "description": "I'm a good teacher",
-    "photo": "IMG_DIR/devmaharjan.jpg",
+    "id": 4,
+    "title": "Manish Singh Mahato",
+    "post": "Chief Committee Head",
+    "email": "contact@msmahato.com.np",
+    "description": "Working with Think Big has taught me that no idea is too small and no challenge is too great. Together, we nurture creativity and turn our collective vision into action.",
+    "photo": "faces/MSK.jpg",
     "slider": "true"
+  },
+  {
+    "id": 5,
+    "title": "Shital Karki",
+    "post": "Secretary",
+    "email": "shitalkarki1024@gmail.com",
+    "description": "In Think Big, we are united by a common goal: to think beyond limits and make a difference. It's a place where every voice is heard, and every idea has the potential to change the world.",
+    "photo": "faces/shital.jpg",
+    "slider": "true"
+  },
+  {
+    "id": 6,
+    "title": "Priyanka Jha",
+    "post": "Tresury",
+    "email": "",
+    "description": "",
+    "photo": "priyanka.jpg",
+    "slider": ""
+  },
+  {
+    "id": 7,
+    "title": "Ganesh Yadav",
+    "post": "Assistant Secretary",
+    "email": "",
+    "description": "",
+    "photo": "ganesh.jpg",
+    "slider": ""
+  },
+  {
+    "id": 8,
+    "title": "Peshal Parajuli",
+    "post": "HR Manager",
+    "email": "",
+    "description": "",
+    "photo": "peshal.jpg",
+    "slider": ""
+  },
+  {
+    "id": 9,
+    "title": "Prajwal Jung Thapa",
+    "post": "IT Head",
+    "email": "",
+    "description": "",
+    "photo": "prajwal.jpg",
+    "slider": ""
+  },
+  {
+    "id": 10,
+    "title": "Gobin Yadav ",
+    "post": "Service Representative",
+    "email": "",
+    "description": "",
+    "photo": "govind.jpg",
+    "slider": ""
+  },
+  {
+    "id": 11,
+    "title": "Nischal Shrestha",
+    "post": "Organization Dev Manager",
+    "email": "",
+    "description": "",
+    "photo": "nischal.jpg",
+    "slider": ""
+  },
+  {
+    "id": 12,
+    "title": "Sagar Dhakal",
+    "post": "Content Reviewer",
+    "email": "",
+    "description": "",
+    "photo": "sagar.jpg",
+    "slider": ""
+  },
+  {
+    "id": 13,
+    "title": "Saroj Sah",
+    "post": "Member",
+    "email": "",
+    "description": "",
+    "photo": "saroj.jpg",
+    "slider": ""
+  },
+  {
+    "id": 13,
+    "title": "Satish Yadav",
+    "post": "Member",
+    "email": "",
+    "description": "",
+    "photo": "satish.gif",
+    "slider": ""
+  },
+  {
+    "id": 14,
+    "title": "Rakhi Yadav",
+    "post": "Member",
+    "email": "",
+    "description": "",
+    "photo": "rakhi.jpg",
+    "slider": ""
   }
 ]

@@ -16,7 +16,7 @@ const Impact = () => {
             <div data-aos="fade-up " data-aos-duration="700">
               <MdLocalActivity className="m-auto w-16 h-16 text-gray-100" />
               <h1 data-aos="fade-up" aos-duration="1000" className=" cursor-default text-5xl font-extrabold text-gray-50">
-                {counterState && <CountUp start={4} end={12} duration={3} />}+
+                {counterState && <CountUp start={1} end={12} duration={3} />}+
               </h1>
               <p data-aos="fade-up" aos-duration="1000" className=" cursor-default text-sm text-gray-100">
                 Programs

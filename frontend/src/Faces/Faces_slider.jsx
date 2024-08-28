@@ -57,8 +57,11 @@ const Faces_slider = () => {
           <h1 className="text-3xl font-bold text-green-600 mb-4">Our Team</h1>
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:items-center lg:gap-16">
             <div className="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
-              <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Education unlocks limitless potential.</h2>
-              <p className="mt-4 text-gray-700">Education is key to personal and societal growth, equipping us with knowledge, skills, and critical thinking. Embrace learning as a lifelong journey shaping your future.</p>
+              <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Lifelong Learner and Mentor</h2>
+              <p className="mt-4 text-gray-700">
+                Think Big is a community driven by innovation and collaboration, where every idea is valued, and every challenge is an opportunity. Together, we empower each other to push boundaries, inspire change, and create a future where our
+                collective vision shapes the world for the better.
+              </p>
               <div className="hidden lg:mt-8 lg:flex lg:gap-4">
                 <button aria-label="Previous slide" id="keen-slider-previous-desktop" className="rounded-full border border-green-600 p-3 text-green-600 transition hover:bg-green-600 hover:text-white">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-5 rtl:rotate-180">
@@ -93,6 +96,7 @@ const Faces_slider = () => {
             </button>
           </div>
         </div>
+        <hr></hr>
       </section>
     </>
   );

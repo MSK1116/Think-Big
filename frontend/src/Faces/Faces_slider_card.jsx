@@ -8,10 +8,10 @@ const Faces_slider_card = ({ items }) => {
           <div>
             <div className=" flex flex-row place-content-between">
               <div>
-                <div className="flex gap-0.5 text-red-500">
+                <div className="flex gap-0.5 text-green-600">
                   <h1>{items.post}</h1>
                 </div>
-                <p className="text-2xl font-bold text-rose-600 sm:text-3xl">{items.title}</p>{" "}
+                <p className="text-2xl font-bold text-green-600 sm:text-3xl">{items.title}</p>{" "}
               </div>
               <div>
                 <img className=" object-center object-cover rounded-full w-20 h-20" src={items.photo}></img>
