@@ -5,6 +5,7 @@ import Home_banner from "./Home_banner";
 import Butterfly from "../component/Butterfly";
 import Home_banner2 from "./Home_banner2";
 import Impact from "../component/Impact";
+import Gallery from "../Gallery/Gallery";
 
 const Home = () => {
   document.title = "Think Big Org";
@@ -14,7 +15,7 @@ const Home = () => {
       <Home_banner />
 
       <Home_banner2 />
-
+      <Gallery />
       <Footer />
     </>
   );

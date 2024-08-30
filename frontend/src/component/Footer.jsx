@@ -13,9 +13,9 @@ const Footer = () => {
       <footer className="bg-gray-100">
         <div className="relative mx-auto max-w-screen-xl p-8 ">
           <div className="lg:flex space-y-7 lg:items-end lg:justify-between">
-            <div className=" flex flex-col items-center">
+            <div className=" md:text-left text-center  flex flex-col md:items-start items-center">
               <img className="h-20 w-20" src={logo}></img>
-              <p className="mx-auto  text-green-600 max-w-md text-center leading-relaxed  lg:text-left">
+              <p className=" text-green-600 leading-relaxed  ">
                 Think Big<br></br>Dhanusha, Nepal{" "}
               </p>{" "}
               <p>Regd. No. 3435/080/081 </p>

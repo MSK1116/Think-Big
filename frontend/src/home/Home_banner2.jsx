@@ -9,7 +9,7 @@ const Home_banner2 = () => {
   }, []);
   return (
     <>
-      <section className=" md:h-screen max-w-screen-2xl  bg-[url(/webi/school1.jpg)] bg-cover bg-top bg-no-repeat shadow-black rounded-md shadow-xl">
+      <section className=" md:h-screen max-w-screen-2xl  bg-[url(/webi/school1.jpg)] bg-cover bg-top bg-no-repeat bg-gray-50 rounded-md ">
         <div className="h-full  bg-gray-950/50 md:p-8 p-2 items-center flex flex-col space-y-11">
           <div data-aos="fade-up">
             <p data-aos="fade-up" className=" mt-6 text-white text-3xl font-extrabold">
