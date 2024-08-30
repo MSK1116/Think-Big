@@ -3,7 +3,7 @@ import Faces_list from "./Faces.json";
 import Faces1_card from "./Faces1_card";
 
 const Faces1 = () => {
-  const Faces = Faces_list.filter((data) => data.slider != "true");
+  const Faces = Faces_list.filter((data) => data.id > 0);
   return (
     <>
       <div className="bg-gray-50 p-8">
