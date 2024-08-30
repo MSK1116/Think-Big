@@ -12,8 +12,8 @@ const Footer = () => {
     <>
       <footer className="bg-gray-100">
         <div className="relative mx-auto max-w-screen-xl p-8 ">
-          <div className="lg:flex lg:items-end lg:justify-between">
-            <div>
+          <div className="lg:flex space-y-7 lg:items-end lg:justify-between">
+            <div className=" flex flex-col items-center">
               <img className="h-20 w-20" src={logo}></img>
               <p className="mx-auto  text-green-600 max-w-md text-center leading-relaxed  lg:text-left">
                 Think Big<br></br>Dhanusha, Nepal{" "}
@@ -76,12 +76,12 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex flex-row space-x-4 w-full justify-end">
-            <p className="mt-6 text-center text-sm text-gray-500 lg:text-left">
+            <div className="mt-6 gap-1 text-center flex flex-col md:flex-row  text-sm text-gray-500 md:text-left">
               Crafted by:
-              <a className="font-bold" target="blank" href="https://www.manishmahato.info.np/">
+              <a className="font-bold text-nowrap" target="blank" href="https://www.manishmahato.info.np/">
                 Manish Singh Mahato
               </a>
-            </p>
+            </div>
             <p className="mt-6 text-center text-sm text-gray-500 lg:text-right">Copyright &copy; 2024. All rights reserved.</p>
           </div>
         </div>

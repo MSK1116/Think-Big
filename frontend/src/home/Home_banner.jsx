@@ -17,7 +17,7 @@ const Home_banner = () => {
       <div className="hidden md:block max-w-screen-2xl">
         <Bee />
       </div>
-      <section className="max-w-screen-2xl  bg-gray-50 md:h-screen p-8 flex  flex-col items-center md:justify-center ">
+      <section className="max-w-screen-2xl mt-9 md:mt-0  bg-gray-50 md:h-screen p-8 flex  flex-col items-center md:justify-center ">
         <div className=" w-full  flex flex-col items-center">
           <div data-aos="fade-down" className="">
             <img className=" w-56" src={Logo1}></img>
