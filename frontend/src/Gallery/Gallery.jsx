@@ -16,7 +16,7 @@ const Gallery = () => {
           ))}
         </div>
         <div className="flex">
-          <button onClick={() => navigate("/event")} className="m-auto btn">
+          <button data-aos-delay="200" data-aos="fade-up" onClick={() => navigate("/event")} className="m-auto btn">
             Go to gallery
           </button>
         </div>
