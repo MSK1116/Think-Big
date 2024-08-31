@@ -8,7 +8,7 @@ const Events_banner1 = () => {
           <div className="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
             <h1 className="text-3xl font-bold text-left text-green-600 mb-4">Events</h1>
 
-            <p className="hidden text-gray-500 md:mt-4 md:block">
+            <p className=" text-gray-500 md:mt-4 text-sm md:text-[0.875rem]  md:block">
               In Think Big, we do more than just host events—we create transformative experiences. Our programs are crafted to ignite curiosity, foster collaboration, and empower every participant to turn their ideas into action. Whether through
               hands-on workshops, insightful talks, or networking opportunities, we are dedicated to building a community where innovation thrives and every voice is heard. Join us in our mission to inspire and make a difference together.{" "}
             </p>

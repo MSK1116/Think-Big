@@ -42,8 +42,8 @@ const Navbar = () => {
           </div>
           <ul tabIndex={0} className="menu menu-sm gap-2 dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
             {navItems}
-            <Link to={"/apply"}>
-              <li>Apply</li>
+            <Link to={"/faq"}>
+              <li>FAQ</li>
             </Link>
             <Link to={"/contact"}>
               <li>Contact</li>

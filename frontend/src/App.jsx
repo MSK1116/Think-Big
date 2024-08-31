@@ -7,6 +7,7 @@ import Faces from "./Faces/Faces";
 import Events from "./Events/Events";
 import Donate from "./Donate/Donate";
 import Contact from "./Contact/Contact";
+import Faq from "./Faq/Faq";
 
 const App = () => {
   useEffect(() => {
@@ -23,6 +24,7 @@ const App = () => {
         <Route path="/event" element={<Events />} />
         <Route path="/giveus" element={<Donate />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/faq" element={<Faq />} />
       </Routes>
     </>
   );

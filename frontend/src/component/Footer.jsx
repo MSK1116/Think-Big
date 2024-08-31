@@ -6,8 +6,10 @@ import { FaFacebook } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagramSquare } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
   return (
     <>
       <footer className="bg-gray-100">
@@ -54,7 +56,7 @@ const Footer = () => {
                 </li>
 
                 <li>
-                  <a target="blank" className="text-gray-700 transition hover:text-gray-700/75" href="#">
+                  <a onClick={() => navigate("/faq")} className="text-gray-700 transition hover:text-gray-700/75" href="#">
                     FAQ{" "}
                   </a>
                 </li>
