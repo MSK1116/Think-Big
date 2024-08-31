@@ -9,11 +9,11 @@ const GalleryCard = ({ items }) => {
       <div data-aos="fade-up" data-aos-offset="50" onClick={() => document.getElementById(items.id).showModal()} className="shadow-md hover:shadow-xl rounded bg-white overflow-hidden cursor-pointer">
         <div className="grid grid-cols-2 h-64">
           <div className="h-64 border overflow-hidden">
-            <img data-aos="zoom-in" data-aos-offset="50" className="object-cover hover:scale-105 transition-all duration-300 h-64 w-full" src={`/prg/${items.img1}.jpg`} alt="Image 1" />
+            <img className="object-cover hover:scale-105 transition-all duration-300 h-64 w-full" src={`/prg/${items.img1}.jpg`} alt="Image 1" />
           </div>
           <div className="h-64 border overflow-hidden">
-            <img data-aos-offset="50" data-aos="zoom-in" className="object-cover hover:scale-105 transition-all duration-300 h-32 w-full" src={`/prg/${items.img2}.jpg`} alt="Image 2" />
-            <img data-aos-offset="50" data-aos="zoom-in" className="object-cover hover:scale-105 transition-all duration-300 h-32 w-full" src={`/prg/${items.img3}.jpg`} alt="Image 3" />
+            <img className="object-cover hover:scale-105 transition-all duration-300 h-32 w-full" src={`/prg/${items.img2}.jpg`} alt="Image 2" />
+            <img className="object-cover hover:scale-105 transition-all duration-300 h-32 w-full" src={`/prg/${items.img3}.jpg`} alt="Image 3" />
           </div>
         </div>
         <div className="p-3">
