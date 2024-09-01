@@ -12,14 +12,17 @@ const ContactBanner1 = () => {
           <p className="mt-4 text-gray-500">At Think Big, we value your questions, feedback, and ideas. Whether you’re interested in joining our events, learning more about our programs, or simply want to connect, we’re here to help.</p>
         </div>
 
-        <form action="#" className="mx-auto mb-0 mt-8 max-w-md space-y-4">
+        <form action="https://formsubmit.co/thinkbigbig18@gmail.com" method="POST" className="mx-auto mb-0 mt-8 max-w-md space-y-4">
           {/* Name */}
+          <input type="hidden" name="_subject" value="Message from website!!"></input>
+          <input type="hidden" name="_autoresponse" value="We have received your message. Thank you!"></input>
+          <input type="hidden" name="_template" value="table"></input>
           <div>
             <label htmlFor="name" className="sr-only">
               Name
             </label>
             <div className="relative">
-              <input required type="text" className="w-full  bg-gray-200 outline-green-500 focus:outline rounded-lg border-gray-300 p-4 pe-12 text-sm shadow-sm" placeholder="Enter fullname" />
+              <input name="fullname" required type="text" className="w-full  bg-gray-200 outline-green-500 focus:outline rounded-lg border-gray-300 p-4 pe-12 text-sm shadow-sm" placeholder="Enter fullname" />
               <span className="absolute inset-y-0 end-0 grid place-content-center px-4">
                 <svg xmlns="http://www.w3.org/2000/svg" className="size-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
@@ -33,7 +36,7 @@ const ContactBanner1 = () => {
               Email
             </label>
             <div className="relative">
-              <input required type="email" className="w-full rounded-lg outline-green-500 focus:outline bg-gray-200  border-gray-300 p-4 pe-12 text-sm shadow-sm" placeholder="Enter email" />
+              <input name="email" required type="email" className="w-full rounded-lg outline-green-500 focus:outline bg-gray-200  border-gray-300 p-4 pe-12 text-sm shadow-sm" placeholder="Enter email" />
               <span className="absolute inset-y-0 end-0 grid place-content-center px-4">
                 <svg xmlns="http://www.w3.org/2000/svg" className="size-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
@@ -47,7 +50,7 @@ const ContactBanner1 = () => {
               Number
             </label>
             <div className="relative">
-              <input type="number" className="w-full rounded-lg bg-gray-200 outline-green-500 focus:outline border-gray-300 p-4 pe-12 text-sm shadow-sm" placeholder="Enter contact number" />
+              <input name="contact" type="number" className="w-full rounded-lg bg-gray-200 outline-green-500 focus:outline border-gray-300 p-4 pe-12 text-sm shadow-sm" placeholder="Enter contact number" />
               <span className="absolute inset-y-0 end-0 grid place-content-center px-4">
                 <svg xmlns="http://www.w3.org/2000/svg" className="size-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
@@ -61,7 +64,7 @@ const ContactBanner1 = () => {
               Message
             </label>
             <div className="relative">
-              <textarea placeholder="Enter message" rows={5} maxLength={500} className="w-full outline-green-500 focus:outline bg-gray-200 rounded-lg border-gray-300 p-4 pe-12 text-sm shadow-sm"></textarea>
+              <textarea name="message" placeholder="Enter message" rows={5} maxLength={500} className="w-full outline-green-500 focus:outline bg-gray-200 rounded-lg border-gray-300 p-4 pe-12 text-sm shadow-sm"></textarea>
               <span className="absolute inset-y-0 end-0 grid place-content-center px-4">
                 <svg xmlns="http://www.w3.org/2000/svg" className="size-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />

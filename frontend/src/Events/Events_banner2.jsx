@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 const Events_banner2 = () => {
   const navigate = useNavigate();
   const events3 = eventsList.filter((data) => data.id < 9);
+  
 
   return (
     <>
