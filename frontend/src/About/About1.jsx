@@ -7,7 +7,7 @@ const About1 = () => {
   return (
     <>
       <section className="max-w-screen-2xl  bg-gray-100">
-        <Bee num={4} />
+        <Bee num={4} className="sm:hidden" />
         <div>
           <div className="relative p-0 justify-center items-center  h-screen overflow-hidden ">
             <div className="absolute -bottom-8 left-0 ">
