@@ -15,7 +15,7 @@ const Home_banner = () => {
   return (
     <>
       <div className="hidden md:block max-w-screen-2xl">
-        <Bee />
+        <Bee num={6} />
       </div>
       <section className="max-w-screen-2xl mt-9 md:mt-0  bg-gray-50 md:h-screen p-8 flex  flex-col items-center md:justify-center ">
         <div className=" w-full  flex flex-col items-center">

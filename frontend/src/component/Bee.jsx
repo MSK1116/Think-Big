@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import anime from "animejs";
 
-const Bee = () => {
+const Bee = ({ num }) => {
   useEffect(() => {
     const animateBee = (id) => {
       const beeElement = document.getElementById(id);
@@ -34,12 +34,12 @@ const Bee = () => {
     };
 
     // Adjust number of bees based on screen width
-    const numBees = window.innerWidth < 600 ? 3 : 6;
+    const numBees = window.innerWidth < 600 ? 3 : num;
     Array.from({ length: numBees }).forEach((_, i) => animateBee(`bee${i + 1}`));
   }, []);
 
   const beeSVG = (id) => (
-    <svg className="absolute max-w-12" key={id} id={id} viewBox="-10.9 -10.5 21 21">
+    <svg className="absolute max-w-12 z-50" key={id} id={id} viewBox="-10.9 -10.5 21 21">
       <g transform="rotate(90) translate(0 -4)">
         <g className="text-black" stroke="currentColor">
           <circle className="text" r="4" strokeWidth="2.5" />
@@ -59,7 +59,7 @@ const Bee = () => {
     </svg>
   );
 
-  return <div className="relative ">{Array.from({ length: 6 }).map((_, i) => beeSVG(`bee${i + 1}`))}</div>;
+  return <div className="relative ">{Array.from({ length: num }).map((_, i) => beeSVG(`bee${i + 1}`))}</div>;
 };
 
 export default Bee;

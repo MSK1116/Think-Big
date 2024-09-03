@@ -20,6 +20,9 @@ const Navbar = () => {
       <Link to="/event">
         <li>Events</li>
       </Link>
+      <Link to="/about">
+        <li>About</li>
+      </Link>
       <Link to={"/giveus"}>
         <li>Donate</li>
       </Link>
@@ -47,6 +50,9 @@ const Navbar = () => {
             </Link>
             <Link to={"/contact"}>
               <li>Contact</li>
+            </Link>
+            <Link to={"/about"}>
+              <li>About</li>
             </Link>
           </ul>
         </div>
