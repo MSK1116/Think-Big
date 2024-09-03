@@ -7,10 +7,13 @@ const About1 = () => {
   return (
     <>
       <section className="max-w-screen-2xl  bg-gray-100">
-        <Bee num={4} className="sm:hidden" />
+        <div className="hidden md:block">
+          <Bee num={4} />
+        </div>
+
         <div>
-          <div className="relative p-0 justify-center items-center  h-screen overflow-hidden ">
-            <div className="absolute -bottom-8 left-0 ">
+          <div className="relative p-0 h-screen overflow-hidden ">
+            <div className="absolute -bottom-8 inset-x-0 md:left-0 flex md:justify-start justify-center">
               <SVGTree Hei={200} Wid={200} />
             </div>
 

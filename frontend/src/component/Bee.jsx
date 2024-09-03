@@ -34,7 +34,7 @@ const Bee = ({ num }) => {
     };
 
     // Adjust number of bees based on screen width
-    const numBees = window.innerWidth < 600 ? 3 : num;
+    const numBees = window.innerWidth < 600 ? num : num;
     Array.from({ length: numBees }).forEach((_, i) => animateBee(`bee${i + 1}`));
   }, []);
 
