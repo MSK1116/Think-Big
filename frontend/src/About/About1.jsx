@@ -14,7 +14,7 @@ const About1 = () => {
               <SVGTree Hei={200} Wid={200} />
             </div>
 
-            <div className=" absolute -right-44 ">
+            <div className=" hidden md:block absolute -right-44 ">
               <SVGNature Hei={800} Wid={800} />
             </div>
             <div className="absolute left-6 top-28 w-full p-4 ">
