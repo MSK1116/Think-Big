@@ -12,7 +12,7 @@ const Footer = () => {
   const navigate = useNavigate();
   return (
     <>
-      <footer className="bg-gray-100">
+      <footer className="bg-gray-200 overflow-hidden">
         <div className="relative mx-auto max-w-screen-xl p-8 ">
           <div className="lg:flex space-y-7 lg:items-end lg:justify-between">
             <div data-aos="zoom-in" className=" md:text-left text-center  flex flex-col md:items-start items-center">

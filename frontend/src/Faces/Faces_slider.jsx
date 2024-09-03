@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import KeenSlider from "https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/+esm";
 import Faculty_list from "./Faces.json";
 import Faces_slider_card from "./Faces_slider_card";
+import AOS from "aos";
 
 const Faces_slider = () => {
   const sliderFac = Faculty_list.filter((data) => data.slider === "true");
@@ -25,6 +26,10 @@ const Faces_slider = () => {
         },
       },
     });
+
+    setTimeout(() => {
+      AOS.refresh();
+    }, 500);
 
     // Add event listeners for navigation buttons
     const keenSliderPrevious = document.getElementById("keen-slider-previous");
@@ -52,7 +57,7 @@ const Faces_slider = () => {
 
   return (
     <>
-      <section data-aos="fade-zoom-out" data-aos-duration="1000" className="bg-gray-50 p-8 ">
+      <section className="bg-gray-50 p-8 ">
         <div className="mx-auto max-w-[1340px] px-4 py-12 sm:px-6 lg:me-0 lg:py-16 lg:pe-0 lg:ps-8 xl:py-24">
           <h1 className="text-3xl font-bold text-green-600 mb-4">Our Team</h1>
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:items-center lg:gap-16">
