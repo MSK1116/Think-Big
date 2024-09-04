@@ -22,6 +22,7 @@ const About1 = () => {
             </div>
             <div className="absolute left-6 top-28 w-full p-4 ">
               <h1 className="text-3xl font-extrabold text-green-600">About us</h1>
+              <p className="text-red-500 cursor-wait text-sm">Loading...</p>
             </div>
           </div>
         </div>
