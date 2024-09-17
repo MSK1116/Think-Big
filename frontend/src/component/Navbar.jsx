@@ -30,7 +30,7 @@ const Navbar = () => {
   );
   return (
     <>
-      <div className="max-w-screen-2xl fixed top-0 left-0 right-0 z-50 container mx-auto md:px-20px navbar bg-gray-200">
+      <div data-aos="fade-down" className="max-w-screen-2xl fixed top-0 left-0 right-0 z-50 container mx-auto md:px-20px navbar bg-gray-200">
         <div className="flex-1">
           <Link to={"/"}>
             {" "}

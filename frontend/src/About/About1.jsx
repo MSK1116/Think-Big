@@ -11,7 +11,7 @@ const About1 = () => {
           <Bee num={4} />
         </div>
 
-        <div>
+        <div className="">
           <div className="relative p-0 h-screen overflow-hidden ">
             <div className="absolute -bottom-8 inset-x-0 md:left-0 flex md:justify-start justify-center">
               <SVGTree Hei={200} Wid={200} />
@@ -22,6 +22,7 @@ const About1 = () => {
             </div>
             <div className="absolute left-6 top-28 w-full p-4 ">
               <h1 className="text-3xl font-extrabold text-green-600">About us</h1>
+              <p className="text-red-500 cursor-wait text-sm">We are registered under the Association Registration Act, 2035 BS, Nepal (Regd. No. 3435/080/081).</p>
               <p className="text-red-500 cursor-wait text-sm">Loading...</p>
             </div>
           </div>
