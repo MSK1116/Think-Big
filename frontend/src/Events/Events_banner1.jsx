@@ -11,8 +11,9 @@ const Events_banner1 = () => {
             </h1>
 
             <p data-aos="fade-down" data-aos-delay="100" className=" text-gray-500 md:mt-4 text-sm md:text-[0.875rem]  md:block">
-              In Think Big, we do more than just host events—we create transformative experiences. Our programs are crafted to ignite curiosity, foster collaboration, and empower every participant to turn their ideas into action. Whether through
-              hands-on workshops, insightful talks, or networking opportunities, we are dedicated to building a community where innovation thrives and every voice is heard. Join us in our mission to inspire and make a difference together.{" "}
+              At Think Big, we do more than just host events—we create transformative experiences that inspire change. Our programs are designed to ignite curiosity, foster collaboration, and empower every participant to turn their ideas into action.
+              In addition to providing mentorship, we focus on critical social issues like child marriage and child labor, working actively to raise awareness and rescue affected children. Through hands-on workshops, insightful talks, and networking
+              opportunities, we build a community where innovation thrives. Join us in our mission to inspire, make a difference, and create a better future together.
             </p>
 
             <div className="mt-4 md:mt-8">
