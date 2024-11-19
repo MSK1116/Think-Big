@@ -17,7 +17,10 @@ const Events_banner1 = () => {
             </p>
 
             <div className="mt-4 md:mt-8">
-              <button data-aos="fade-up" className=" cursor-not-allowed inline-block rounded bg-emerald-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-emerald-700 focus:outline-none focus:ring focus:ring-yellow-400">
+              <button
+                disabled={true}
+                data-aos="fade-up"
+                className=" cursor-not-allowed inline-block rounded bg-emerald-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-emerald-700 focus:outline-none focus:ring focus:ring-yellow-400">
                 Register
               </button>
             </div>
