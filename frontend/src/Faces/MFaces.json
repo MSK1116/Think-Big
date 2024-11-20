@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "Bishnu P Bhushal",
+    "post": "CDO, Nepal Goverment",
+    "email": "",
+    "description": "",
+    "photo": "BPB.jpeg",
+    "slider": ""
+  },
+  {
+    "id": 2,
+    "title": "Biru Balampaki",
+    "post": "Educational Officer, Nepal Goverment",
+    "email": "",
+    "description": "",
+    "photo": "BB.jpg",
+    "slider": ""
+  },
+  {
+    "id": 3,
+    "title": "Basanta Ghishing",
+    "post": "MSC",
+    "email": "",
+    "description": "",
+    "photo": "BG.jpg",
+    "slider": ""
+  },
+  {
+    "id": 4,
+    "title": "Sanjeev khatiwada",
+    "post": "Master in Mathematics",
+    "email": "",
+    "description": "",
+    "photo": "SK.jpg",
+    "slider": ""
+  },
+  {
+    "id": 5,
+    "title": "Durga P Patel",
+    "post": "Master in Mathematics",
+    "email": "",
+    "description": "",
+    "photo": "DPP.jpg",
+    "slider": ""
+  },
+  {
+    "id": 6,
+    "title": "Ranzeet Khatri",
+    "post": "MBS (IN)",
+    "email": "",
+    "description": "",
+    "photo": "RK.jpg",
+    "slider": ""
+  }
+]

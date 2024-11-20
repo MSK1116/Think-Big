@@ -7,6 +7,7 @@ import Faces1 from "./Faces1";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Faces2 from "./Faces2";
 
 const Faces = () => {
   document.title = "Faces | Think Big Org";
@@ -16,6 +17,7 @@ const Faces = () => {
       <Navbar />
       <Faces_slider />
       <Faces1 />
+      <Faces2 />
       <Footer />
     </>
   );
