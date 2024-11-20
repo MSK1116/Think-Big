@@ -6,7 +6,7 @@ const Faces1_card = ({ items }) => {
       <div>
         <div className="w-full rounded-lg p-12 flex z-0 flex-col justify-center items-center hover:shadow-lg">
           <div className="mb-8 rounded-full overflow-hidden">
-            <img data-aos="zoom-in" className="object-center object-cover rounded-full h-36 w-36 " src={`/faces/` + items.photo} alt="photo"></img>
+            <img alt={items.title} data-aos="zoom-in" className="object-center object-cover rounded-full h-36 w-36 " src={`/faces/` + items.photo}></img>
           </div>
           <div className="text-center">
             <p data-aos="fade-up" className="text-xl text-gray-700 font-bold mb-2">
