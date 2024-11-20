@@ -17,7 +17,11 @@ const Faces1 = () => {
           ))}
         </div>
         <Link activeClass="active" to="mentor" smooth={true} offset={-50} duration={500}>
-          <span data-aos-offset={100} data-aos-duration="700" data-aos="fade-left" className=" cursor-pointer  absolute right-0 top-1/2 rounded-s-lg p-2 font-semibold bg-gradient-to-tl from-green-500 to bg-green-600 opacity-65 text-gray-100">
+          <span
+            data-aos-offset={100}
+            data-aos-duration="700"
+            data-aos="fade-left"
+            className="md:w-auto w-28 truncate cursor-pointer  absolute right-0 top-1/2 rounded-s-lg p-2 font-semibold bg-gradient-to-tl from-green-500 to bg-green-600 opacity-65 text-gray-100">
             {" "}
             Scroll to mentor
           </span>
