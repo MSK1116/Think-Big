@@ -13,11 +13,11 @@ const Home_banner2 = () => {
         <div className="h-full  bg-gray-950/50 md:p-8 p-2 items-center flex flex-col space-y-11">
           <div data-aos="fade-up">
             <p data-aos="fade-up" className=" mt-6 text-white text-3xl font-extrabold">
-              We Learn, We Teach
+              Together for Childhood, Against Injustice
             </p>
           </div>
           <div data-aos="zoom-in-up" className="md:w-1/3 w-full">
-            <p className="text-center text-gray-50 font-semibold">Passionate about discovering new knowledge and sharing it with others. Let’s inspire each other and make learning a joyful journey together! </p>
+            <p className="text-center text-gray-50 font-semibold">We are dedicated to raising awareness, ending child marriage and labor, and ensuring every child has the opportunity to grow, learn, and thrive in a safe environment. </p>
           </div>
           <Impact />
         </div>
