@@ -23,7 +23,7 @@ const Home_banner = () => {
             <img className=" w-56" src={Logo1}></img>
           </div>
           <div data-aos="zoom-in-up" data-aos-duration="100" className="">
-            <ReactTyped className="mt-0 text-green-600 font-extrabold text-xl md:text-2xl" strings={[" Lifelong Learner and Mentor"]} typeSpeed={40} />
+            <ReactTyped className="mt-0 text-green-600 font-extrabold text-xl md:text-2xl" strings={[" Ending Exploitation, Ensuring Education"]} typeSpeed={40} />
           </div>
           {/* <Link to={"/register"} className="  mt-5 btn">
             {" "}
