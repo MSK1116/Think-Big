@@ -9,6 +9,7 @@ import Donate from "./Donate/Donate";
 import Contact from "./Contact/Contact";
 import Faq from "./Faq/Faq";
 import About from "./About/About";
+import Decoder from "./component/Decoder";
 
 const App = () => {
   useEffect(() => {
@@ -27,6 +28,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="/about" element={<About />} />
+        <Route path="/decoder" element={<Decoder />} />
       </Routes>
     </>
   );

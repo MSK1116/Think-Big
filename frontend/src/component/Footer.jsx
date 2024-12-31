@@ -74,6 +74,12 @@ const Footer = () => {
                     Donate{" "}
                   </Link>
                 </li>
+                <li>
+                  <Link to={"/decoder"} className="text-gray-700 transition hover:text-gray-700/75" href="#">
+                    {" "}
+                    Decoder{" "}
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
