@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import Navbar from "./Navbar";
 
 const App = () => {
+  document.title = "Decoder | Think Big";
   const [inputs, setInputs] = useState(["", "", "", "", "", ""]);
   const [error, setError] = useState("");
   const [redirecting, setRedirecting] = useState(false);
@@ -85,7 +86,7 @@ const App = () => {
           </div>
         )}
         {!redirecting && (
-          <button onClick={handleVerify} className="mt-6 px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">
+          <button onClick={handleVerify} className="mt-6 px-6 py-2 bg-green-600 text-white rounded-lg hover:bg-green-500 transition">
             Verify
           </button>
         )}
