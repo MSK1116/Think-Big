@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import { IoNotificationsCircleSharp } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import Aos from "aos";
+import { BiSolidPhoneCall } from "react-icons/bi";
+import { MdOutlineMessage } from "react-icons/md";
 
 const Navbar = () => {
   useEffect(() => {
@@ -61,11 +63,36 @@ const Navbar = () => {
         </div>
         <div className="flex-none space-x-4">
           {/* <Notification /> */}
-          <Link to={"/contact"}>
-            <button className="btn  hidden md:block bg-emerald-600 hover:bg-emerald-700 transition-all border-none text-white ">Contact Us</button>
+          <Link onClick={() => document.getElementById("my_modal_2").showModal()}>
+            <button className="btn  hidden md:block bg-emerald-600 hover:bg-emerald-700 transition-all border-none text-white uppercase font-semibold tracking-wide "> In trouble?</button>
           </Link>
         </div>
       </div>
+
+      <dialog id="my_modal_2" className="modal">
+        <div className="modal-box">
+          <h3 className="font-bold text-lg text-center uppercase text-green-600">Keep calm!</h3>
+
+          <div className=" flex justify-center rounded-full ">
+            <BiSolidPhoneCall className=" size-20 text-red-600 p-1 bg-gray-100 rounded-full content-center" />
+          </div>
+          <p className=" text-center text-red-600 mx-auto"> Make a call at CWIN </p>
+          <p className=" text-center text-red-600 text-2xl font-bold ">
+            <a href="callto:1098">1098</a>
+          </p>
+          <p className=" text-red-600 text-center ">or leave us message at</p>
+          <p className=" flex justify-center">
+            <Link to={"/contact"}>
+              {" "}
+              <MdOutlineMessage className="size-8 text-red-600 rounded-full p-1 bg-gray-100 " />{" "}
+            </Link>
+          </p>
+        </div>
+
+        <form method="dialog" className="modal-backdrop">
+          <button>close</button>
+        </form>
+      </dialog>
     </>
   );
 };

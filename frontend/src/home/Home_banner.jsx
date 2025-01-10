@@ -25,10 +25,7 @@ const Home_banner = () => {
           <div data-aos="zoom-in-up" data-aos-duration="100" className=" text-center">
             <ReactTyped className="mt-0 text-green-600 font-extrabold text-xl  md:text-2xl" strings={[" Ending Exploitation, Ensuring Education"]} typeSpeed={40} />
           </div>
-          {/* <Link to={"/register"} className="  mt-5 btn">
-            {" "}
-            Register for Aug-24 webinar
-          </Link> */}
+        
         </div>
         <div></div>
       </section>
