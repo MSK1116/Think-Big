@@ -4,6 +4,7 @@ import SVGTree from "../svg/SVGTree";
 import Bee from "../component/Bee";
 
 const About1 = () => {
+  document.title = "About us | Think Big Org";
   return (
     <>
       <section className="max-w-screen-2xl  bg-gray-100">

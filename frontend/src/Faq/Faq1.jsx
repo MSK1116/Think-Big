@@ -10,105 +10,141 @@ const Faq1 = () => {
             <input type="radio" name="my-accordion-2" defaultChecked />
             <div className="collapse-title text-xl font-medium">What is ThinkBig?</div>
             <div className="collapse-content">
-              <p className="text-gray-400">ThinkBig is a tech-driven organization focused on empowering youth to contribute to society through various initiatives like awareness programs, donations, and webinars.</p>
+              <p className="text-gray-400">ThinkBig is a organization focused on empowering youth to contribute to society through various initiatives like awareness programs, donations, and webinars.</p>
             </div>
-          </div>
-          <div className="collapse collapse-arrow bg-gray-200">
-            <input type="radio" name="my-accordion-2" />
-            <div className="collapse-title text-xl font-medium">Who can join ThinkBig?</div>
-            <div className="collapse-content">
-              <p className="text-gray-400">Anyone passionate about making a positive impact on society, especially young people, can join ThinkBig.</p>
-            </div>
-          </div>
+          </div>{" "}
           <div className="collapse collapse-arrow bg-gray-200">
             <input type="radio" name="my-accordion-2" />
             <div className="collapse-title text-xl font-medium">How can I get involved with ThinkBig?</div>
             <div className="collapse-content">
-              <p className="text-gray-400">You can get involved by signing up on our website, participating in events, or volunteering for different projects.</p>
+              <p className="text-gray-400">You can get involved with ThinkBig by volunteering for our events, participating in our programs, or donating to support our initiatives. Visit our website for more information.</p>
             </div>
           </div>
           <div className="collapse collapse-arrow bg-gray-200">
             <input type="radio" name="my-accordion-2" />
-            <div className="collapse-title text-xl font-medium">What types of programs does ThinkBig organize?</div>
+            <div className="collapse-title text-xl font-medium">What kind of programs does ThinkBig offer?</div>
             <div className="collapse-content">
-              <p className="text-gray-400">ThinkBig organizes programs such as awareness campaigns, donation drives, educational webinars, and youth contests.</p>
+              <p className="text-gray-400">ThinkBig offers a variety of programs including educational webinars, community service projects, and donation drives. Our programs are designed to empower youth and make a positive impact on society.</p>
             </div>
           </div>
           <div className="collapse collapse-arrow bg-gray-200">
             <input type="radio" name="my-accordion-2" />
-            <div className="collapse-title text-xl font-medium">How do I sign up for a ThinkBig event?</div>
+            <div className="collapse-title text-xl font-medium">How can I donate to ThinkBig?</div>
             <div className="collapse-content">
-              <p className="text-gray-400">You can sign up for events through our website by visiting the events section and registering for the event you are interested in.</p>
+              <p className="text-gray-400">You can donate to ThinkBig through our website. We accept various forms of donations including monetary contributions, supplies, and other resources that can help support our initiatives.</p>
             </div>
           </div>
           <div className="collapse collapse-arrow bg-gray-200">
             <input type="radio" name="my-accordion-2" />
-            <div className="collapse-title text-xl font-medium">Is ThinkBig a non-profit organization?</div>
+            <div className="collapse-title text-xl font-medium">Who can participate in ThinkBig's programs?</div>
             <div className="collapse-content">
-              <p className="text-gray-400">Yes, ThinkBig operates as a non-profit organization, aiming to make a difference in society without a focus on profit.</p>
+              <p className="text-gray-400">ThinkBig's programs are open to everyone, especially youth who are passionate about making a difference in their communities. We encourage individuals from all backgrounds to join us in our mission.</p>
             </div>
           </div>
           <div className="collapse collapse-arrow bg-gray-200">
             <input type="radio" name="my-accordion-2" />
-            <div className="collapse-title text-xl font-medium">Can I donate to ThinkBig?</div>
+            <div className="collapse-title text-xl font-medium">What is the mission of ThinkBig?</div>
             <div className="collapse-content">
-              <p className="text-gray-400">Yes, donations are welcome and help us fund various initiatives and projects. You can donate via our website.</p>
+              <p className="text-gray-400">The mission of ThinkBig is to empower youth to make a positive impact on society through education, community service, and leadership development.</p>
             </div>
           </div>
           <div className="collapse collapse-arrow bg-gray-200">
             <input type="radio" name="my-accordion-2" />
-            <div className="collapse-title text-xl font-medium">How does ThinkBig use donations?</div>
+            <div className="collapse-title text-xl font-medium">Where is ThinkBig located?</div>
             <div className="collapse-content">
-              <p className="text-gray-400">Donations are used to support our programs, outreach efforts, and resources for youth development and social impact initiatives.</p>
+              <p className="text-gray-400">ThinkBig is headquartered in [Location], but we have various chapters and programs running in different regions.</p>
             </div>
           </div>
           <div className="collapse collapse-arrow bg-gray-200">
             <input type="radio" name="my-accordion-2" />
-            <div className="collapse-title text-xl font-medium">What is the ThinkBig youth contest?</div>
+            <div className="collapse-title text-xl font-medium">How can I start a ThinkBig chapter in my area?</div>
             <div className="collapse-content">
-              <p className="text-gray-400">The ThinkBig youth contest is a competition that encourages young people to propose innovative solutions to social problems.</p>
-            </div>
-          </div>
-          <div className="collapse collapse-arrow bg-gray-200">
-            <input type="radio" name="my-accordion-2" />
-            <div className="collapse-title text-xl font-medium">How can I participate in the youth contest?</div>
-            <div className="collapse-content">
-              <p className="text-gray-400">You can participate by submitting your project or idea through the contest page on our website.</p>
+              <p className="text-gray-400">To start a ThinkBig chapter in your area, please contact us through our website. We will provide you with the necessary resources and support to get started.</p>
             </div>
           </div>
           <div className="collapse collapse-arrow bg-gray-200">
             <input type="radio" name="my-accordion-2" />
             <div className="collapse-title text-xl font-medium">Are there any membership fees to join ThinkBig?</div>
             <div className="collapse-content">
-              <p className="text-gray-400">No, there are no membership fees. ThinkBig is open to all who wish to contribute their time and skills to our mission.</p>
-            </div>
-          </div>
-          <div className="collapse collapse-arrow bg-gray-200">
-            <input type="radio" name="my-accordion-2" />
-            <div className="collapse-title text-xl font-medium">What kind of impact does ThinkBig aim to achieve?</div>
-            <div className="collapse-content">
-              <p className="text-gray-400">ThinkBig aims to empower youth to drive social change, create awareness, and contribute to the betterment of society.</p>
+              <p className="text-gray-400">No, there are no membership fees to join ThinkBig. Our programs and events are open to everyone.</p>
             </div>
           </div>
           <div className="collapse collapse-arrow bg-gray-200">
             <input type="radio" name="my-accordion-2" />
             <div className="collapse-title text-xl font-medium">How can I stay updated on ThinkBig's activities?</div>
             <div className="collapse-content">
-              <p className="text-gray-400">You can stay updated by subscribing to our newsletter, following us on social media, and checking our website regularly.</p>
+              <p className="text-gray-400">You can stay updated on ThinkBig's activities by subscribing to our newsletter, following us on social media, and regularly visiting our website.</p>
             </div>
           </div>
           <div className="collapse collapse-arrow bg-gray-200">
             <input type="radio" name="my-accordion-2" />
             <div className="collapse-title text-xl font-medium">Does ThinkBig collaborate with other organizations?</div>
             <div className="collapse-content">
-              <p className="text-gray-400">Yes, ThinkBig collaborates with other organizations to enhance the reach and impact of our initiatives.</p>
+              <p className="text-gray-400">Yes, ThinkBig collaborates with various organizations to enhance the impact of our programs and initiatives. We believe in the power of partnerships to achieve common goals.</p>
             </div>
           </div>
           <div className="collapse collapse-arrow bg-gray-200">
             <input type="radio" name="my-accordion-2" />
-            <div className="collapse-title text-xl font-medium">How can I contact ThinkBig for more information?</div>
+            <div className="collapse-title text-xl font-medium">What are the benefits of volunteering with ThinkBig?</div>
             <div className="collapse-content">
-              <p className="text-gray-400">You can contact us via email, phone, or through the contact form on our website for any inquiries or more information.</p>
+              <p className="text-gray-400">Volunteering with ThinkBig provides opportunities for personal growth, skill development, and making a positive impact on society. Volunteers also gain valuable experience and connections.</p>
+            </div>
+          </div>
+          <div className="collapse collapse-arrow bg-gray-200">
+            <input type="radio" name="my-accordion-2" />
+            <div className="collapse-title text-xl font-medium">How does ThinkBig ensure the safety of its participants?</div>
+            <div className="collapse-content">
+              <p className="text-gray-400">ThinkBig prioritizes the safety of its participants by implementing strict safety protocols, providing training, and ensuring that all activities are supervised by experienced staff.</p>
+            </div>
+          </div>
+          <div className="collapse collapse-arrow bg-gray-200">
+            <input type="radio" name="my-accordion-2" />
+            <div className="collapse-title text-xl font-medium">Can I donate supplies to ThinkBig?</div>
+            <div className="collapse-content">
+              <p className="text-gray-400">Yes, ThinkBig accepts donations of supplies that can support our programs and initiatives. Please contact us to learn more about the types of supplies we need and how to donate them.</p>
+            </div>
+          </div>
+          <div className="collapse collapse-arrow bg-gray-200">
+            <input type="radio" name="my-accordion-2" />
+            <div className="collapse-title text-xl font-medium">What is the age requirement to participate in ThinkBig's programs?</div>
+            <div className="collapse-content">
+              <p className="text-gray-400">ThinkBig's programs are primarily aimed at youth, but we have opportunities for individuals of all ages to get involved. Specific age requirements may vary depending on the program.</p>
+            </div>
+          </div>
+          <div className="collapse collapse-arrow bg-gray-200">
+            <input type="radio" name="my-accordion-2" />
+            <div className="collapse-title text-xl font-medium">How can I provide feedback to ThinkBig?</div>
+            <div className="collapse-content">
+              <p className="text-gray-400">We welcome feedback from our participants and supporters. You can provide feedback through our website, social media channels, or by contacting us directly.</p>
+            </div>
+          </div>
+          <div className="collapse collapse-arrow bg-gray-200">
+            <input type="radio" name="my-accordion-2" />
+            <div className="collapse-title text-xl font-medium">Does ThinkBig offer internships?</div>
+            <div className="collapse-content">
+              <p className="text-gray-400">
+                Yes, ThinkBig offers internships for individuals who are interested in gaining hands-on experience in nonprofit work and youth empowerment. Please visit our website for more information on available internship opportunities.
+              </p>
+            </div>
+          </div>
+          <div className="collapse collapse-arrow bg-gray-200">
+            <input type="radio" name="my-accordion-2" />
+            <div className="collapse-title text-xl font-medium">How can I become a speaker at ThinkBig's events?</div>
+            <div className="collapse-content">
+              <p className="text-gray-400">
+                If you are interested in becoming a speaker at ThinkBig's events, please contact us with your credentials and the topics you would like to speak about. We are always looking for inspiring speakers to share their knowledge and
+                experiences.
+              </p>
+            </div>
+          </div>
+          <div className="collapse collapse-arrow bg-gray-200">
+            <input type="radio" name="my-accordion-2" />
+            <div className="collapse-title text-xl font-medium">What is ThinkBig's impact on the community?</div>
+            <div className="collapse-content">
+              <p className="text-gray-400">
+                ThinkBig has made a significant impact on the community by empowering youth, providing educational opportunities, and supporting various social causes. Our programs have reached thousands of individuals and have made a positive
+                difference in many lives.
+              </p>
             </div>
           </div>
         </div>
