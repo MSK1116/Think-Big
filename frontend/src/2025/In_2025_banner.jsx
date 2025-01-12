@@ -5,7 +5,7 @@ import SVGFriend1 from "../svg/SVGFriend1";
 const In_2025_banner = () => {
   return (
     <>
-      <div className=" absolute bottom-0 left-0">
+      <div className=" absolute md:block hidden bottom-0 left-0">
         <Butterfly />
       </div>
       <div className=" min-h-screen space-y-32 mt-10 p-8 relative">
@@ -13,14 +13,14 @@ const In_2025_banner = () => {
           Our goal for 2025
         </h1>
         {/* 1 */}
-        <div className="h-full max-h-screen flex flex-col md:flex-row mt-10">
-          <div className=" relative w-1/2 flex justify-center">
+        <div className="h-full md:max-h-screen flex items-center flex-col md:flex-row mt-10">
+          <div className=" relative md:w-1/2  flex justify-center">
             <div className=" absolute inset-0 z-10 w-full h-full"></div>
-            <img className=" size-80" src="/webi/GroupWork.jpeg"></img>
+            <img className=" md:size-80 h-[80%] w-[80%] " src="/webi/GroupWork.jpeg"></img>
           </div>
-          <div className="  w-1/2 h-3/4 ">
-            <h1 className=" font-semibold text-xl  uppercase">
-              <span className=" font-playwrite text-3xl lowercase font-bold">1.</span> Establishment of sub-club at schools
+          <div className=" mt-3 md:mt-0 md:w-1/2 md:h-3/4 ">
+            <h1 className=" font-semibold md:text-xl  uppercase">
+              <span className=" font-playwrite  text-3xl lowercase font-bold">1.</span> Establishment of sub-club at schools
             </h1>
             <h1 className=" indent-8">
               In rural areas of Nepal, students rarely get the chance to showcase their skills or access platforms that help them grow into the leaders they could become. That’s why we want to create sub-clubs of our organization in schools. These
@@ -31,12 +31,13 @@ const In_2025_banner = () => {
         </div>
         <hr></hr>
         {/* 2 */}
-        <div className="h-full max-h-screen flex flex-col md:flex-row mt-10">
-          <div className=" order-2 relative w-1/2 flex justify-end">
+
+        <div className="h-full md:max-h-screen flex flex-col md:flex-row mt-10">
+          <div className=" md:order-2 relative md:w-1/2 flex justify-end">
             <div className=" absolute inset-0 z-10 w-full h-full"></div>
             <img className=" size-80" src="/webi/Scholarship.png"></img>
           </div>
-          <div className=" ml-20 w-1/2 h-3/4 ">
+          <div className=" md:ml-20 md:w-1/2 md:h-3/4 ">
             <h1 className=" font-semibold text-xl  uppercase">
               <span className=" font-playwrite text-3xl lowercase font-bold">2.</span> Scholarship for 20 students
             </h1>
@@ -49,12 +50,12 @@ const In_2025_banner = () => {
         </div>
         <hr></hr>
         {/* 3 */}
-        <div className="h-full max-h-screen flex flex-col md:flex-row mt-10">
-          <div className="  relative w-1/2 flex justify-center">
+        <div className="h-full md:max-h-screen flex flex-col md:flex-row mt-10">
+          <div className="  relative md:w-1/2 flex justify-center">
             <div className=" absolute inset-0 z-10 w-full h-full"></div>
             <img className=" size-80" src="/webi/Books.jpg"></img>
           </div>
-          <div className="  w-1/2 h-3/4 ">
+          <div className=" md:mt-0 mt-10 md:w-1/2 md:h-3/4 ">
             <h1 className=" font-semibold text-xl  uppercase">
               <span className=" font-playwrite text-3xl lowercase font-bold">3.</span> Distribution of Novel, self help & academic books
             </h1>
@@ -66,12 +67,12 @@ const In_2025_banner = () => {
         </div>
         <hr></hr>
         {/* 4 */}
-        <div className="h-full max-h-screen flex flex-col md:flex-row mt-10">
-          <div className=" order-2 relative w-1/2 flex justify-end">
+        <div className="h-full md:max-h-screen flex flex-col md:flex-row mt-10">
+          <div className=" md:order-2 relative md:w-1/2 flex justify-end">
             <div className=" absolute inset-0 z-10 w-full h-full"></div>
             <img className=" size-80" src="/webi/Camera.gif"></img>
           </div>
-          <div className=" ml-20 w-1/2 h-3/4 ">
+          <div className="md:mt-0 mt-10 md:ml-20 md:w-1/2 md:h-3/4 ">
             <h1 className=" font-semibold text-xl  uppercase">
               <span className=" font-playwrite text-3xl lowercase font-bold">3.</span> Documentary on child marriage
             </h1>
