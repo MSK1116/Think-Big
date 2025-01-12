@@ -17,15 +17,14 @@ const Home_banner = () => {
       <div className="hidden md:block max-w-screen-2xl">
         <Bee num={6} />
       </div>
-      <section className="max-w-screen-2xl mt-9 md:mt-0  bg-gray-50 md:h-screen p-8 flex  flex-col items-center md:justify-center ">
+      <section className="max-w-screen-2xl mt-9 md:mt-0   md:h-screen p-8 flex  flex-col items-center md:justify-center ">
         <div className=" w-full  flex flex-col items-center">
           <div data-aos="fade-down" className="">
             <img className=" w-56" src={Logo1}></img>
           </div>
-          <div data-aos="zoom-in-up" data-aos-duration="100" className=" text-center">
-            <ReactTyped className="mt-0 text-green-600 font-extrabold text-xl  md:text-2xl" strings={[" Ending Exploitation, Ensuring Education"]} typeSpeed={40} />
+          <div data-aos="zoom-in-up" data-aos-duration="100" className=" text-center ">
+            <ReactTyped className="mt-0 font-playwrite bg-transparent text-green-600 font-extrabold text-xl  md:text-2xl" strings={[" Ending Exploitation, Ensuring Education"]} typeSpeed={40} />
           </div>
-        
         </div>
         <div></div>
       </section>

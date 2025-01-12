@@ -15,9 +15,9 @@ const Navbar = () => {
       <Link to="/">
         <li>Home</li>
       </Link>
-      {/* <Link to="/2025">
+      <Link to="/2025">
         <li>In 2025</li>
-      </Link> */}
+      </Link>
       <Link to="/member">
         <li>Faces</li>
       </Link>
@@ -59,9 +59,9 @@ const Navbar = () => {
               <Link to={"/about"}>
                 <li>About</li>
               </Link>
-              {/* <Link to={"/2025"}>
-              <li>In 2025</li>
-            </Link> */}
+              <Link to={"/2025"}>
+                <li>In 2025</li>
+              </Link>
             </ul>
           </div>
 
