@@ -81,9 +81,11 @@ const Navbar = () => {
         <div className="modal-box">
           <h3 className="font-bold text-lg text-center uppercase text-green-600">Keep calm!</h3>
 
-          <div className=" flex justify-center rounded-full ">
-            <BiSolidPhoneCall className=" animate animate-pulse size-20 text-red-600 p-1 bg-gray-100 rounded-full content-center" />
-          </div>
+          <a href="callto:1098">
+            <div className=" flex justify-center rounded-full ">
+              <BiSolidPhoneCall className=" animate animate-pulse size-20 text-red-600 p-1 bg-gray-100 rounded-full content-center" />
+            </div>
+          </a>
           <p className=" text-center text-red-600 mx-auto"> Make a call at CWIN </p>
           <p className=" text-center text-red-600 text-2xl font-bold ">
             <a href="callto:1098">1098</a>
