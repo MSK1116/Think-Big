@@ -91,7 +91,7 @@ const Footer = () => {
               </a>
             </div>
             <p data-aos="fade-up" data-aos-offset="50" data-aos-delay="200" className="mt-6 text-center text-sm text-gray-500 lg:text-right">
-              Copyright &copy; 2024. All rights reserved.
+              Copyright &copy; 2025. All rights reserved.
             </p>
           </div>
         </div>
