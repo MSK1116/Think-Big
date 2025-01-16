@@ -1,6 +1,6 @@
 [
   {
-    "Link": "",
+    "Link": "null",
     "id": 1,
     "title": "Ram Julum Yadav",
     "post": "President",
@@ -10,7 +10,7 @@
     "slider": "true"
   },
   {
-    "Link": "",
+    "Link": "null",
     "id": 2,
     "title": "Abishek Yadav",
     "post": "Vice President",
@@ -20,7 +20,7 @@
     "slider": "true"
   },
   {
-    "Link": "",
+    "Link": "null",
     "id": 3,
     "title": "Nandini Karna",
     "post": "Director",
@@ -40,7 +40,7 @@
     "slider": "true"
   },
   {
-    "Link": "",
+    "Link": "null",
     "id": 5,
     "title": "Shital Karki",
     "post": "Secretary",
@@ -50,7 +50,7 @@
     "slider": "true"
   },
   {
-    "Link": "",
+    "Link": "null",
     "id": 6,
     "title": "Priyanka Jha",
     "post": "Tresury",
@@ -60,7 +60,7 @@
     "slider": ""
   },
   {
-    "Link": "",
+    "Link": "null",
     "id": 7,
     "title": "Ganesh Yadav",
     "post": "Assistant Secretary",
@@ -80,7 +80,7 @@
     "slider": ""
   },
   {
-    "Link": "",
+    "Link": "null",
     "id": 9,
     "title": "Prajwal Jung Thapa",
     "post": "IT Head",
@@ -90,7 +90,7 @@
     "slider": ""
   },
   {
-    "Link": "",
+    "Link": "null",
     "id": 10,
     "title": "Gobin Yadav ",
     "post": "Service Representative",
@@ -100,7 +100,7 @@
     "slider": ""
   },
   {
-    "Link": "",
+    "Link": "null",
     "id": 11,
     "title": "Nischal Shrestha",
     "post": "Organization Dev Manager",
@@ -110,7 +110,7 @@
     "slider": ""
   },
   {
-    "Link": "",
+    "Link": "null",
     "id": 12,
     "title": "Sagar Dhakal",
     "post": "R&D Head",
@@ -120,8 +120,8 @@
     "slider": ""
   },
   {
-    "Link": "",
-    "id": 12,
+    "Link": "null",
+    "id": 123,
     "title": "Aakriti Pokhare",
     "post": "Public Relations (PR) Head ",
     "email": "",
@@ -130,7 +130,7 @@
     "slider": ""
   },
   {
-    "Link": "",
+    "Link": "null",
     "id": 13,
     "title": "Saroj Sah",
     "post": "Member",
@@ -140,7 +140,7 @@
     "slider": ""
   },
   {
-    "Link": "",
+    "Link": "null",
     "id": 130,
     "title": "Satish Yadav",
     "post": "Member",
@@ -150,7 +150,7 @@
     "slider": ""
   },
   {
-    "Link": "",
+    "Link": "null",
     "id": 14,
     "title": "Rakhi Yadav",
     "post": "Member",

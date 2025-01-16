@@ -1,14 +1,16 @@
 [
   {
+    "Link": "null",
     "id": 1,
     "title": "Bishnu P Bhushal",
-    "post": "CDO, Nepal Goverment",
+    "post": "Chief District Officer, Nepal Goverment",
     "email": "",
     "description": "",
     "photo": "BPB.jpeg",
     "slider": ""
   },
   {
+    "Link": "null",
     "id": 2,
     "title": "Biru Balampaki",
     "post": "Educational Officer, Nepal Goverment",
@@ -18,6 +20,17 @@
     "slider": ""
   },
   {
+    "Link": "null",
+    "id": 200,
+    "title": "Dr. Santosh Shah",
+    "post": "Medical Officer, Patan Hospital",
+    "email": "santoshshah@pahs.edu.np",
+    "description": "",
+    "photo": "SS.jpeg",
+    "slider": ""
+  },
+  {
+    "Link": "null",
     "id": 3,
     "title": "Basanta Ghishing",
     "post": "MSC",
@@ -27,6 +40,7 @@
     "slider": ""
   },
   {
+    "Link": "null",
     "id": 4,
     "title": "Sanjeev khatiwada",
     "post": "Master in Mathematics",
@@ -36,6 +50,7 @@
     "slider": ""
   },
   {
+    "Link": "null",
     "id": 5,
     "title": "Durga P Patel",
     "post": "Master in Mathematics",
@@ -45,6 +60,7 @@
     "slider": ""
   },
   {
+    "Link": "null",
     "id": 6,
     "title": "Ranzeet Khatri",
     "post": "MBS (IN)",
