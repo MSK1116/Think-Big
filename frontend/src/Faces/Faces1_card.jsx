@@ -15,7 +15,7 @@ const Faces1_card = ({ items }) => {
             <p data-aos="fade-up" className="text-base mb-0 text-gray-400 font-normal">
               {items.post}
             </p>
-            <a target="_blank" href={`https://${items.Link}`} className=" text-gray-300 text-xs mt-0">
+            <a data-aos="fade-up" data-aos-delay="100" target="_blank" href={`https://${items.Link}`} className=" text-gray-300 text-xs mt-0">
               {items.Link}
             </a>
           </div>
