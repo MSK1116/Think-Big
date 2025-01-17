@@ -1,34 +1,67 @@
 import React, { useEffect } from "react";
 import { IoNotificationsCircleSharp } from "react-icons/io5";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Aos from "aos";
 import { BiSolidPhoneCall } from "react-icons/bi";
 import { MdOutlineMessage } from "react-icons/md";
+import { use } from "react";
 
 const Navbar = () => {
   useEffect(() => {
     Aos.init();
     Aos.refresh();
   }, []);
+
+  const location = useLocation();
   const navItems = (
     <>
       <Link to="/">
-        <li>Home</li>
+        <li
+          className={` relative hover:after:w-full  ${
+            location.pathname == "/" ? " text-green-600 after:w-full   " : ""
+          } after:content-[''] after:absolute after:h-1 after:w-0 after:top-full after:transition-all after:origin-left after:duration-1000  after:bg-green-600 after:rounded-md  `}>
+          Home
+        </li>
       </Link>
       <Link to="/2025">
-        <li>In 2025</li>
+        <li
+          className={` relative hover:after:w-full  ${
+            location.pathname == "/2025" ? " text-green-600 after:w-full  " : ""
+          } after:content-[''] after:absolute after:h-1 after:w-0 after:top-full after:transition-all after:origin-left after:duration-1000  after:bg-green-600 after:rounded-md  `}>
+          In 2025
+        </li>
       </Link>
       <Link to="/member">
-        <li>Faces</li>
+        <li
+          className={` relative hover:after:w-full  ${
+            location.pathname == "/member" ? " text-green-600 after:w-full   " : ""
+          } after:content-[''] after:absolute after:h-1 after:w-0 after:top-full after:transition-all after:origin-left after:duration-1000  after:bg-green-600 after:rounded-md  `}>
+          Faces
+        </li>
       </Link>
       <Link to="/event">
-        <li>Events</li>
+        <li
+          className={` relative hover:after:w-full  ${
+            location.pathname == "/event" ? " text-green-600 after:w-full   " : ""
+          } after:content-[''] after:absolute after:h-1 after:w-0 after:top-full after:transition-all after:origin-left after:duration-1000  after:bg-green-600 after:rounded-md  `}>
+          Events
+        </li>
       </Link>
       <Link to="/about">
-        <li>About</li>
+        <li
+          className={` relative hover:after:w-full  ${
+            location.pathname == "/about" ? " text-green-600 after:w-full   " : ""
+          } after:content-[''] after:absolute after:h-1 after:w-0 after:top-full after:transition-all after:origin-left after:duration-1000  after:bg-green-600 after:rounded-md  `}>
+          About
+        </li>
       </Link>
       <Link to={"/giveus"}>
-        <li>Donate</li>
+        <li
+          className={` relative hover:after:w-full  ${
+            location.pathname == "/giveus" ? " text-green-600 after:w-full   " : ""
+          } after:content-[''] after:absolute after:h-1 after:w-0 after:top-full after:transition-all after:origin-left after:duration-1000  after:bg-green-600 after:rounded-md  `}>
+          Donate
+        </li>
       </Link>
     </>
   );
@@ -58,9 +91,6 @@ const Navbar = () => {
               </Link>
               <Link to={"/about"}>
                 <li>About</li>
-              </Link>
-              <Link to={"/2025"}>
-                <li>In 2025</li>
               </Link>
             </ul>
           </div>
