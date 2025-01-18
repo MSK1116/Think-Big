@@ -25,7 +25,7 @@ const Impact = () => {
             <div data-aos="fade-up " data-aos-duration="700">
               <FaHandsHelping className=" cursor-default m-auto md:w-16 md:h-16 w-10 h-10 text-gray-100" />
               <h1 data-aos="fade-up" aos-duration="1000" className=" cursor-default text-xl md:text-5xl font-extrabold text-gray-50">
-                {counterState && <CountUp start={300} end={900} duration={3} />}+
+                {counterState && <CountUp start={300} end={1000} duration={4} />}+
               </h1>
               <p data-aos="fade-up" aos-duration="1000" className=" cursor-default text-sm text-gray-100">
                 Students Helped
