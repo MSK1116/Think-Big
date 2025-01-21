@@ -101,7 +101,9 @@ const Navbar = () => {
           <div className="flex-none space-x-4">
             {/* <Notification /> */}
             <Link onClick={() => document.getElementById("my_modal_2").showModal()}>
-              <button className="btn  bg-emerald-600 hover:bg-emerald-700 transition-all border-none text-white uppercase font-semibold md:tracking-wide tracking-normal "> In trouble?</button>
+              <button className=" after:content-[''] hover:after:content-['CALL'] after:text-center after:flex after:justify-center after:items-center after:absolute  after:z-10 after:w-full after:h-full after:scale-x-0 hover:after:scale-x-100 after:origin-left after:rounded-lg after:transition-all after:duration-700 after:ease-out  after:bg-red-600  btn relative  hover:bg-emerald-600 bg-emerald-600  transition-all border-none text-white uppercase font-semibold md:tracking-wide  tracking-normal after:font-semibold after:md:tracking-wide  after:tracking-normal ">
+                In trouble?
+              </button>
             </Link>
           </div>
         </div>
