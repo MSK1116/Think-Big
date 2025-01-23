@@ -29,7 +29,7 @@ const About1 = () => {
               <p className="text-red-500  text-sm"> Regd. No. 3435/080/081</p>
               <p className="text-red-500  text-sm">We are registered under the Association Registration Act, 2035 BS, Nepal.</p>
               <p className="text-red-500  text-sm">Complete detail about us and our legislation will be updated along with Social welfare council number by March 1.</p>
-              <p className=" mt-20 underline cursor-pointer" onClick={() => navigate("/event")}>
+              <p className=" mt-20 underline text-xl cursor-pointer" onClick={() => navigate("/event")}>
                 You can be clear about us through event page
               </p>
             </div>
