@@ -84,12 +84,12 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex flex-row space-x-4 w-full justify-end">
-            {/* <div data-aos="fade-up" data-aos-offset="50" data-aos-delay="100" className="mt-6 gap-1 text-center flex flex-col md:flex-row  text-sm text-gray-500 md:text-left">
+            <div data-aos="fade-up" data-aos-offset="50" data-aos-delay="100" className="mt-6 gap-1 text-center flex flex-col md:flex-row  text-sm text-gray-500 md:text-left">
               Crafted by:
               <a className="font-bold text-nowrap" target="blank" href="https://www.manishmahato.info.np/">
-                Manish Singh Mahato
+                Manish Singh Mahato & Think Big
               </a>
-            </div> */}
+            </div>
             <p data-aos="fade-up" data-aos-offset="50" data-aos-delay="200" className="mt-6 text-center text-sm text-gray-500 lg:text-right">
               Copyright &copy; 2025. All rights reserved.
             </p>
