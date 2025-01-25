@@ -12,6 +12,10 @@ import { GiSecretBook } from "react-icons/gi";
 import { MdLocalMovies } from "react-icons/md";
 import { BiSolidCameraMovie } from "react-icons/bi";
 import { RiMovie2Fill } from "react-icons/ri";
+import SVGDollPlay from "../svg/SVGDollPlay";
+import { GiHealthCapsule } from "react-icons/gi";
+import { MdHealthAndSafety } from "react-icons/md";
+import { RiWomenLine } from "react-icons/ri";
 
 const In_2025_banner = () => {
   return (
@@ -100,7 +104,7 @@ const In_2025_banner = () => {
           </div>
           <div className="md:mt-0 mt-10 md:ml-20 md:w-1/2 md:h-3/4 ">
             <h1 data-aos="fade-right" data-aos-duration="1000" className=" font-semibold text-xl  uppercase">
-              <span className=" font-playwrite text-3xl lowercase font-bold">3.</span> Documentary on child marriage
+              <span className=" font-playwrite text-3xl lowercase font-bold">4.</span> Documentary on child marriage
             </h1>
             <h1 data-aos="fade-up" data-aos-duration="1000" className=" indent-8">
               We plan to create a documentary that tells the stories of two families: one that marries their daughter off while she is underage and another that supports their daughter in completing her education and marrying when and whom she
@@ -112,6 +116,29 @@ const In_2025_banner = () => {
             <BiSolidCameraMovie data-aos="zoom-in" data-aos-duration="1000" className=" floating01 absolute  -top-14 right-80 size-14 text-green-700/20" />
             <RiMovie2Fill data-aos="zoom-in" data-aos-duration="1000" className=" floating1 animate-pulse absolute bottom-10  left-[35rem] size-14 text-green-700/20" />
             <MdLocalMovies data-aos="zoom-in" data-aos-duration="1000" className=" floating2 absolute  -top-28 left-20 size-14 text-green-700/20" />
+          </div>
+        </div>
+        <hr></hr>
+        {/* 5 */}
+        <div className="h-full relative md:max-h-screen flex flex-col md:flex-row mt-10">
+          <div className="  relative md:w-1/2 flex justify-center">
+            <div className="absolute inset-0  z-10 w-full h-full"></div>
+            <SVGDollPlay Wid={500} Hei={250} />
+          </div>
+          <div className=" md:mt-0 mt-10 md:w-1/2 md:h-3/4 ">
+            <h1 data-aos="fade-right" data-aos-duration="1000" className=" font-semibold text-xl  uppercase">
+              <span className=" font-playwrite text-3xl lowercase font-bold">5.</span> Awarness and distribution of sanitary <span className=" text-emerald-700">goods</span>
+            </h1>
+            <h1 data-aos="fade-up" data-aos-duration="1000" className=" indent-8">
+              We are committed to addressing the critical issues surrounding menstrual health and hygiene. As part of our initiative, we plan to conduct awareness campaigns and distribute sanitary goods four times a year. Our efforts aim to reach as
+              many communities as possible, and we hope to expand further as our budget allows. In addition to distributing sanitary pads and other hygiene products, our campaigns will focus on raising awareness about menstrual health, the importance
+              of hygiene, and the impact of early marriage on young girls' lives. Through education and resource distribution, we strive to empower individuals and create a supportive environment for women's health and well-being.{" "}
+            </h1>
+          </div>
+          <div className=" hidden md:block">
+            <GiHealthCapsule data-aos="zoom-in" data-aos-duration="1000" className=" floating1 absolute -top-14 right-80 size-14 text-green-700/20" />
+            <MdHealthAndSafety data-aos="zoom-in" data-aos-duration="1000" className="floating01 absolute bottom-10  left-[35rem] size-14 text-green-700/20" />
+            <RiWomenLine data-aos="zoom-in" data-aos-duration="1000" className=" floating2 absolute  -top-28 left-20 size-14 text-green-700/20" />
           </div>
         </div>
         <p className=" text-center uppercase text-xs text-gray-700">The first quarter meeting of this year will take place at the end of March. The budget distribution and additional initiatives will be updated after that.</p>

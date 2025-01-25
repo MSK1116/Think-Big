@@ -29,7 +29,7 @@ const Events_banner1 = () => {
 
         <div data-aos="zoom-in-lrft" className=" bg-[url(/webi/handprint.jpg)] bg-cover  object-cover sm:h-[calc(100%_-_2rem)] sm:self-end sm:rounded-ss-[30px] md:h-[calc(100%_-_4rem)] md:rounded-ss-[60px]">
           <div className=" bg-black/50 h-full w-full flex items-center sm:self-end sm:rounded-ss-[30px]  md:rounded-ss-[60px]  ">
-            <h1 className="text-gray-100 font-bold  mx-auto ">Upcomig event will appear here </h1>
+            <h1 className="text-gray-100 font-bold  mx-auto ">Webinar on mental helath will be held this week. Stay tuned till we open registeration</h1>
           </div>
         </div>
       </section>
