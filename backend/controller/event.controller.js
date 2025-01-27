@@ -20,7 +20,8 @@ export const eventReg = async (req, res) => {
     });
 
     await eventRegTemp.save();
-    sendConfirmationEmail({
+
+    const emailStatus = await sendConfirmationEmail({
       eventName,
       Fullname,
       email,
@@ -28,6 +29,7 @@ export const eventReg = async (req, res) => {
       textarea,
       date,
     });
+
     res.status(201).json({ message: "Event registered & email", emailStatus });
   } catch (error) {
     console.log("Failed event_controller.js", error.message);
