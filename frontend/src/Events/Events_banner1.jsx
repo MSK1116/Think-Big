@@ -55,7 +55,7 @@ const Events_banner1 = () => {
       .post("https://think-big-backend.vercel.app/eventReg", applicant)
       .then((res) => {
         if (res.data) {
-          toast.success(res.data.message, { id: toastId });
+          toast.success(res.data.message, res.data.emailStatus, { id: toastId });
           setRegStart(false);
         }
       })
