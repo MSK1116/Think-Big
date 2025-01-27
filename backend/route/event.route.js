@@ -3,6 +3,6 @@ import { eventReg } from "../controller/event.controller.js";
 
 const router = express.Router();
 
-router.post("/eventReg", eventReg);
+router.post("/", eventReg);
 
 export default router;
