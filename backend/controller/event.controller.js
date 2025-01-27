@@ -4,7 +4,11 @@ import Event from "../model/event.model.js";
 export const eventReg = async (req, res) => {
   try {
     const { eventName, Fullname, email, address, textarea, date } = req.body;
-    console.log(req.body);
+    const user = await Event.findOne({ email });
+    if (user) {
+      return res.status(400).json({ message: "You have alredy registered" });
+    }
+
     const eventRegTemp = new Event({
       eventName: eventName,
       Fullname: Fullname,

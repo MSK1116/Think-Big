@@ -12,6 +12,7 @@ const eventSchema = mongoose.Schema({
   email: {
     type: String,
     required: true,
+    unique: true,
   },
   address: {
     type: String,
