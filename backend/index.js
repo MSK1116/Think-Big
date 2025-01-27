@@ -2,8 +2,10 @@ import express from "express";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
 import eventReg from "../backend/route/event.route.js";
+import cors from "cors";
 
 dotenv.config();
+app.use(cors());
 
 const PORT = process.env.PORT || 1000;
 const MONGOURI = process.env.MONGODBURI;
