@@ -21,6 +21,7 @@ const Events_banner1 = () => {
   hours = hours % 12;
   hours = hours ? hours : 12; // If hour is 0, make it 12
   const formattedDateTime = `${month}/${day}/${year} ${hours}:${minutes} ${ampm}`;
+  eventName = "Hi";
 
   const RandomIDforModal = Math.random();
   const [registerForm, setRegisterForm] = useState(true);
@@ -41,13 +42,14 @@ const Events_banner1 = () => {
 
   const onSubmit = async (data) => {
     const applicant = {
-      eventName: "hi ",
+      eventName: eventName,
       Fullname: data.Fullname,
       email: data.email,
       address: data.address,
       textarea: data.textarea,
       date: formattedDateTime,
     };
+    console.log(applicant);
     const toastId = toast.loading("Registering...");
 
     await axios
