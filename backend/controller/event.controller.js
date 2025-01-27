@@ -30,7 +30,7 @@ export const eventReg = async (req, res) => {
       date,
     });
 
-    res.status(201).json({ message: "Event registered & email", emailStatus });
+    res.status(201).json({ message: "Event registered", emailStatus });
   } catch (error) {
     console.log("Failed event_controller.js", error.message);
     res.status(500).json({ message: "Internal server error" });

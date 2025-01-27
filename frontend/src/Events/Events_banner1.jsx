@@ -25,6 +25,7 @@ const Events_banner1 = () => {
   const RandomIDforModal = Math.random();
   const [registerForm, setRegisterForm] = useState(true);
   const [regStart, setRegStart] = useState(false);
+  const [isEmail, setIsEmail] = useState(false);
 
   const formVisibility = () => {
     setRegisterForm(!registerForm);
@@ -55,7 +56,13 @@ const Events_banner1 = () => {
       .post("https://think-big-backend.vercel.app/eventReg", applicant)
       .then((res) => {
         if (res.data) {
-          toast.success(res.data.message, res.data.emailStatus, { id: toastId });
+          toast.success(res.data.message, { id: toastId });
+          if (res.data.emailStatus === "sent") {
+            setIsEmail(true);
+            toast.success("Confirmation email" + res.data.emailStatus);
+          } else {
+            toast.error("Confirmation email" + res.data.emailStatus);
+          }
           setRegStart(false);
         }
       })
@@ -86,7 +93,7 @@ const Events_banner1 = () => {
             <div className="mt-4 md:mt-8">
               <button
                 onClick={formVisibility}
-                disabled={false}
+                disabled={true}
                 className={` ${
                   !registerForm ? " after:scale-x-100  " : " "
                 } relative after:transition-all after:flex after:items-center after:justify-center after:origin-left after:duration-700 after:ease-in-out  after:absolute after:top-0 after:right-0 after:rounded after:z-10 after:content-['Fill_the_form'] after:h-full after:w-full after:scale-x-0 after:bg-red-600 hover:after:bg-red-700 cursor-pointer inline-block rounded bg-emerald-600 px-12 py-3   text-sm font-medium text-white transition-all hover:bg-emerald-700 outline-none `}>
