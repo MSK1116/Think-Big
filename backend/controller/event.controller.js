@@ -1,5 +1,6 @@
 import { text } from "express";
 import Event from "../model/event.model.js";
+import { sendConfirmationEmail } from "./mail.controller.js";
 
 export const eventReg = async (req, res) => {
   try {
@@ -20,6 +21,15 @@ export const eventReg = async (req, res) => {
 
     await eventRegTemp.save();
     res.status(201).json({ message: "Event registered" });
+
+    sendConfirmationEmail({
+      eventName,
+      Fullname,
+      email,
+      address,
+      textarea,
+      date,
+    });
   } catch (error) {
     console.log("Failed event_controller.js", error.message);
     res.status(500).json({ message: "Internal server error" });
