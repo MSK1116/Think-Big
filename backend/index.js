@@ -11,6 +11,7 @@ const MONGOURI = process.env.MONGODBURI;
 
 const app = express();
 app.use(cors());
+app.use(express.json());
 
 try {
   mongoose.connect(MONGOURI);
