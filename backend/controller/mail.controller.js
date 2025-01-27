@@ -217,7 +217,7 @@ export const sendConfirmationEmail = async (userDetails) => {
  <p>Copyright © 2025. All rights reserved.</p>
             </div>
             <div class="footer-right">
-                <p>"Ending Exploitation, Ensuring Education |"</p>
+                <p>"Ending Exploitation, Ensuring Education"</p>
                
             </div>
         </div>
@@ -233,9 +233,9 @@ export const sendConfirmationEmail = async (userDetails) => {
     };
 
     await emailApi.sendTransacEmail(emailContent);
-    return "sent";
+    return " sent";
   } catch (error) {
     console.error("Error while sending email:", error.message);
-    return "failed";
+    return " failed";
   }
 };
