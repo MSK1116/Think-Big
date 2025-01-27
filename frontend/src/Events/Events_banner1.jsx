@@ -55,14 +55,14 @@ const Events_banner1 = () => {
       .then((res) => {
         if (res.data) {
           toast.success("Registeration success!", { id: toastId });
-          regStart(true);
+          setRegStart(true);
         }
       })
       .catch((err) => {
         if (err.response) {
           console.log(err);
-          toast.error("ERROR: " + err.response, { id: toastId });
-          regStart(false);
+          toast.error("ERROR: " + err.response.message, { id: toastId });
+          setRegStart(false);
         }
       });
   };
