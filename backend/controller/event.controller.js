@@ -1,7 +1,7 @@
 import { text } from "express";
 import Event from "../model/event.model.js";
 
-export const signup = async (req, res) => {
+export const eventReg = async (req, res) => {
   try {
     const { eventName, Fullname, email, address, textarea, date } = req.body;
 
