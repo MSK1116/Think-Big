@@ -107,7 +107,8 @@ export const sendConfirmationEmail = async (userDetails) => {
             border-radius: 5px;
             text-align: center;
             width: 48%; /* Adjust width for side-by-side */
-            margin-bottom: 10px; /* Add gap between buttons on mobile */
+            margin-bottom: 10px;
+            margin-left: 10px; /* Add gap between buttons on mobile */
         }
         .btn i {
             margin-right: 8px; /* Add some space between the icon and the text */
