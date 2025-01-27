@@ -62,7 +62,7 @@ const Events_banner1 = () => {
       .catch((err) => {
         if (err.response) {
           console.log(err);
-          toast.error("ERROR: " + err.response.message, { id: toastId });
+          toast.error("ERROR: " + err.response.data.message, { id: toastId });
           setRegStart(false);
         }
       });
