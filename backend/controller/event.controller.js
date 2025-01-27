@@ -20,8 +20,6 @@ export const eventReg = async (req, res) => {
     });
 
     await eventRegTemp.save();
-    res.status(201).json({ message: "Event registered" });
-
     sendConfirmationEmail({
       eventName,
       Fullname,
@@ -30,6 +28,7 @@ export const eventReg = async (req, res) => {
       textarea,
       date,
     });
+    res.status(201).json({ message: "Event registered", emailStatus });
   } catch (error) {
     console.log("Failed event_controller.js", error.message);
     res.status(500).json({ message: "Internal server error" });

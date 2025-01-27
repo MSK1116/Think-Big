@@ -40,8 +40,9 @@ export const sendConfirmationEmail = async (userDetails) => {
     };
 
     await emailApi.sendTransacEmail(emailContent);
-    console.log("Email sent successfully!");
+    return "sent";
   } catch (error) {
     console.error("Error while sending email:", error.message);
+    return "failed";
   }
 };
