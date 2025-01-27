@@ -1,6 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
+import eventReg from "../backend/route/event.route.js";
 
 dotenv.config();
 
@@ -19,6 +20,8 @@ try {
 app.get("/", (req, res) => {
   res.send("Hello hacker");
 });
+
+app.use("/eventReg", eventReg);
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);

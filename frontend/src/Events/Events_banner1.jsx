@@ -7,10 +7,24 @@ import { TiMessageTyping } from "react-icons/ti";
 import { useForm } from "react-hook-form";
 import { RiErrorWarningLine } from "react-icons/ri";
 import { FaUserNinja } from "react-icons/fa";
+import toast, { Toaster } from "react-hot-toast";
+import axios from "axios";
 
 const Events_banner1 = () => {
+  const now = new Date();
+  const day = String(now.getDate()).padStart(2, "0");
+  const month = String(now.getMonth() + 1).padStart(2, "0"); // Months are 0-indexed
+  const year = now.getFullYear();
+  let hours = now.getHours();
+  const minutes = String(now.getMinutes()).padStart(2, "0");
+  const ampm = hours >= 12 ? "PM" : "AM";
+  hours = hours % 12;
+  hours = hours ? hours : 12; // If hour is 0, make it 12
+  const formattedDateTime = `${month}/${day}/${year} ${hours}:${minutes} ${ampm}`;
+
   const RandomIDforModal = Math.random();
   const [registerForm, setRegisterForm] = useState(true);
+  const [regStart, setRegStart] = useState(false);
 
   const formVisibility = () => {
     setRegisterForm(!registerForm);
@@ -24,6 +38,34 @@ const Events_banner1 = () => {
     handleSubmit,
     formState: { errors },
   } = useForm();
+
+  const onSubmit = async (data) => {
+    const applicant = {
+      eventName: "hi ",
+      Fullname: data.Fullname,
+      email: data.email,
+      address: data.address,
+      textarea: data.textarea,
+      date: formattedDateTime,
+    };
+    const toastId = toast.loading("Registering...");
+
+    await axios
+      .post("https://think-big-backend.vercel.app/eventReg", applicant)
+      .then((res) => {
+        if (res.data) {
+          toast.success("Registeration success!", { id: toastId });
+          regStart(true);
+        }
+      })
+      .catch((err) => {
+        if (err.response) {
+          console.log(err);
+          toast.error("ERROR: " + err.response, { id: toastId });
+          regStart(false);
+        }
+      });
+  };
 
   return (
     <>
@@ -66,7 +108,7 @@ const Events_banner1 = () => {
           <>
             <div className=" relative fade-left flex flex-col  items-center  rounded-md shadow-xl w-full h-full    sm:self-end sm:rounded-ss-[30px]  md:rounded-ss-[60px] ">
               <p className=" text-gray-400"> Few more click to do!</p>
-              <form onSubmit={handleSubmit()} className=" fade-left mt-4 w-[90%] h-full p-3 space-y-4 flex flex-col">
+              <form onSubmit={handleSubmit(onSubmit)} className=" fade-left mt-4 w-[90%] h-full p-3 space-y-4 flex flex-col">
                 <span className=" flex items-center shadow-md rounded-md ">
                   <FaUserNinja className=" size-6 mx-1 opacity-85 " />
                   <input {...register("Fullname", { required: true })} name="Fullname" className="w-full p-3 text-emerald-700 rounded-md  outline-none shadow-sm focus:shadow-lg " type="text" placeholder="Your Name" />
@@ -92,7 +134,7 @@ const Events_banner1 = () => {
                     placeholder="Anything you would like to tell us?"></textarea>
                   {errors.textarea && <RiErrorWarningLine className=" mx-1 text-red-500" />}{" "}
                 </span>
-                <button className=" mx-auto text-white rounded-md bg-emerald-700 max-w-24 w-full p-2" type="submit">
+                <button disabled={regStart} className=" mx-auto text-white rounded-md bg-emerald-700 max-w-24 w-full p-2" type="submit">
                   {" "}
                   Submit
                 </button>
@@ -101,6 +143,7 @@ const Events_banner1 = () => {
           </>
         )}
       </section>
+      <Toaster />
     </>
   );
 };
