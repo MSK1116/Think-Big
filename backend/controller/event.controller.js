@@ -1,4 +1,4 @@
-import { text } from "express";
+import { express } from "express";
 import Event from "../model/event.model.js";
 import { sendConfirmationEmail } from "./mail.controller.js";
 
