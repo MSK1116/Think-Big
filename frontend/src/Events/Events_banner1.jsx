@@ -21,7 +21,6 @@ const Events_banner1 = () => {
   hours = hours % 12;
   hours = hours ? hours : 12; // If hour is 0, make it 12
   const formattedDateTime = `${month}/${day}/${year} ${hours}:${minutes} ${ampm}`;
-  eventName = "Hi";
 
   const RandomIDforModal = Math.random();
   const [registerForm, setRegisterForm] = useState(true);
@@ -39,7 +38,7 @@ const Events_banner1 = () => {
     handleSubmit,
     formState: { errors },
   } = useForm();
-
+  const eventName = "Webinar on mental health";
   const onSubmit = async (data) => {
     const applicant = {
       eventName: eventName,
