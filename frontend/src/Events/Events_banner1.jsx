@@ -50,13 +50,13 @@ const Events_banner1 = () => {
     };
     console.log(applicant);
     const toastId = toast.loading("Registering...");
-
+    setRegStart(true);
     await axios
       .post("https://think-big-backend.vercel.app/eventReg", applicant)
       .then((res) => {
         if (res.data) {
           toast.success("Registeration success!", { id: toastId });
-          setRegStart(true);
+          setRegStart(false);
         }
       })
       .catch((err) => {

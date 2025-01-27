@@ -7,6 +7,7 @@ const eventSchema = mongoose.Schema({
   Fullname: {
     type: String,
     required: true,
+    unique: false,
   },
   email: {
     type: String,
