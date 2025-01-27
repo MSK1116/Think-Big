@@ -18,6 +18,59 @@ body {
 /* ========================= */
 /* FADE EFFECTS (700ms) */
 /* ========================= */
+.fade-up {
+  animation: fade-up var(--tw-duration, 0.7s) ease-out forwards;
+}
+.fade-down {
+  animation: fade-down var(--tw-duration, 0.7s) ease-out forwards;
+}
+.fade-left {
+  animation: fade-left var(--tw-duration, 0.7s) ease-out forwards;
+}
+.fade-right {
+  animation: fade-right var(--tw-duration, 0.7s) ease-out forwards;
+}
+
+.zoom-in {
+  animation: zoom-in var(--tw-duration, 0.7s) ease-out forwards;
+}
+.zoom-out {
+  animation: zoom-out var(--tw-duration, 0.7s) ease-out forwards;
+}
+.zoom-in-up {
+  animation: zoom-in-up var(--tw-duration, 0.7s) ease-out forwards;
+}
+.zoom-in-down {
+  animation: zoom-in-down var(--tw-duration, 0.7s) ease-out forwards;
+}
+.zoom-in-left {
+  animation: zoom-in-left var(--tw-duration, 0.7s) ease-out forwards;
+}
+.zoom-in-right {
+  animation: zoom-in-right var(--tw-duration, 0.7s) ease-out forwards;
+}
+.zoom-out-up {
+  animation: zoom-out-up var(--tw-duration, 0.7s) ease-out forwards;
+}
+.zoom-out-down {
+  animation: zoom-out-down var(--tw-duration, 0.7s) ease-out forwards;
+}
+.zoom-out-left {
+  animation: zoom-out-left var(--tw-duration, 0.7s) ease-out forwards;
+}
+.zoom-out-right {
+  animation: zoom-out-right var(--tw-duration, 0.7s) ease-out forwards;
+}
+.floating01 {
+  animation: floating 10s infinite ease-in-out;
+}
+.floating1 {
+  animation: floating 8s infinite ease-in-out;
+}
+.floating2 {
+  animation: floating 7s infinite ease-in-out;
+}
+
 @keyframes fade-up {
   0% {
     opacity: 0;
@@ -60,19 +113,6 @@ body {
     opacity: 1;
     transform: translateX(0);
   }
-}
-
-.fade-up {
-  animation: fade-up 0.7s ease-out forwards;
-}
-.fade-down {
-  animation: fade-down 0.7s ease-out forwards;
-}
-.fade-left {
-  animation: fade-left 0.7s ease-out forwards;
-}
-.fade-right {
-  animation: fade-right 0.7s ease-out forwards;
 }
 
 @keyframes zoom-in {
@@ -185,37 +225,6 @@ body {
   }
 }
 
-.zoom-in {
-  animation: zoom-in 0.7s ease-out forwards;
-}
-.zoom-out {
-  animation: zoom-out 0.7s ease-out forwards;
-}
-.zoom-in-up {
-  animation: zoom-in-up 0.7s ease-out forwards;
-}
-.zoom-in-down {
-  animation: zoom-in-down 0.7s ease-out forwards;
-}
-.zoom-in-left {
-  animation: zoom-in-left 0.7s ease-out forwards;
-}
-.zoom-in-right {
-  animation: zoom-in-right 0.7s ease-out forwards;
-}
-.zoom-out-up {
-  animation: zoom-out-up 0.7s ease-out forwards;
-}
-.zoom-out-down {
-  animation: zoom-out-down 0.7s ease-out forwards;
-}
-.zoom-out-left {
-  animation: zoom-out-left 0.7s ease-out forwards;
-}
-.zoom-out-right {
-  animation: zoom-out-right 0.7s ease-out forwards;
-}
-
 @keyframes floating {
   0% {
     transform: translateY(0);
@@ -226,13 +235,4 @@ body {
   100% {
     transform: translateY(0);
   }
-}
-.floating01 {
-  animation: floating 10s infinite ease-in-out;
-}
-.floating1 {
-  animation: floating 8s infinite ease-in-out;
-}
-.floating2 {
-  animation: floating 7s infinite ease-in-out;
 }

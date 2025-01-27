@@ -16,7 +16,6 @@ const Donate_banner = () => {
 
   const donationBtn = () => {
     setDonationType(!donationType);
-    console.log(donationType);
   };
   return (
     <>

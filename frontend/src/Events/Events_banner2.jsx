@@ -5,11 +5,10 @@ import { useNavigate } from "react-router-dom";
 const Events_banner2 = () => {
   const navigate = useNavigate();
   const events3 = eventsList.filter((data) => data.id < 9);
-  
 
   return (
     <>
-      <section className="md:p-8 p-5 block  bg-gray-50">
+      <section className="md:p-8 p-5 block  ">
         <h1 data-aos="fade-up" className="font-bold text-green-600 text-center md:text-left text-xl md:text-2xl ">
           See more
         </h1>

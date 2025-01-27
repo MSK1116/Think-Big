@@ -1,11 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
+import AOS from "aos";
+import { CgRename } from "react-icons/cg";
+import { MdAlternateEmail } from "react-icons/md";
+import { FaLocationArrow } from "react-icons/fa";
+import { TiMessageTyping } from "react-icons/ti";
+import { useForm } from "react-hook-form";
+import { RiErrorWarningLine } from "react-icons/ri";
+import { FaUserNinja } from "react-icons/fa";
 
 const Events_banner1 = () => {
+  const RandomIDforModal = Math.random();
+  const [registerForm, setRegisterForm] = useState(true);
+
+  const formVisibility = () => {
+    setRegisterForm(!registerForm);
+    setTimeout(() => {
+      AOS.refresh();
+    }, 500);
+  };
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
   return (
     <>
-      <section data-aos="fade-zoom-out" data-aos-duration="1000" className="overflow-hidden mt-9 bg-gray-50 sm:grid sm:grid-cols-2 sm:items-center">
-        <div className="p-8 md:p-12 lg:px-16 lg:py-24">
-          <div className="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
+      <section data-aos="fade-zoom-out" data-aos-duration="1000" className="overflow-hidden mt-28   sm:grid sm:grid-cols-2 sm:items-center">
+        <div className="md:p-8 p-3  md:h-[80vh] h-full ">
+          <div className=" flex flex-col justify-start max-w-xl text-center ltr:sm:text-left rtl:sm:text-right ">
             <h1 data-aos="fade-down" className="text-3xl font-bold text-left text-green-600 mb-4">
               Events
             </h1>
@@ -18,20 +42,64 @@ const Events_banner1 = () => {
 
             <div className="mt-4 md:mt-8">
               <button
-                disabled={true}
-                data-aos="fade-up"
-                className=" cursor-not-allowed inline-block rounded bg-emerald-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-emerald-700 focus:outline-none focus:ring focus:ring-yellow-400">
+                onClick={formVisibility}
+                disabled={false}
+                className={` ${
+                  !registerForm ? " after:scale-x-100  " : " "
+                } relative after:transition-all after:flex after:items-center after:justify-center after:origin-left after:duration-700 after:ease-in-out  after:absolute after:top-0 after:right-0 after:rounded after:z-10 after:content-['Fill_the_form'] after:h-full after:w-full after:scale-x-0 after:bg-red-600 hover:after:bg-red-700 cursor-pointer inline-block rounded bg-emerald-600 px-12 py-3   text-sm font-medium text-white transition-all hover:bg-emerald-700 outline-none `}>
                 Register
               </button>
             </div>
           </div>
         </div>
-
-        <div data-aos="zoom-in-lrft" className=" bg-[url(/webi/handprint.jpg)] bg-cover  object-cover sm:h-[calc(100%_-_2rem)] sm:self-end sm:rounded-ss-[30px] md:h-[calc(100%_-_4rem)] md:rounded-ss-[60px]">
-          <div className=" bg-black/50 h-full w-full flex items-center sm:self-end sm:rounded-ss-[30px]  md:rounded-ss-[60px]  ">
-            <h1 className="text-gray-100 font-bold  mx-auto ">Webinar on mental helath will be held this week. Stay tuned till we open registeration</h1>
-          </div>
-        </div>
+        {registerForm ? (
+          <>
+            <div className=" h-full w-full ">
+              <div className=" fade-right shadow-md  bg-[url(/webi/handprint.jpg)] bg-cover  object-cover  sm:h-[calc(100%_-_2rem)] sm:self-end sm:rounded-ss-[30px] md:h-[calc(100%_-_4rem)] md:rounded-ss-[60px]">
+                <div className="   bg-black/50 h-full w-full flex items-center sm:self-end sm:rounded-ss-[30px]  md:rounded-ss-[60px]  ">
+                  <h1 className="text-gray-100 font-bold  mx-auto text-center ">Webinar on mental helath will be held this week. Stay tuned till we open registeration</h1>
+                </div>
+              </div>
+            </div>
+          </>
+        ) : (
+          <>
+            <div className=" relative fade-left flex flex-col  items-center  rounded-md shadow-xl w-full h-full    sm:self-end sm:rounded-ss-[30px]  md:rounded-ss-[60px] ">
+              <p className=" text-gray-400"> Few more click to do!</p>
+              <form onSubmit={handleSubmit()} className=" fade-left mt-4 w-[90%] h-full p-3 space-y-4 flex flex-col">
+                <span className=" flex items-center shadow-md rounded-md ">
+                  <FaUserNinja className=" size-6 mx-1 opacity-85 " />
+                  <input {...register("Fullname", { required: true })} name="Fullname" className="w-full p-3 text-emerald-700 rounded-md  outline-none shadow-sm focus:shadow-lg " type="text" placeholder="Your Name" />
+                  {errors.Fullname && <RiErrorWarningLine className=" mx-1 text-red-500" />}
+                </span>
+                <span className="flex items-center shadow-md rounded-md">
+                  <MdAlternateEmail className=" size-6 mx-1 opacity-85 " />
+                  <input {...register("email", { required: true })} name="email" className="w-full p-3 text-emerald-700 rounded-md outline-none shadow-sm focus:shadow-lg " type="email" placeholder="Your Email" />
+                  {errors.email && <RiErrorWarningLine className=" mx-1 text-red-500" />}{" "}
+                </span>
+                <span className="flex items-center shadow-md rounded-md">
+                  <FaLocationArrow className=" size-6 mx-1 opacity-85 " />
+                  <input {...register("address", { required: true })} name="address" className="w-full p-3 text-emerald-700 rounded-md outline-none shadow-sm focus:shadow-lg " type="text" placeholder="Your Address" />
+                  {errors.address && <RiErrorWarningLine className=" mx-1 text-red-500" />}{" "}
+                </span>
+                <span className="flex items-center shadow-md rounded-md">
+                  <TiMessageTyping className=" size-6 mx-1 opacity-85 " />
+                  <textarea
+                    {...register("textarea", { required: true })}
+                    name="textarea"
+                    className="w-full p-3 text-emerald-700 rounded-md outline-none shadow-sm focus:shadow-lg resize-none  "
+                    rows={6}
+                    placeholder="Anything you would like to tell us?"></textarea>
+                  {errors.textarea && <RiErrorWarningLine className=" mx-1 text-red-500" />}{" "}
+                </span>
+                <button className=" mx-auto text-white rounded-md bg-emerald-700 max-w-24 w-full p-2" type="submit">
+                  {" "}
+                  Submit
+                </button>
+              </form>
+            </div>
+          </>
+        )}
       </section>
     </>
   );
