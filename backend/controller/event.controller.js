@@ -4,7 +4,7 @@ import Event from "../model/event.model.js";
 export const eventReg = async (req, res) => {
   try {
     const { eventName, Fullname, email, address, textarea, date } = req.body;
-
+    console.log(req.body);
     const eventRegTemp = new Event({
       eventName: eventName,
       Fullname: Fullname,
@@ -13,6 +13,7 @@ export const eventReg = async (req, res) => {
       textarea: textarea,
       date: date,
     });
+
     await eventRegTemp.save();
     res.status(201).json({ message: "Event registered" });
   } catch (error) {
