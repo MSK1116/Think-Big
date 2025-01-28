@@ -6,12 +6,11 @@ import cors from "cors";
 
 const app = express();
 dotenv.config();
+app.use(cors());
+app.use(express.json());
 
 const PORT = process.env.PORT || 1000;
 const MONGOURI = process.env.MONGODBURI;
-
-app.use(cors());
-app.use(express.json());
 
 try {
   mongoose.connect(MONGOURI);
