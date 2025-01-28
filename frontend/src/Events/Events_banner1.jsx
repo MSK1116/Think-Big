@@ -105,7 +105,8 @@ const Events_banner1 = () => {
         {registerForm ? (
           <>
             <div className=" h-full w-full ">
-              <div className=" fade-right shadow-md  bg-[url(/webi/handprint.jpg)] bg-cover  object-cover  sm:h-[calc(100%_-_2rem)] sm:self-end sm:rounded-ss-[30px] md:h-[calc(100%_-_4rem)] md:rounded-ss-[60px]">
+              {" "}
+              <div className=" fade-right shadow-md  bg-[url(/prg/mental_health.jpg)] bg-cover  object-cover  sm:h-[calc(100%_-_2rem)] sm:self-end sm:rounded-ss-[30px] md:h-[calc(100%_-_4rem)] md:rounded-ss-[60px]">
                 <div className="   bg-black/50 h-full w-full flex items-center sm:self-end sm:rounded-ss-[30px]  md:rounded-ss-[60px]  ">
                   <h1 className="text-gray-100 font-bold  mx-auto text-center ">Webinar on mental helath will be held this week. Stay tuned till we open registeration</h1>
                 </div>
