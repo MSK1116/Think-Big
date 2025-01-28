@@ -6,7 +6,13 @@ import cors from "cors";
 
 const app = express();
 dotenv.config();
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://www.thinkbig.org.np",
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+  })
+);
 app.use(express.json());
 
 const PORT = process.env.PORT || 1000;
