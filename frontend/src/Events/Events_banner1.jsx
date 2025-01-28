@@ -106,9 +106,9 @@ const Events_banner1 = () => {
           <>
             <div className=" h-full w-full ">
               {" "}
-              <div className=" fade-right shadow-md  bg-[url(/prg/mental_health.jpg)] bg-cover  object-cover  sm:h-[calc(100%_-_2rem)] sm:self-end sm:rounded-ss-[30px] md:h-[calc(100%_-_4rem)] md:rounded-ss-[60px]">
-                <div className="   bg-black/50 h-full w-full flex items-center sm:self-end sm:rounded-ss-[30px]  md:rounded-ss-[60px]  ">
-                  <h1 className="text-gray-100 font-bold  mx-auto text-center ">Webinar on mental helath will be held this week. Stay tuned till we open registeration</h1>
+              <div className=" fade-right shadow-md  bg-[url(/prg/mental_health.jpg)] bg-contain bg-no-repeat bg-center  object-cover  sm:h-[calc(100%_-_2rem)] sm:self-end sm:rounded-ss-[30px] md:h-[calc(100%_-_4rem)] md:rounded-ss-[60px]">
+                <div className=" bg-gradient-to-t from-gray-800/50 to-transparent h-full w-full flex items-end sm:self-end sm:rounded-ss-[30px]  md:rounded-ss-[60px]  ">
+                  <h1 className="text-gray-100 font-bold  mx-auto text-end ">Mental health Episode 1</h1>
                 </div>
               </div>
             </div>
