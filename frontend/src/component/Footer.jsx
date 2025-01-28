@@ -84,14 +84,14 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="flex flex-row space-x-4 w-full justify-end">
-            <div data-aos="fade-up" data-aos-offset="50" data-aos-delay="100" className="mt-6 gap-1 text-center flex flex-col md:flex-row  text-sm items-center text-gray-500 md:text-left">
+          <div className="flex md:flex-row flex-col  space-x-4 w-full justify-end">
+            <div data-aos="fade-up" data-aos-offset="50" data-aos-delay="100" className="mt-6 gap-1 text-center flex flex-col md:flex-row  md:text-sm text-xs items-center text-gray-500 md:text-left">
               Designed with Passion, Perfected with Purpose by
               <a className="font-bold text-nowrap" target="blank" href="https://www.manishmahato.info.np/">
                 Manish Singh Mahato
               </a>
-              with{" "}
-              <a target="_blank" href="https://react.dev/">
+              <span className=" hidden md:block">with</span>
+              <a className="hidden md:block" target="_blank" href="https://react.dev/">
                 <FaReact />
               </a>
             </div>
