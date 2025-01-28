@@ -61,7 +61,7 @@ const Events_banner1 = () => {
             setIsEmail(true);
             toast.success("Confirmation email" + res.data.emailStatus);
           } else {
-            toast.error("Confirmation email" + res.data.emailStatus);
+            toast.success("Confirmation email" + res.data.emailStatus);
           }
           setRegStart(false);
         }
