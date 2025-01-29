@@ -44,9 +44,9 @@ const In_2025_banner = () => {
             </h1>
           </div>
           <div className=" hidden md:block">
-            <TiGroup data-aos="zoom-in" data-aos-duration="1000" className=" floating1 absolute top-0 right-80 size-14 text-green-700/20" />
+            <TiGroup data-aos="zoom-in" data-aos-duration="1000" className=" floating03 absolute top-0 right-80 size-14 text-green-700/20" />
             <FaHandsHelping data-aos="zoom-in" data-aos-duration="1000" className=" floating01 absolute bottom-10  left-[35rem] size-14 text-green-700/20" />
-            <IoSchoolSharp data-aos="zoom-in" data-aos-duration="1000" className="floating2 absolute  -top-52 left-20 size-14 text-green-700" />
+            <IoSchoolSharp data-aos="zoom-in" data-aos-duration="1000" className="floating02 absolute  -top-52 left-20 size-14 text-green-700" />
           </div>
         </div>
         <hr></hr>
@@ -68,9 +68,9 @@ const In_2025_banner = () => {
             </h1>
           </div>
           <div className=" hidden md:block">
-            <FaSchool data-aos="zoom-in" data-aos-duration="1000" className=" floating1 absolute top-0 right-80 size-14 text-green-700/20" />
+            <FaSchool data-aos="zoom-in" data-aos-duration="1000" className=" floating03 absolute top-0 right-80 size-14 text-green-700/20" />
             <LuSchool data-aos="zoom-in" data-aos-duration="1000" className=" floating01 absolute bottom-0  left-52 size-14 text-green-700/20" />
-            <IoSchoolSharp data-aos="zoom-in" data-aos-duration="1000" className=" floating2 absolute  top-0 left-20 size-14 text-green-700/20" />
+            <IoSchoolSharp data-aos="zoom-in" data-aos-duration="1000" className=" floating02 absolute  top-0 left-20 size-14 text-green-700/20" />
           </div>
         </div>
         <hr></hr>
@@ -90,9 +90,9 @@ const In_2025_banner = () => {
             </h1>
           </div>
           <div className=" hidden md:block">
-            <LuBookCopy data-aos="zoom-in" data-aos-duration="1000" className=" floating1 absolute -top-14 right-80 size-14 text-green-700/20" />
+            <LuBookCopy data-aos="zoom-in" data-aos-duration="1000" className=" floating03 absolute -top-14 right-80 size-14 text-green-700/20" />
             <GiSecretBook data-aos="zoom-in" data-aos-duration="1000" className="floating01 absolute bottom-10  left-[35rem] size-14 text-green-700/20" />
-            <FaBookOpenReader data-aos="zoom-in" data-aos-duration="1000" className=" floating2 absolute  -top-28 left-20 size-14 text-green-700/20" />
+            <FaBookOpenReader data-aos="zoom-in" data-aos-duration="1000" className=" floating02 absolute  -top-28 left-20 size-14 text-green-700/20" />
           </div>
         </div>
         <hr></hr>
@@ -114,8 +114,8 @@ const In_2025_banner = () => {
           </div>
           <div className=" hidden md:block  ">
             <BiSolidCameraMovie data-aos="zoom-in" data-aos-duration="1000" className=" floating01 absolute  -top-14 right-80 size-14 text-green-700/20" />
-            <RiMovie2Fill data-aos="zoom-in" data-aos-duration="1000" className=" floating1 animate-pulse absolute bottom-10  left-[35rem] size-14 text-green-700/20" />
-            <MdLocalMovies data-aos="zoom-in" data-aos-duration="1000" className=" floating2 absolute  -top-28 left-20 size-14 text-green-700/20" />
+            <RiMovie2Fill data-aos="zoom-in" data-aos-duration="1000" className=" floating03 animate-pulse absolute bottom-10  left-[35rem] size-14 text-green-700/20" />
+            <MdLocalMovies data-aos="zoom-in" data-aos-duration="1000" className=" floating02 absolute  -top-28 left-20 size-14 text-green-700/20" />
           </div>
         </div>
         <hr></hr>
@@ -136,9 +136,9 @@ const In_2025_banner = () => {
             </h1>
           </div>
           <div className=" hidden md:block">
-            <GiHealthCapsule data-aos="zoom-in" data-aos-duration="1000" className=" floating1 absolute -top-14 right-80 size-14 text-green-700/20" />
+            <GiHealthCapsule data-aos="zoom-in" data-aos-duration="1000" className=" floating03 absolute -top-14 right-80 size-14 text-green-700/20" />
             <MdHealthAndSafety data-aos="zoom-in" data-aos-duration="1000" className="floating01 absolute bottom-10  left-[35rem] size-14 text-green-700/20" />
-            <RiWomenLine data-aos="zoom-in" data-aos-duration="1000" className=" floating2 absolute  -top-28 left-20 size-14 text-green-700/20" />
+            <RiWomenLine data-aos="zoom-in" data-aos-duration="1000" className=" floating02 absolute  -top-28 left-20 size-14 text-green-700/20" />
           </div>
         </div>
         <p className=" text-center uppercase text-xs text-gray-700">The first quarter meeting of this year will take place at the end of March. The budget distribution and additional initiatives will be updated after that.</p>

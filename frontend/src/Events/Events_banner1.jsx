@@ -9,6 +9,10 @@ import { RiErrorWarningLine } from "react-icons/ri";
 import { FaUserNinja } from "react-icons/fa";
 import toast, { Toaster } from "react-hot-toast";
 import axios from "axios";
+import { MdEventAvailable } from "react-icons/md";
+import { MdEmojiEvents } from "react-icons/md";
+import { FaSnowboarding } from "react-icons/fa";
+import { MdElderly } from "react-icons/md";
 
 const Events_banner1 = () => {
   const now = new Date();
@@ -80,7 +84,19 @@ const Events_banner1 = () => {
     <>
       <section data-aos="fade-zoom-out" data-aos-duration="1000" className="overflow-hidden mt-28   sm:grid sm:grid-cols-2 sm:items-center">
         <div className="md:p-8 p-3  md:h-[80vh] h-full ">
-          <div className=" flex flex-col justify-start max-w-xl text-center ltr:sm:text-left rtl:sm:text-right ">
+          <div className=" relative flex flex-col justify-start max-w-xl text-center ltr:sm:text-left rtl:sm:text-right ">
+            <div className=" hidden md:block">
+              <span className=" floating01 absolute top-32 -left-12 -z-10  text-emerald-700/20 ">
+                <MdEventAvailable className=" size-16" />
+              </span>
+              <span className=" floating02 absolute top-5 -right-14 -z-10 text-emerald-700/20 ">
+                <MdEmojiEvents className=" size-16" />
+              </span>
+              <span className=" floating03 absolute -bottom-40 left-0 -z-10 text-emerald-700/20 ">
+                <MdElderly className=" size-16" />
+              </span>
+            </div>
+
             <h1 data-aos="fade-down" className="text-3xl font-bold text-left text-green-600 mb-4">
               Events
             </h1>
@@ -108,7 +124,7 @@ const Events_banner1 = () => {
             <div className=" h-full w-full min-h-[50vh]">
               {" "}
               <div className=" fade-right shadow-md  bg-[url(/prg/mental_health.jpg)] bg-contain bg-no-repeat bg-center  object-cover min-h-[50vh] sm:self-end sm:rounded-ss-[30px] md:h-[calc(100%_-_4rem)] md:rounded-ss-[60px]">
-                <div className=" bg-gradient-to-t from-gray-800/50 to-transparent h-full w-full flex items-end sm:self-end sm:rounded-ss-[30px] min-h-[50vh]  md:rounded-ss-[60px]  ">
+                <div className=" bg-gradient-to-t  from-gray-800/50 hover:opacity-10 transition-all duration-700  to-transparent h-full w-full flex items-end sm:self-end sm:rounded-ss-[30px] min-h-[50vh]  md:rounded-ss-[60px]  ">
                   <h1 className="text-gray-100 font-bold  mx-auto text-end ">Mental health Episode 1</h1>
                 </div>
               </div>
