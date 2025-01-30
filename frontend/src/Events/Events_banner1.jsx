@@ -43,7 +43,7 @@ const Events_banner1 = () => {
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const eventName = "Webinar on mental health";
+  const eventName = "Webinar on Mental Health";
   const onSubmit = async (data) => {
     const applicant = {
       eventName: eventName,
@@ -92,8 +92,8 @@ const Events_banner1 = () => {
               <span className=" floating02 absolute top-5 -right-14 -z-10 text-emerald-700/20 ">
                 <MdEmojiEvents className=" size-16" />
               </span>
-              <span className=" floating03 absolute -bottom-40 left-0 -z-10 text-emerald-700/20 ">
-                <MdElderly className=" size-16" />
+              <span className=" floating03 absolute -bottom-20 left-0 -z-10 text-emerald-700/20 ">
+                <MdElderly className="size-16" />
               </span>
             </div>
 
@@ -101,11 +101,40 @@ const Events_banner1 = () => {
               Events
             </h1>
 
-            <p data-aos="fade-down" data-aos-delay="100" className=" text-gray-500 md:mt-4 text-sm md:text-[0.875rem]  md:block">
-              At Think Big, we do more than just host events—we create transformative experiences that inspire change. Our programs are designed to ignite curiosity, foster collaboration, and empower every participant to turn their ideas into action.
-              In addition to providing mentorship, we focus on critical social issues like child marriage and child labor, working actively to raise awareness and rescue affected children. Through hands-on workshops, insightful talks, and networking
-              opportunities, we build a community where innovation thrives. Join us in our mission to inspire, make a difference, and create a better future together.
-            </p>
+            <div data-aos="fade-down" data-aos-delay="100" className=" text-gray-500 md:mt-4  md:text-[0.875rem]  md:block">
+              <h1 className=" text-xl uppercase font-semibold">
+                Mental Health Program<hr></hr>
+              </h1>
+              <ul className="ml-10 text-left list-disc">
+                <li>
+                  <strong>Duration:</strong> One hour (1 hr)
+                </li>
+                <li>
+                  <strong>Total episodes:</strong> 6
+                </li>
+                <li>
+                  <strong>Gap between episodes:</strong> 24 hrs, or announced at end of each episode.
+                </li>
+                <li>
+                  <strong>Speaker:</strong> Dr. Santosh Shah (Medical Officer, Patan Hospital)
+                </li>
+                <li>
+                  <strong>Topics: Mental Issues</strong>
+                  <ul className="ml-5 list-decimal">
+                    <li>Types</li>
+                    <li>Causes</li>
+                    <li>Preventions</li>
+                    <li>Mental exercise lessons - Meditation and Yoga</li>
+                  </ul>
+                </li>
+                <li>
+                  <strong>Target audience:</strong> All ages
+                </li>
+                <li>
+                  <strong>Platform:</strong> Online (Meet)
+                </li>
+              </ul>
+            </div>
 
             <div className="mt-4 md:mt-8">
               <button
