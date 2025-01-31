@@ -12,7 +12,6 @@ const Bee = ({ num }) => {
         const newX = anime.random(0, window.innerWidth - 50);
         const newY = anime.random(0, window.innerHeight - 50);
 
-        // Calculate the angle of rotation
         const angle = Math.atan2(newY - lastY, newX - lastX) * (180 / Math.PI);
 
         anime({
