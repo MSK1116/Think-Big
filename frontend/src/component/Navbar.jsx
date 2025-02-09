@@ -96,7 +96,36 @@ const Navbar = () => {
           </div>
 
           <div className="navbar-center hidden mr-5 lg:flex">
-            <ul className="menu  space-x-8 menu-horizontal px-1">{navItems}</ul>
+            <ul className="menu  space-x-8 menu-horizontal px-1">
+              {navItems}
+              <div
+                className={` dropdown dropdown-bottom relative hover:after:w-full  ${
+                  ["/contact", "/faq"].includes(location.pathname) ? " text-green-600 after:w-full   " : ""
+                } after:content-[''] after:absolute after:h-1 after:w-0 after:top-full after:transition-all after:origin-left after:duration-1000  after:bg-green-600 after:rounded-md  `}>
+                {" "}
+                <div tabIndex={0} role="button" className="">
+                  More
+                </div>
+                <ul tabIndex={0} className="dropdown-content mt-5 menu bg-base-100 rounded-box z-[1] w-40 space-y-2  shadow">
+                  <Link to="/contact">
+                    <li
+                      className={` relative hover:after:w-full hover:shadow-xl  ${
+                        location.pathname == "/contact" ? " text-green-600 after:w-full   " : ""
+                      } after:content-[''] after:absolute after:h-1 text-gray-800 p-1 after:w-0 after:top-full after:transition-all after:origin-left after:duration-1000  after:bg-green-600 after:rounded-md  `}>
+                      Contact
+                    </li>
+                  </Link>
+                  <Link to="/faq">
+                    <li
+                      className={` relative hover:after:w-full hover:shadow-xl  ${
+                        location.pathname == "/faq" ? " text-green-600 after:w-full   " : ""
+                      } after:content-[''] after:absolute after:h-1 text-gray-800 p-1 after:w-0 after:top-full after:transition-all after:origin-left after:duration-1000  after:bg-green-600 after:rounded-md  `}>
+                      FAQ
+                    </li>
+                  </Link>
+                </ul>
+              </div>
+            </ul>
           </div>
           <div className="flex-none space-x-4">
             {/* <Notification /> */}
