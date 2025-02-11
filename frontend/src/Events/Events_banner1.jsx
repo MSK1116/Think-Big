@@ -13,7 +13,6 @@ import { MdEventAvailable } from "react-icons/md";
 import { MdEmojiEvents } from "react-icons/md";
 import { FaSnowboarding } from "react-icons/fa";
 import { MdElderly } from "react-icons/md";
-import { MdOutlineMoneyOffCsred } from "react-icons/md";
 
 const Events_banner1 = () => {
   const now = new Date();
@@ -96,9 +95,6 @@ const Events_banner1 = () => {
               <span className=" floating03 absolute -bottom-20 left-0 -z-10 text-emerald-700/20 ">
                 <MdElderly className="size-16" />
               </span>
-              <span className="  absolute top-48 right-60 -z-10 text-emerald-700/50 ">
-                <MdOutlineMoneyOffCsred className="size-10" />
-              </span>
             </div>
 
             <h1 data-aos="fade-down" className="text-3xl font-bold text-left text-green-600 mb-4">
@@ -136,6 +132,9 @@ const Events_banner1 = () => {
                 </li>
                 <li>
                   <strong>Platform:</strong> Online (Meet)
+                </li>
+                <li>
+                  <strong>Fee:</strong> No cost
                 </li>
               </ul>
             </div>
