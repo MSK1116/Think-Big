@@ -110,7 +110,7 @@ const Events_banner1 = () => {
                   <strong>Duration:</strong> One hour (1 hr)
                 </li>
                 <li>
-                  <strong>Total episodes:</strong> 6
+                  <strong>Total episodes:</strong> 6 (starting from February 22nd, 2025 )
                 </li>
                 <li>
                   <strong>Gap between episodes:</strong> 24 hrs, or announced at end of each episode.
