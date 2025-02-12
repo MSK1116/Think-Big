@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 const ModalOwn = ({ text, children }) => {
-  console.log(text);
   const [isVisibile, setIsVisible] = useState(false);
   const randomNumber = Math.random();
 
