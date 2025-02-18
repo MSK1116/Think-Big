@@ -12,6 +12,10 @@ export const sendConfirmationEmail = async (userDetails) => {
     const emailApi = new sibApiV3Sdk.TransactionalEmailsApi();
     const contactApi = new sibApiV3Sdk.ContactsApi();
 
+    const nameParts = (userDetails.Fullname || "N/A").trim().split(" ");
+    const firstName = nameParts.shift();
+    const lastName = nameParts.join(" ");
+
     const sender = {
       email: "no-reply@thinkbig.org.np", // Replace with your email
       name: "Think Big", // Replace with your app name
@@ -186,7 +190,7 @@ export const sendConfirmationEmail = async (userDetails) => {
 
         <!-- Email Content -->
         <div class="email-content">
-            <p>Dear ${userDetails.Fullname},</p>
+            <p>Dear ${firstName},</p>
 
             <p>Thank you for registering for <strong>${userDetails.eventName}</strong>. We have received your registration successfully.</p>
 
@@ -236,9 +240,11 @@ export const sendConfirmationEmail = async (userDetails) => {
     await emailApi.sendTransacEmail(emailContent);
     const contactData = {
       email: userDetails.email,
-      name: userDetails.Fullname || "N/A",
-      listIds: ["#9"], // Replace with your Brevo List ID
+
+      listIds: ["9"], // Replace with your Brevo List ID
       attributes: {
+        FIRSTNAME: firstName || "N/A",
+        LASTNAME: lastName || "N/A",
         ADDRESS: userDetails.address || "N/A",
         EVENT: userDetails.eventName,
       },
