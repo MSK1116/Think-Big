@@ -10,6 +10,7 @@ apiKey.apiKey = process.env.BREVO_API_KEY;
 export const sendConfirmationEmail = async (userDetails) => {
   try {
     const emailApi = new sibApiV3Sdk.TransactionalEmailsApi();
+    const contactApi = new sibApiV3Sdk.ContactsApi();
 
     const sender = {
       email: "no-reply@thinkbig.org.np", // Replace with your email
@@ -233,6 +234,18 @@ export const sendConfirmationEmail = async (userDetails) => {
     };
 
     await emailApi.sendTransacEmail(emailContent);
+    const contactData = {
+      email: userDetails.email,
+      name: userDetails.Fullname || "N/A",
+      listIds: ["#9"], // Replace with your Brevo List ID
+      attributes: {
+        ADDRESS: userDetails.address || "N/A",
+        EVENT: userDetails.eventName,
+      },
+    };
+
+    await contactApi.createContact(contactData);
+
     return " sent";
   } catch (error) {
     console.error("Error while sending email:", error.message);
