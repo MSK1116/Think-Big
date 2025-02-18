@@ -241,12 +241,12 @@ export const sendConfirmationEmail = async (userDetails) => {
     const contactData = {
       email: userDetails.email,
 
-      listIds: ["9"], // Replace with your Brevo List ID
+      listIds: [9], // Replace with your Brevo List ID
       attributes: {
         FIRSTNAME: firstName || "N/A",
         LASTNAME: lastName || "N/A",
         ADDRESS: userDetails.address || "N/A",
-        EVENT: userDetails.eventName,
+        EVENT: userDetails.eventName || "N/A",
       },
     };
 
