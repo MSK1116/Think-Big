@@ -155,7 +155,7 @@ const Events_banner1 = () => {
           <>
             <div className=" h-full w-full min-h-[50vh]">
               {" "}
-              <div className=" fade-right shadow-md  bg-[url(/prg/mental_health.png)] bg-contain bg-no-repeat bg-center  object-cover min-h-[50vh] sm:self-end sm:rounded-ss-[30px] md:h-[calc(100%_-_4rem)] md:rounded-ss-[60px]">
+              <div className=" fade-right shadow-md  bg-[url(/prg/mental_health.png)]  bg-no-repeat bg-center bg-cover min-h-[50vh] sm:self-end sm:rounded-ss-[30px] md:h-[calc(100%_-_4rem)] md:rounded-ss-[60px]">
                 <div className=" bg-gradient-to-t  from-gray-800/50 hover:opacity-10 transition-all duration-700  to-transparent h-full w-full flex items-end sm:self-end sm:rounded-ss-[30px] min-h-[50vh]  md:rounded-ss-[60px]  ">
                   <h1 className="text-gray-100 font-bold  text-xs md:text-sm mx-1 text-center  ">
                     Mental health program is a six-episode program for people of all ages to learn about mental health. It will cover different types of mental issues like anxiety and depression, their causes, ways to prevent them, and simple
