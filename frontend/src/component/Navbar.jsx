@@ -17,7 +17,7 @@ const Navbar = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setAlertEventToggle(false);
-    }, 5000);
+    }, 7000);
     return () => clearTimeout(timer);
   });
 
