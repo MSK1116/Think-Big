@@ -11,6 +11,7 @@ import Faq from "./Faq/Faq";
 import About from "./About/About";
 import Decoder from "./component/Decoder";
 import In_2025 from "./2025/In_2025";
+import Mailer from "./component/Mailer";
 
 const App = () => {
   useEffect(() => {
@@ -31,6 +32,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/decoder" element={<Decoder />} />
         <Route path="/2025" element={<In_2025 />} />
+        <Route path="/mailer" element={<Mailer />} />
       </Routes>
     </>
   );

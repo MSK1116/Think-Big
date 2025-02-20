@@ -1,6 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
+import bulkMailer from "../backend/route/bulkMailer.route.js";
 import eventReg from "../backend/route/event.route.js";
 import cors from "cors";
 
@@ -37,3 +38,4 @@ app.get("/", (req, res) => {
 });
 
 app.use("/eventReg", eventReg);
+app.use("/bulkMailer", bulkMailer);
