@@ -9,10 +9,6 @@ const Navbar = () => {
   const navigate = useNavigate();
   const [alertEventToggle, setAlertEventToggle] = useState(true);
 
-  const alertToggle = () => {
-    setLocalStorage("alertEventToggle", !alertEventToggle);
-  };
-
   useEffect(() => {
     Aos.init();
     Aos.refresh();
@@ -76,7 +72,7 @@ const Navbar = () => {
       {" "}
       <div className=" flex flex-col fixed top-0 left-0 right-0 z-50">
         {alertEventToggle && (
-          <div className="flex items-center justify-between gap-4 bg-gradient-to-b from-emerald-700 to-emerald-600 px-4 py-2 text-white">
+          <div className=" fade-down flex items-center justify-between gap-4 bg-gradient-to-b from-emerald-700 to-emerald-600 px-4 py-2 text-white">
             <p className="md:text-sm text-xs font-medium cursor-default">
               Want to tackle or help others with mental illness?{" "}
               <span
