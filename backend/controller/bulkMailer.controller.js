@@ -17,20 +17,19 @@ export const bulkMailer = async (req, res) => {
 
     const emailApi = new sibApiV3Sdk.TransactionalEmailsApi();
 
-    for (const recipient of recipients) {
-      if (!recipient.firstName || !recipient.email) {
-        console.warn(`Skipping invalid recipient: ${JSON.stringify(recipient)}`);
-        continue;
-      }
+    // Prepare recipients list
+    const validRecipients = recipients.filter((r) => r.firstName && r.email);
+    const failedRecipients = recipients.filter((r) => !r.firstName || !r.email);
 
-      const emailContent = {
-        sender: {
-          email: "no-reply@thinkbig.org.np",
-          name: "Think Big | Event Wing",
-        },
-        to: [{ email: recipient.email }],
-        subject: subject,
-        htmlContent: `
+    if (validRecipients.length === 0) {
+      return res.status(400).json({ message: "No valid recipients found" });
+    }
+
+    // Create bulk email content
+    const emails = validRecipients.map((recipient) => ({
+      to: [{ email: recipient.email }],
+      subject,
+      htmlContent: `
       <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -244,13 +243,26 @@ This program isn’t just for those navigating mental health challenges—it’s
 </body>
 </html>
 `,
-      };
+      sender: {
+        email: "no-reply@thinkbig.org.np",
+        name: "Think Big | Event Wing",
+      },
+    }));
 
-      await emailApi.sendTransacEmail(emailContent);
-      console.log(`Email sent to: ${recipient.firstName} <${recipient.email}>`);
+    // Send all emails in a **single** API request
+    await emailApi.sendTransacEmail({ messageVersions: emails });
+
+    console.log(`Emails sent successfully to ${validRecipients.length} recipients`);
+
+    if (failedRecipients.length > 0) {
+      console.warn("⚠️ Some recipients were skipped due to missing info:", failedRecipients);
     }
 
-    res.status(201).json({ message: "Emails sent successfully" });
+    res.status(201).json({
+      message: "Emails sent successfully",
+      validRecipients: validRecipients.length,
+      failedRecipients: failedRecipients.length,
+    });
   } catch (error) {
     console.error("Failed to send emails:", error.message);
     res.status(500).json({ message: "Internal server error" });
