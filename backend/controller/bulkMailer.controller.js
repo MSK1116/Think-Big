@@ -190,21 +190,41 @@ export const bulkMailer = async (req, res) => {
 
  
         <div class="email-content">
-            <p>Dear ${recipient.firstName},</p>
+           <p>Dear ${recipient.firstName},</p>
 
-            <p>I hope you're doing well!</p>
+<p>I hope you're doing well!</p>
 
-            <p>This is a gentle reminder about our first session on <strong>Saturday, February 22, at 8 PM</strong>. We encourage you to join a little before 8 PM to ensure a smooth start..</p>
+<p>
+  This is a gentle reminder about our first session on 
+  <strong>Saturday, February 22, at 8 PM</strong>. 
+  We encourage you to join a little before 8 PM to ensure a smooth start.
+</p>
 
-           <p>Your privacy is important to us—enabling your camera or microphone is entirely optional. Rest assured, any information you’ve shared is kept private and is only accessible to a select few of us.</p>
+<p>
+  Your privacy is important to us—enabling your camera or microphone is entirely optional. 
+  Rest assured, any information you’ve shared is kept private and is only accessible to a select few of us.
+</p>
 
-<p><strong>Who should join?</strong><br></br>
-This program isn’t just for those navigating mental health challenges—it’s also for anyone who wants to support others. Feel free to invite your friends and family; it could be valuable for everyone.</p>
+<p><strong>Who should join?</strong></p>
+<p>
+  This program isn’t just for those navigating mental health challenges—
+  it’s also for anyone who wants to support others. Feel free to invite your friends and family;
+  it could be valuable for everyone.
+</p>
 
-<p>The <strong>joining link and further details</strong> will be sent to you shortly.</p>
-            <p>For now, look into our other events <a href="https://www.thinkbig.org.np/event" style="color: #2D9C6D; text-decoration: none;">here</a>.</p>
+<p>
+  The <strong>joining link and further details</strong> will be sent to you shortly.
+</p>
 
-<p>Looking forward to seeing you there!<p>
+<p>
+  For now, explore our other events 
+  <a href="https://www.thinkbig.org.np/event" style="color: #2D9C6D; text-decoration: none;">
+    here
+  </a>.
+</p>
+
+<p>Looking forward to seeing you there!</p>
+
 
             <!-- Button Container with Support, Our 2025 Goal, and FAQ -->
             <div class="btn-container">
