@@ -14,6 +14,13 @@ const Navbar = () => {
     Aos.refresh();
   }, []);
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setAlertEventToggle(false);
+    }, 5000);
+    return () => clearTimeout(timer);
+  });
+
   const location = useLocation();
   const navItems = (
     <>
