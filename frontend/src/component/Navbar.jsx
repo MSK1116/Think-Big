@@ -8,6 +8,11 @@ import { MdOutlineMessage } from "react-icons/md";
 const Navbar = () => {
   const navigate = useNavigate();
   const [alertEventToggle, setAlertEventToggle] = useState(true);
+
+  const alertToggle = () => {
+    setLocalStorage("alertEventToggle", !alertEventToggle);
+  };
+
   useEffect(() => {
     Aos.init();
     Aos.refresh();
@@ -77,7 +82,7 @@ const Navbar = () => {
               <span
                 onClick={() => {
                   navigate("/event");
-                  setAlertEventToggle(false);
+                  alertToggle;
                 }}
                 className=" underline cursor-pointer">
                 Register for Mental Health Program (Episode: 1)
