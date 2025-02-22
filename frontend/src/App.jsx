@@ -12,7 +12,7 @@ import About from "./About/About";
 import Decoder from "./component/Decoder";
 import In_2025 from "./2025/In_2025";
 // import Mailer from "./component/Mailer";
-import Joinevent from "./component/joinevent";
+import Joinevent from "./component/Joinevent";
 
 const App = () => {
   useEffect(() => {
