@@ -103,7 +103,7 @@ const Events_banner1 = () => {
 
             <div data-aos="fade-down" data-aos-delay="100" className=" text-gray-500 md:mt-4  md:text-[0.875rem]  md:block">
               <h1 className=" text-xl uppercase font-semibold">
-                Mental Health Program<hr></hr>
+                Mental Health Program <span className=" text-xs opacity-45 ">Episode: 2</span> <hr></hr>
               </h1>
               <ul className="ml-10 text-left list-disc">
                 <li>
