@@ -195,8 +195,8 @@ export const bulkMailer = async (req, res) => {
 <p>I hope you're doing well!</p>
 
 <p>
-  This is a gentle reminder about our first session on 
-  <strong>Saturday, February 22, at 8 PM</strong>. 
+  This is a gentle reminder about our first session
+  <strong>TodayM</strong>. 
   We encourage you to join a little before 8 PM to ensure a smooth start.
 </p>
 
