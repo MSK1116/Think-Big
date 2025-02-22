@@ -193,20 +193,19 @@ export const bulkMailer = async (req, res) => {
            <div >
   <div style="padding: 20px;">
     <p>Hello ${recipient.firstName},</p>
-    
-    <p>I hope you're having a great time,</p>
-    
-    <p>Thank you for registering for the mental health program. Today is the first episode of this program, so please join with 
-      <a href="https://www.thinkbig.org.np/joinevent" style="color: #007bff; text-decoration: none;">this link</a> 
-      not later than 8PM.
-    </p>
-    
-    <p>This program spans up to six episodes and we will try to cover everything possible. If you want to give any suggestions about things that you would like to be included, please 
-      <a href="https://www.thinkbig.org.np/contact" style="color: #007bff; text-decoration: none;">fill this form</a> 
-      or directly email us.
-    </p>
-    
-    <p>We expect you to maintain a peaceful environment during our sessions and any bad act can result in dismissal from our upcoming sessions and program.</p>
+
+<p>I hope you're doing well.</p>
+
+<p>The mental health program has officially started! Please join us now using  
+  <a href="https://www.thinkbig.org.np/joinevent" style="color: #007bff; text-decoration: none;">this link</a>.  
+  </p>
+
+
+
+<p>We appreciate your cooperation in maintaining a respectful and engaging environment throughout the sessions. Disruptive behavior may result in removal from future sessions.</p>
+
+<p>Looking forward to your participation!</p>
+
     
     
     
