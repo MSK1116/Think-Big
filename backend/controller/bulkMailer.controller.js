@@ -190,41 +190,30 @@ export const bulkMailer = async (req, res) => {
 
  
         <div class="email-content">
-           <p>Dear ${recipient.firstName},</p>
-
-<p>I hope you're doing well!</p>
-
-<p>
-  This is a gentle reminder about our first session
-  <strong>TodayM</strong>. 
-  We encourage you to join a little before 8 PM to ensure a smooth start.
-</p>
-
-<p>
-  Your privacy is important to us—enabling your camera or microphone is entirely optional. 
-  Rest assured, any information you’ve shared is kept private and is only accessible to a select few of us.
-</p>
-
-<p><strong>Who should join?</strong></p>
-<p>
-  This program isn’t just for those navigating mental health challenges—
-  it’s also for anyone who wants to support others. Feel free to invite your friends and family;
-  it could be valuable for everyone.
-</p>
-
-<p>
-  The <strong>joining link and further details</strong> will be sent to you shortly.
-</p>
-
-<p>
-  For now, explore our other events 
-  <a href="https://www.thinkbig.org.np/event" style="color: #2D9C6D; text-decoration: none;">
-    here
-  </a>.
-</p>
-
-<p>Looking forward to seeing you there!</p>
-
+           <div >
+  <div style="padding: 20px;">
+    <p>Hello [Name],</p>
+    
+    <p>I hope you're having a great time,</p>
+    
+    <p>Thank you for registering for the mental health program. Today is the first episode of this program, so please join with 
+      <a href="https://www.thinkbig.org.np/joinevent" style="color: #007bff; text-decoration: none;">this link</a> 
+      not later than 8PM.
+    </p>
+    
+    <p>This program spans up to six episodes and we will try to cover everything possible. If you want to give any suggestions about things that you would like to be included, please 
+      <a href="https://www.thinkbig.org.np/contact" style="color: #007bff; text-decoration: none;">fill this form</a> 
+      or directly email us.
+    </p>
+    
+    <p>We expect you to maintain a peaceful environment during our sessions and any bad act can result in dismissal from our upcoming sessions and program.</p>
+    
+    
+    
+   
+  </div>
+</div>
+<hr>
 
             <!-- Button Container with Support, Our 2025 Goal, and FAQ -->
             <div class="btn-container">
@@ -234,8 +223,8 @@ export const bulkMailer = async (req, res) => {
                 <a href="https://www.thinkbig.org.np/2025" class="btn">
                     Our 2025 Goal
                 </a>
-                <a href="https://www.thinkbig.org.np/faq#" class="btn">
-                    FAQ
+                <a href="https://www.thinkbig.org.np/event" class="btn">
+                Event
                 </a>
             </div>
         </div>
@@ -252,9 +241,10 @@ export const bulkMailer = async (req, res) => {
                
             </div>
         </div>
-
+<hr>
         <div class="footer">
             <p>This is an automated email. Please do not reply to this message.</p>
+<p>For immediate technical support mail at: <a href="mailto:email@manishmahato.info.np">email@manishmahato.info.np</a> </p>
         </div>
     </div>
 
