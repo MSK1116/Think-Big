@@ -192,7 +192,7 @@ export const bulkMailer = async (req, res) => {
         <div class="email-content">
            <div >
   <div style="padding: 20px;">
-    <p>Hello [Name],</p>
+    <p>Hello ${recipient.firstName},</p>
     
     <p>I hope you're having a great time,</p>
     
