@@ -173,7 +173,7 @@ export const bulkMailer = async (req, res) => {
 <body>
 
     <div class="email-container">
-        <!-- Header -->
+ 
         <div class="header">
             <div class="logo-col">
                 <img src="https://www.thinkbig.org.np/Logo_noBg.png" alt="Think Big Logo">
@@ -192,19 +192,26 @@ export const bulkMailer = async (req, res) => {
         <div class="email-content">
            <div >
   <div style="padding: 20px;">
-    <p>Hello ${recipient.firstName},</p>
+    <p>Hello BIG THINKER ${recipient.firstName}, </p>
 
-<p>I hope you're doing well.</p>
-
-<p>The mental health program has officially started! Please join us now using  
-  <a href="https://www.thinkbig.org.np/joinevent" style="color: #007bff; text-decoration: none;">this link</a>.  
-  </p>
+<div>
 
 
+  <p>Think Big hopes that you learned something valuable from our first episode of the Mental Health Program. We truly appreciate your interaction and engagement.</p>
 
-<p>We appreciate your cooperation in maintaining a respectful and engaging environment throughout the sessions. Disruptive behavior may result in removal from future sessions.</p>
+  <p>If you have any questions or need any kind of assistance, feel free to reach out to us through any medium—email, Facebook, or our website.</p>
 
-<p>Looking forward to your participation!</p>
+  <p>This program spans six episodes, and we aim to cover as much as possible. If you have any suggestions for topics you’d like us to include, please fill out  
+    <a href="https://www.thinkbig.org.np/contact" style="color: #007bff; text-decoration: none;">this form</a>  
+    or email us directly.</p>
+
+  <p>Just in case you missed the session, you can use  
+    <a href="https://docs.google.com/presentation/d/1-7OnsbZ8e2vArNIfDJbu9gRIXnXOxjGv/edit?usp=sharing&ouid=116334907021628253115&rtpof=true&sd=true" style="color: #007bff; text-decoration: none;">this link</a>  
+    to access the PPT. We will also upload the recording on our website and Facebook page soon.</p>
+  <p>We will email you the date for Episode 2 very soon, so stay tuned!</p>
+  <p>Thank you for being part of this journey!</p>
+</div>
+
 
     
     
@@ -214,7 +221,7 @@ export const bulkMailer = async (req, res) => {
 </div>
 <hr>
 
-            <!-- Button Container with Support, Our 2025 Goal, and FAQ -->
+        
             <div class="btn-container">
                 <a href="https://www.thinkbig.org.np/giveus" class="btn">
                     <i class="fa fa-heart"></i> Support Our Mission
