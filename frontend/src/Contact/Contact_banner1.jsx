@@ -12,7 +12,7 @@ const ContactBanner1 = () => {
           <p className="mt-4 text-gray-500">At Think Big, we value your questions, feedback, and ideas. Whether you’re interested in joining our events, learning more about our programs, or simply want to connect, we’re here to help.</p>
         </div>
 
-        <form action="https://formsubmit.co/thinkbigbig18@gmail.com" method="POST" className="mx-auto mb-0 mt-8 max-w-md space-y-4">
+        <form action="https://formsubmit.co/contact@thinkbig.org.np" method="POST" className="mx-auto mb-0 mt-8 max-w-md space-y-4">
           {/* Name */}
           <input type="hidden" name="_subject" value="Message from website!!"></input>
           <input type="hidden" name="_autoresponse" value="We have received your message. Thank you!"></input>
