@@ -43,7 +43,7 @@ const Events_banner1 = () => {
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const eventName = "Webinar on Mental Health";
+  const eventName = "Episode 2 | Think Big Mental Health Program";
   const onSubmit = async (data) => {
     const applicant = {
       eventName: eventName,
