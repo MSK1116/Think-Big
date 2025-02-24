@@ -28,7 +28,7 @@ export const sendConfirmationEmail = async (userDetails) => {
       to: receivers,
       subject: `Registration Confirmation for ${userDetails.eventName}`,
       htmlContent: `
-      <!DOCTYPE html>
+          <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -173,7 +173,7 @@ export const sendConfirmationEmail = async (userDetails) => {
 <body>
 
     <div class="email-container">
-        <!-- Header -->
+ 
         <div class="header">
             <div class="logo-col">
                 <img src="https://www.thinkbig.org.np/Logo_noBg.png" alt="Think Big Logo">
@@ -188,19 +188,36 @@ export const sendConfirmationEmail = async (userDetails) => {
             </div>
         </div>
 
-        <!-- Email Content -->
+ 
         <div class="email-content">
-            <p>Dear ${firstName},</p>
+           <div >
+  <div style="padding: 20px;">
+    <p>Hey BIG THINKER <span style="color:#2D9C6D">${firstName}</span>, </p>
 
-            <p>Thank you for registering for <strong>${userDetails.eventName}</strong>. We have received your registration successfully.</p>
+<div>
+
+
+ <p>Thank you for registering for <strong>${userDetails.eventName}</strong>. We have received your registration successfully.</p>
 
             <p>Our team will send you a follow-up email shortly, including all the details you'll need for the event.</p>
 
-            <p>If you have any immediate questions, feel free to reach out via our <a href="https://www.thinkbig.org.np/contact" style="color: #2D9C6D; text-decoration: none;">Contact Page</a>.</p>
 
-            <p>For now, look into our other events <a href="https://www.thinkbig.org.np/event" style="color: #2D9C6D; text-decoration: none;">here</a>.</p>
+  <p>This program spans six episodes, and we aim to cover as much as possible. If you have any suggestions for topics you’d like us to include, please fill out  
+    <a href="https://www.thinkbig.org.np/contact" style="color: #007bff; text-decoration: none;">this form</a>  
+    or email us directly.
+  </p>
 
-            <!-- Button Container with Support, Our 2025 Goal, and FAQ -->
+  <p>Just in case you missed the first episode, you can use  
+    <a href="https://docs.google.com/presentation/d/1-7OnsbZ8e2vArNIfDJbu9gRIXnXOxjGv/edit?usp=sharing&ouid=116334907021628253115&rtpof=true&sd=true" style="color: #007bff; text-decoration: none;">this link</a>  
+    to access the PPT. </p>
+  <p>Don't forget to share our registration page so others can join too! </p>
+</div>
+
+  </div>
+</div>
+<hr>
+
+        
             <div class="btn-container">
                 <a href="https://www.thinkbig.org.np/giveus" class="btn">
                     <i class="fa fa-heart"></i> Support Our Mission
@@ -208,8 +225,8 @@ export const sendConfirmationEmail = async (userDetails) => {
                 <a href="https://www.thinkbig.org.np/2025" class="btn">
                     Our 2025 Goal
                 </a>
-                <a href="https://www.thinkbig.org.np/faq#" class="btn">
-                    FAQ
+                <a href="https://www.thinkbig.org.np/event" class="btn">
+                Event
                 </a>
             </div>
         </div>
@@ -226,15 +243,16 @@ export const sendConfirmationEmail = async (userDetails) => {
                
             </div>
         </div>
-
+<hr>
         <div class="footer">
             <p>This is an automated email. Please do not reply to this message.</p>
+<p>For immediate technical support mail at: <a href="mailto:email@manishmahato.info.np">email@manishmahato.info.np</a> </p>
         </div>
     </div>
 
 </body>
 </html>
-`,
+       `,
     };
 
     await emailApi.sendTransacEmail(emailContent);
