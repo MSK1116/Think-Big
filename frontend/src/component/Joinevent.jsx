@@ -13,7 +13,7 @@ const Joinevent = () => {
     }, 1000);
 
     setTimeout(() => {
-      window.location.href = "https://meet.google.com/uhm-qhok-ief"; // Redirect after 5 sec
+      window.location.href = "https://meet.google.com/ben-ovwg-nvp"; // Redirect after 5 sec
     }, 5000);
 
     return () => {
