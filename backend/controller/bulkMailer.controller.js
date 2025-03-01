@@ -192,14 +192,12 @@ export const bulkMailer = async (req, res) => {
         <div class="email-content">
            <div >
   <div style="padding: 20px;">
-    <p>Hey BIG THINKER <span style="color:#2D9C6D">${recipient.firstName}</span>, </p>
+    <p>Hi BIG THINKER <span style="color:#2D9C6D">${recipient.firstName}</span>, </p>
 
 <div>
 
 
-  <p>I hope you're doing well! We hope you found something valuable in <strong>Mental Health Program Episode-1</strong>.</p>
-
-  <p>We're excited to invite you to <strong>Episode-2</strong>, happening this <strong>Saturday, 1st March, at 8 PM</strong> (same time as before). You <strong>don’t need to register again</strong>; we will send you the Google Meet link shortly.</p>
+ <p>Thank you for registering for the mental health program. Today is the second episode of this program, so please join with <a href="https://www.thinkbig.org.np/joinevent">this</a> link not later than 8PM.</p>
 
   <p>This program spans six episodes, and we aim to cover as much as possible. If you have any suggestions for topics you’d like us to include, please fill out  
     <a href="https://www.thinkbig.org.np/contact" style="color: #007bff; text-decoration: none;">this form</a>  
