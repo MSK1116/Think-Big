@@ -88,7 +88,7 @@ const Navbar = () => {
                   alertToggle;
                 }}
                 className=" underline cursor-pointer">
-                Register for Mental Health Program (Episode: 2)
+                Register for Mental Health Program (Episode: 3)
               </span>
             </p>
 
