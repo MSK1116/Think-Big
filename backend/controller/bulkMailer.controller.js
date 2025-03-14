@@ -192,21 +192,36 @@ export const bulkMailer = async (req, res) => {
         <div class="email-content">
            <div >
   <div style="padding: 20px;">
-    <p>Hi BIG THINKER <span style="color:#2D9C6D">${recipient.firstName}</span>, </p>
+    <p>Happy Holi <span style="color:#2D9C6D">${recipient.firstName}</span>, </p>
 
 <div>
 
 
- <p>Thank you for registering for the mental health program. Today is the second episode of this program, so please join with <a href="https://www.thinkbig.org.np/joinevent">this</a> link not later than 8PM.</p>
+ <p>The wait is over! Our third episode of the Mental Health Program is happening tomorrow, Saturday, March 15, 2025, at 8:00 PM. so please join with <a href="https://www.thinkbig.org.np/joinevent">this</a> link not later than 8PM.</p>
 
   <p>This program spans six episodes, and we aim to cover as much as possible. If you have any suggestions for topics you’d like us to include, please fill out  
     <a href="https://www.thinkbig.org.np/contact" style="color: #007bff; text-decoration: none;">this form</a>  
     or email us directly.
   </p>
 
-  <p>Just in case you missed the first episode, you can use  
+  <p>Just in case you missed the previous episode, you can use  
     <a href="https://docs.google.com/presentation/d/1-7OnsbZ8e2vArNIfDJbu9gRIXnXOxjGv/edit?usp=sharing&ouid=116334907021628253115&rtpof=true&sd=true" style="color: #007bff; text-decoration: none;">this link</a>  
-    to access the PPT. </p>
+    to access the PPT. </p><div>
+    <p>Additionally, we shared a few other resources that we highly recommend exploring:</p>
+    <ul>
+        <li>
+            <a href="https://www.youtube.com/watch?v=Onb6_bRJ0Bw" target="_blank">
+                Sitar for Mental Health
+            </a>
+        </li>
+        <li>
+            <a href="https://www.thinkbig.org.np/resource_arc_01/Illustration%20by%20WHO,%20Doing%20What%20Matters.pdf" target="_blank">
+                Doing What Matters in Times of Stress: Illustration by WHO
+            </a>
+        </li>
+    </ul>
+</div>
+
   <p>Don't forget to share our registration page so others can join too! </p>
 </div>
 
