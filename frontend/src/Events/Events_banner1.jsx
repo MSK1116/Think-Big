@@ -43,7 +43,7 @@ const Events_banner1 = () => {
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const eventName = "Episode 3 | Think Big Mental Health Program";
+  const eventName = "Episode 4 | Think Big Mental Health Program";
   const onSubmit = async (data) => {
     const applicant = {
       eventName: eventName,
@@ -103,7 +103,7 @@ const Events_banner1 = () => {
 
             <div data-aos="fade-down" data-aos-delay="100" className=" text-gray-500 md:mt-4  md:text-[0.875rem]  md:block">
               <h1 className=" text-xl uppercase font-semibold">
-                Mental Health Program <span className=" text-xs opacity-45 ">Episode: 3</span> <hr></hr>
+                Mental Health Program <span className=" text-xs opacity-45 ">Episode: 4</span> <hr></hr>
               </h1>
               <ul className="ml-10 text-left list-disc">
                 <li>
