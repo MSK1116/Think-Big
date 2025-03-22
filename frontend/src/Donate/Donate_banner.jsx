@@ -84,10 +84,7 @@ const Donate_banner = () => {
                       </p>
                     </div>
                     <div className=" absolute  right-1  bottom-1">
-                      <ModalOwn
-                        text={
-                          " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, obcaecati quibusdam! Repellendus soluta reprehenderit natus aliquid facilis mollitia, ipsum quos, exercitationem tempora placeat eveniet. Fuga error dolore iure velit exercitationem."
-                        }>
+                      <ModalOwn text={"Please use QR code to donate us funds when it is available, for now you can use these given details to deposit the fund."}>
                         <BsFillInfoCircleFill className=" cursor-pointer opacity-50 transition-all duration-700 hover:opacity-100 size-5" />
                       </ModalOwn>
                     </div>
@@ -109,11 +106,6 @@ const Donate_banner = () => {
                               <span>Peshal Parajuli</span>
                               <span> (Jhapa)</span>
                               <span className="text-gray-500"> Call +977 9848284634</span>
-                            </li>
-                            <li>
-                              <span>Sita Rai</span>
-                              <span> (Dharan, College Road)</span>
-                              <span className="text-gray-500"> Call +977 9847654321</span>
                             </li>
                           </ol>
                         </li>
@@ -169,14 +161,10 @@ const Donate_banner = () => {
                           <span className="font-bold uppercase">Gandaki Province</span>
                           <ol className="text-sm list-[upper-alpha] list-inside indent-4">
                             <li>
-                              <span>Surendra Raj Pandey</span>
+                              {/* <span>Surendra Raj Pandey</span>
                               <span> (Pokhara, Lakeside)</span>
-                              <span className="text-gray-500"> Call +977 9841122334</span>
-                            </li>
-                            <li>
-                              <span>Dipak Gurung</span>
-                              <span> (Gorkha, Barpak)</span>
-                              <span className="text-gray-500"> Call +977 9854433221</span>
+                              <span className="text-gray-500"> Call +977 9841122334</span> */}
+                              NA
                             </li>
                           </ol>
                         </li>
@@ -196,14 +184,10 @@ const Donate_banner = () => {
                           <span className="font-bold uppercase">Karnali Province</span>
                           <ol className="text-sm list-[upper-alpha] list-inside indent-4">
                             <li>
-                              <span>Raj Kumar Sharma</span>
+                              {/* <span>Raj Kumar Sharma</span>
                               <span> (Surkhet, Birendranagar)</span>
-                              <span className="text-gray-500"> Call +977 9810099887</span>
-                            </li>
-                            <li>
-                              <span>Krishna Bhandari</span>
-                              <span> (Jumla, Khalanga)</span>
-                              <span className="text-gray-500"> Call +977 9846655443</span>
+                              <span className="text-gray-500"> Call +977 9810099887</span> */}
+                              NA
                             </li>
                           </ol>
                         </li>
@@ -212,24 +196,17 @@ const Donate_banner = () => {
                           <span className="font-bold uppercase">Sudurpashchim Province</span>
                           <ol className="text-sm list-[upper-alpha] list-inside indent-4">
                             <li>
-                              <span>Kamal Bahadur Shah</span>
+                              {/* <span>Kamal Bahadur Shah</span>
                               <span> (Dhangadhi, Campus Road)</span>
-                              <span className="text-gray-500"> Call +977 9812348765</span>
-                            </li>
-                            <li>
-                              <span>Purnima Rawat</span>
-                              <span> (Baitadi, Dasharathchand)</span>
-                              <span className="text-gray-500"> Call +977 9807766554</span>
+                              <span className="text-gray-500"> Call +977 9812348765</span> */}
+                              NA
                             </li>
                           </ol>
                         </li>
                       </ol>
                     </div>
                     <div className=" absolute  right-1  bottom-0">
-                      <ModalOwn
-                        text={
-                          " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, obcaecati quibusdam! Repellendus soluta reprehenderit natus aliquid facilis mollitia, ipsum quos, exercitationem tempora placeat eveniet. Fuga error dolore iure velit exercitationem."
-                        }>
+                      <ModalOwn text={"The list you see are the BOD's of Think Big Org and trusted volunteer across the country. You may donate us by sending goods to the nearest receiver."}>
                         <BsFillInfoCircleFill className=" cursor-pointer  opacity-50 transition-all duration-700 hover:opacity-100 size-5" />
                       </ModalOwn>
                     </div>
