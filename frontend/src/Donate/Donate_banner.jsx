@@ -47,7 +47,7 @@ const Donate_banner = () => {
                     <FaSearch onClick={() => setSearchButton(!searchButton)} className=" cursor-pointer" />
                   </span>
                 </div>{" "}
-                <div className=" w-full space-y-2 max-h-[21.8rem] m overflow-y-scroll overflow-x-hidden cursor-default">
+                <div className=" w-full space-y-2 max-h-[21.8rem] min-h-[21.8rem] overflow-y-scroll overflow-x-hidden cursor-default">
                   {searchFound.length > 0
                     ? searchFound.map((data) => (
                         <div key={data.id} className="  shadow-lg p-2 hover:shadow-xl hover:scale-105 transition-all duration-1000 rounded-md flex flex-row min-h-20 max-h-min-h-20 h-full bg-transparent ">
