@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import ModalOwn from "../component/ModalOwn";
 import QR1 from "../assets/BANK_QR/QR1.jpg";
 import { IoQrCode } from "react-icons/io5";
-import { FcCancel } from "react-icons/fc";
+
 import { BsFillInfoCircleFill, BsBox2HeartFill } from "react-icons/bs";
 import { FaHandHoldingHeart, FaSearch, FaSearchLocation } from "react-icons/fa";
 import donationList from "./Donation_list.json";
@@ -10,6 +10,8 @@ import donationList from "./Donation_list.json";
 const Donate_banner = () => {
   const [donationType, setDonationType] = useState(true);
   const [stopView, setStopView] = useState(false);
+
+  const [searchButton, setSearchButton] = useState(true);
 
   const donationBtn = () => {
     setDonationType(!donationType);
@@ -27,11 +29,11 @@ const Donate_banner = () => {
               <div className="  relative p-2 shadow-md w-full  rounded-md mt-4">
                 <div className=" w-full flex justify-between min-h-7  ">
                   <div className="md:w-[63%] w-[70%] text-right">Our generous donor</div>
-                  <span className="group hover:bg-gray-100 hover:w-44 w-12 transition-all duration-700 flex items-center justify-end rounded-md">
-                    <input className=" w-[90%] outline-none rounded  border-l-2 border-t-2 border-b-2  bg-transparent hidden group-hover:block" type="text" />
-                    <FaSearch className=" cursor-pointer" />
+                  <span className={` ${searchButton ? "w-44 bg-gray-100" : ""} group   w-12 transition-all duration-700 flex items-center justify-end rounded-md `}>
+                    <input className={` ${searchButton ? "w-[90%] border-l-2 border-t-2 border-b-2 " : "w-[0%]"} outline-none rounded    bg-transparent group-hover:block `} type="text" />
+                    <FaSearch onClick={() => setSearchButton(!searchButton)} className=" cursor-pointer" />
                   </span>
-                </div>
+                </div>{" "}
                 <div className=" w-full space-y-2 max-h-[21.8rem] m overflow-y-scroll overflow-x-hidden cursor-default">
                   {donationList.map((data) => (
                     <div key={data.id} className="  shadow-lg p-2 hover:shadow-xl hover:scale-105 transition-all duration-1000 rounded-md flex flex-row min-h-20 max-h-min-h-20 h-full bg-transparent ">
