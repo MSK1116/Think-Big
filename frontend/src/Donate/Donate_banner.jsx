@@ -42,7 +42,7 @@ const Donate_banner = () => {
               <div className="  relative p-2 shadow-md w-full  rounded-md mt-4">
                 <div className=" w-full flex justify-between min-h-7  ">
                   <div className="md:w-[63%] w-[70%] text-right">Our generous donor</div>
-                  <span className={` ${searchButton ? "w-44 bg-gray-100" : ""} group   w-12 transition-all duration-700 flex items-center justify-end rounded-md `}>
+                  <span className={` ${searchButton ? "w-44 ml-2 bg-gray-100" : ""} group   w-12 transition-all duration-700 flex items-center justify-end rounded-md `}>
                     <input onChange={(data) => searchDonor(data.target.value)} className={` ${searchButton ? "w-[90%] border-l-2 border-t-2 border-b-2 " : "w-[0%]"} outline-none rounded    bg-transparent group-hover:block `} type="text" />
                     <FaSearch onClick={() => setSearchButton(!searchButton)} className=" cursor-pointer" />
                   </span>
