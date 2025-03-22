@@ -8,7 +8,7 @@ const Donate = () => {
   const [stopView, setStopView] = useState(false);
   return (
     <>
-      {/* <div className=" relative ">
+      <div className=" relative ">
         <div className="flex flex-col items-center max-w-screen-2xl mt-4 absolute z-50 backdrop-blur-lg md:backdrop-blur-sm top-0 right-0 left-0 bottom-0 h-full w-full">
           <div className="rounded-lg w-64 p-12 flex z-0 flex-col bg-gray-100  justify-center items-center hover:shadow-lg">
             CONTACT
@@ -29,11 +29,11 @@ const Donate = () => {
             </div>
           </div>
           <span className=" text-center">Donation directly through wbesite isn't possible in your place</span>
-        </div> */}
-      <Navbar />
-      <Donate_banner />
-      <Footer />
-      {/* </div> */}
+        </div>
+        <Navbar />
+        <Donate_banner />
+        <Footer />
+      </div>
     </>
   );
 };
