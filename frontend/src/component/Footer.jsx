@@ -13,7 +13,10 @@ const Footer = () => {
   const navigate = useNavigate();
   return (
     <>
-      <footer className="bg-gray-200 overflow-hidden">
+      <footer className="bg-gray-200 overflow-hidden relative">
+        <div className=" absolute md:right-80 md:top-16 md:size-full -bottom-28 -right-28 size-72   -rotate-[40deg]">
+          <img className=" w-full h-full object-contain " src="\webi\slogan_flag.png"></img>
+        </div>
         <div className="relative mx-auto max-w-screen-xl p-8 ">
           <div className="lg:flex space-y-7 lg:items-end lg:justify-between">
             <div data-aos="zoom-in" className=" md:text-left text-center  flex flex-col md:items-start items-center">
