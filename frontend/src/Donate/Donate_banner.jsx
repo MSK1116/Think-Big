@@ -9,9 +9,22 @@ import donationList from "./Donation_list.json";
 
 const Donate_banner = () => {
   const [donationType, setDonationType] = useState(true);
-  const [stopView, setStopView] = useState(false);
 
   const [searchButton, setSearchButton] = useState(true);
+  const [searchFound, setSearchFound] = useState([]);
+
+  const searchDonor = (data) => {
+    if (data.length > 2) {
+      const filterName = donationList.filter((donationList) => donationList.name.toLowerCase().includes(data.toLowerCase()));
+      if (filterName.length > 0) {
+        setSearchFound(filterName);
+      } else {
+        setSearchFound([]);
+      }
+    } else {
+      setSearchFound([]);
+    }
+  };
 
   const donationBtn = () => {
     setDonationType(!donationType);
@@ -30,24 +43,38 @@ const Donate_banner = () => {
                 <div className=" w-full flex justify-between min-h-7  ">
                   <div className="md:w-[63%] w-[70%] text-right">Our generous donor</div>
                   <span className={` ${searchButton ? "w-44 bg-gray-100" : ""} group   w-12 transition-all duration-700 flex items-center justify-end rounded-md `}>
-                    <input className={` ${searchButton ? "w-[90%] border-l-2 border-t-2 border-b-2 " : "w-[0%]"} outline-none rounded    bg-transparent group-hover:block `} type="text" />
+                    <input onChange={(data) => searchDonor(data.target.value)} className={` ${searchButton ? "w-[90%] border-l-2 border-t-2 border-b-2 " : "w-[0%]"} outline-none rounded    bg-transparent group-hover:block `} type="text" />
                     <FaSearch onClick={() => setSearchButton(!searchButton)} className=" cursor-pointer" />
                   </span>
                 </div>{" "}
                 <div className=" w-full space-y-2 max-h-[21.8rem] m overflow-y-scroll overflow-x-hidden cursor-default">
-                  {donationList.map((data) => (
-                    <div key={data.id} className="  shadow-lg p-2 hover:shadow-xl hover:scale-105 transition-all duration-1000 rounded-md flex flex-row min-h-20 max-h-min-h-20 h-full bg-transparent ">
-                      <div className=" w-[15%] flex justify-center ">
-                        <img className=" object-center mt-2 object-cover rounded-full h-11 w-11 md:h-16 md:w-16  " alt={data.name} src={data.photo_link}></img>
-                      </div>
-                      <div className=" w-[85%] p-1 md:p-2">
-                        <h1 className=" ">{data.name}</h1>
-                        <h2 className=" text-xs md:text-sm text-gray-600"> {data.address}</h2>
-                        <h3>{data.description}</h3>
-                        <h1 className=" text-right text-gray-500 md:text-sm text-xs ">{data.date}</h1>
-                      </div>
-                    </div>
-                  ))}
+                  {searchFound.length > 0
+                    ? searchFound.map((data) => (
+                        <div key={data.id} className="  shadow-lg p-2 hover:shadow-xl hover:scale-105 transition-all duration-1000 rounded-md flex flex-row min-h-20 max-h-min-h-20 h-full bg-transparent ">
+                          <div className=" w-[15%] flex justify-center ">
+                            <img className=" object-center mt-2 object-cover rounded-full h-11 w-11 md:h-16 md:w-16  " alt={data.name} src={data.photo_link}></img>
+                          </div>
+                          <div className=" w-[85%] p-1 md:p-2">
+                            <h1 className=" ">{data.name}</h1>
+                            <h2 className=" text-xs md:text-sm text-gray-600"> {data.address}</h2>
+                            <h3>{data.description}</h3>
+                            <h1 className=" text-right text-gray-500 md:text-sm text-xs ">{data.date}</h1>
+                          </div>
+                        </div>
+                      ))
+                    : donationList.map((data) => (
+                        <div key={data.id} className="  shadow-lg p-2 hover:shadow-xl hover:scale-105 transition-all duration-1000 rounded-md flex flex-row min-h-20 max-h-min-h-20 h-full bg-transparent ">
+                          <div className=" w-[15%] flex justify-center ">
+                            <img className=" object-center mt-2 object-cover rounded-full h-11 w-11 md:h-16 md:w-16  " alt={data.name} src={data.photo_link}></img>
+                          </div>
+                          <div className=" w-[85%] p-1 md:p-2">
+                            <h1 className=" ">{data.name}</h1>
+                            <h2 className=" text-xs md:text-sm text-gray-600"> {data.address}</h2>
+                            <h3>{data.description}</h3>
+                            <h1 className=" text-right text-gray-500 md:text-sm text-xs ">{data.date}</h1>
+                          </div>
+                        </div>
+                      ))}
                 </div>
                 <p className=" text-xs  text-center mt-1">Your generosity makes a difference! 🙌</p>
               </div>
