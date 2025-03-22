@@ -14,7 +14,7 @@ const Footer = () => {
   return (
     <>
       <footer className="bg-gray-200 overflow-hidden relative">
-        <div className=" absolute md:right-80 md:top-16 md:size-full -bottom-28 -right-28 size-72   -rotate-[40deg]">
+        <div className=" absolute md:right-80 md:top-16 md:size-full -bottom-28 -right-24 size-72   -rotate-[40deg]">
           <img data-aos="zoom-in-left" data-aos-duration="1500" className=" w-full h-full object-contain " src="\webi\slogan_flag.png"></img>
         </div>
         <div className="relative mx-auto max-w-screen-xl p-8 ">
