@@ -1,14 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { BsBox2HeartFill } from "react-icons/bs";
-import { IoQrCode } from "react-icons/io5";
-import { FaSearchLocation } from "react-icons/fa";
-import QR1 from "../assets/BANK_QR/QR1.jpg";
-import { BsFillInfoCircleFill } from "react-icons/bs";
 import ModalOwn from "../component/ModalOwn";
-import { IoMdCall } from "react-icons/io";
-import { FaSearch } from "react-icons/fa";
-import { GiLifeSupport } from "react-icons/gi";
-import { FaHandHoldingHeart } from "react-icons/fa";
+import QR1 from "../assets/BANK_QR/QR1.jpg";
+import { IoQrCode } from "react-icons/io5";
+import { FcCancel } from "react-icons/fc";
+import { BsFillInfoCircleFill, BsBox2HeartFill } from "react-icons/bs";
+import { FaHandHoldingHeart, FaSearch, FaSearchLocation } from "react-icons/fa";
+import donationList from "./Donation_list.json";
 
 const Donate_banner = () => {
   const [donationType, setDonationType] = useState(true);
@@ -24,8 +21,8 @@ const Donate_banner = () => {
           <div className=" floating1">
             <BsBox2HeartFill className="  absolute size-14 -rotate-12 opacity-40 z-10 -top-12 left-60 text-red-600 " />
           </div>
-          <div className=" w-full flex flex-col md:flex-row mt-8">
-            <div className=" w-[55%] flex flex-col items-center  p-4">
+          <div className=" w-full flex h-full flex-col md:flex-row mt-8">
+            <div className=" w-[55%] flex  h-[99%]  flex-col items-center  p-4">
               <p className=" mt-10 font-semibold font-playwrite   text-green-800">We rely on your support to bring hope and help to those in need.</p>
               <div className=" relative p-2 shadow-md w-full  rounded-md mt-4">
                 <div className=" w-full flex justify-between min-h-7  ">
@@ -35,57 +32,26 @@ const Donate_banner = () => {
                     <FaSearch className=" cursor-pointer" />
                   </span>
                 </div>
-                <div className=" w-full space-y-2 max-h-[23rem] overflow-y-scroll overflow-x-hidden cursor-default">
-                  <div className="  shadow-lg p-2 hover:shadow-xl hover:scale-105 transition-all duration-1000 rounded-md flex flex-row min-h-20 max-h-min-h-20 h-full bg-transparent ">
-                    <div className=" w-[15%] flex justify-center ">
-                      <img className=" object-center mt-2 object-cover rounded-full h-16 w-16  " src="/faces/BB.jpg"></img>
+                <div className=" w-full space-y-2 max-h-[21.8rem] m overflow-y-scroll overflow-x-hidden cursor-default">
+                  {donationList.map((data) => (
+                    <div key={data.id} className="  shadow-lg p-2 hover:shadow-xl hover:scale-105 transition-all duration-1000 rounded-md flex flex-row min-h-20 max-h-min-h-20 h-full bg-transparent ">
+                      <div className=" w-[15%] flex justify-center ">
+                        <img className=" object-center mt-2 object-cover rounded-full h-16 w-16  " src="/faces/BB.jpg"></img>
+                      </div>
+                      <div className=" w-[85%]  p-2">
+                        <h1>{data.name}</h1>
+                        <h2 className=" text-sm text-gray-600"> {data.address}</h2>
+                        <h3>{data.description}</h3>
+                        <h1 className=" text-right text-gray-500 text-sm">{data.date}</h1>
+                      </div>
                     </div>
-                    <div className=" w-[85%]  p-2">
-                      <h1>Manish Singh Mahato</h1>
-                      <h2 className=" text-sm text-gray-600"> Kishnapur, Madhesh, Nepal</h2>
-                      <h3>Proudly donated us NRP 1,000 to fuel our mission.</h3>
-                      <h1 className=" text-right text-gray-500 text-sm">August 24, 2024</h1>
-                    </div>
-                  </div>
-                  <div className=" shadow-lg p-2 hover:shadow-xl hover:scale-105 transition-all duration-1000  rounded-md flex flex-row min-h-20 max-h-min-h-20 h-full bg-transparent ">
-                    <div className=" w-[15%] flex justify-center ">
-                      <img className=" object-center mt-2 object-cover rounded-full h-16 w-16  " src="/faces/satish.gif"></img>
-                    </div>
-                    <div className=" w-[85%]  p-2">
-                      <h1>Manish Singh Mahato</h1>
-                      <h2 className=" text-sm text-gray-600"> Kishnapur, Madhesh, Nepal</h2>
-                      <h3>Proudly donated us NRP 1,000 to fuel our mission.</h3>
-                      <h1 className=" text-right text-gray-500 text-sm">August 24, 2024</h1>
-                    </div>
-                  </div>
-                  <div className=" shadow-lg p-2 hover:shadow-xl hover:scale-105 transition-all duration-1000  rounded-md flex flex-row min-h-20 max-h-min-h-20 h-full bg-transparent ">
-                    <div className=" w-[15%] flex justify-center ">
-                      <img className=" object-center mt-2 object-cover rounded-full h-16 w-16  " src="/faces/BPB.jpeg"></img>
-                    </div>
-                    <div className=" w-[85%]  p-2">
-                      <h1>Manish Singh Mahato</h1>
-                      <h2 className=" text-sm text-gray-600"> Kishnapur, Madhesh, Nepal</h2>
-                      <h3>Proudly donated us NRP 1,000 to fuel our mission.</h3>
-                      <h1 className=" text-right text-gray-500 text-sm">August 24, 2024</h1>
-                    </div>
-                  </div>
-                  <div className=" shadow-lg p-2 hover:shadow-xl hover:scale-105 transition-all duration-1000  rounded-md flex flex-row min-h-20 max-h-min-h-20 h-full bg-transparent ">
-                    <div className=" w-[15%] flex justify-center ">
-                      <img className=" object-center mt-2 object-cover rounded-full h-16 w-16  " src="/faces/MSK.jpg"></img>
-                    </div>
-                    <div className=" w-[85%]  p-2">
-                      <h1>Manish Singh Mahato</h1>
-                      <h2 className=" text-sm text-gray-600"> Kishnapur, Madhesh, Nepal</h2>
-                      <h3>Proudly donated us NRP 1,000 to fuel our mission.</h3>
-                      <h1 className=" text-right text-gray-500 text-sm">August 24, 2024</h1>
-                    </div>
-                  </div>
+                  ))}
                 </div>
                 <p className=" text-xs text-center mt-1">Your generosity makes a difference! 🙌</p>
               </div>
             </div>
             {/* other half part */}
-            <div className=" relative shadow-md w-[45%] p-2 flex  items-center flex-col ">
+            <div className=" relative shadow-md h-[99%]  w-[45%] p-2 flex  items-center flex-col ">
               <div>
                 <span className=" absolute top-10 floating01 -left-0 text-green-600/50  ">
                   <FaHandHoldingHeart className=" size-14 " />
@@ -106,14 +72,16 @@ const Donate_banner = () => {
                     <p className=" fade-down flex gap-x-1 items-center justify-center text-center text-sm text-gray-600 ">
                       SCAN <IoQrCode />{" "}
                     </p>
-                    <div className=" size-64 zoom-in ">
-                      <img src={QR1}></img>
+                    <div className=" size-64 zoom-in relative ">
+                      <FcCancel className=" absolute size-60 z-10  opacity-50" />
+                      <img className="opacity-50 cursor-not-allowed" src={QR1}></img>
                     </div>
                     <div className="text-center">
-                      <p>BANK ACCOUNT: 100200300 </p>
-                      <p>IBAN: 1234567890</p>
-                      <p>SWIFT: 1234567890</p>
-                      <p>Bank: Bank </p>
+                      <p>BANK ACCOUNT: 1220100026967001 </p>
+                      <p>SWIFT: RBBANPKA</p>
+                      <p>
+                        Bank: Rastriya Banijya Bank<br></br> Bhanuchowk, Janakpur Branch{" "}
+                      </p>
                     </div>
                     <div className=" absolute  right-1  bottom-1">
                       <ModalOwn
@@ -261,7 +229,6 @@ const Donate_banner = () => {
             </div>
           </div>
         </div>
-        <hr></hr>
       </section>
     </>
   );
