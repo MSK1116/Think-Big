@@ -22,11 +22,11 @@ const Donate_banner = () => {
             <BsBox2HeartFill className="  absolute size-14 -rotate-12 opacity-40 z-10 -top-12 left-60 text-red-600 " />
           </div>
           <div className=" w-full flex h-full flex-col md:flex-row mt-8">
-            <div className=" w-[55%] flex  h-[99%]  flex-col items-center  p-4">
-              <p className=" mt-10 font-semibold font-playwrite   text-green-800">We rely on your support to bring hope and help to those in need.</p>
-              <div className=" relative p-2 shadow-md w-full  rounded-md mt-4">
+            <div className=" md:w-[55%] w-full flex  h-[99%] flex-col items-center  md:p-4">
+              <p className=" mt-10 font-semibold font-playwrite text-center  text-green-800">We rely on your support to bring hope and help to those in need.</p>
+              <div className="  relative p-2 shadow-md w-full  rounded-md mt-4">
                 <div className=" w-full flex justify-between min-h-7  ">
-                  <div className="w-[63%] text-right">Our generous donor</div>
+                  <div className="md:w-[63%] w-[70%] text-right">Our generous donor</div>
                   <span className="group hover:bg-gray-100 hover:w-44 w-12 transition-all duration-700 flex items-center justify-end rounded-md">
                     <input className=" w-[90%] outline-none rounded  border-l-2 border-t-2 border-b-2  bg-transparent hidden group-hover:block" type="text" />
                     <FaSearch className=" cursor-pointer" />
@@ -36,22 +36,22 @@ const Donate_banner = () => {
                   {donationList.map((data) => (
                     <div key={data.id} className="  shadow-lg p-2 hover:shadow-xl hover:scale-105 transition-all duration-1000 rounded-md flex flex-row min-h-20 max-h-min-h-20 h-full bg-transparent ">
                       <div className=" w-[15%] flex justify-center ">
-                        <img className=" object-center mt-2 object-cover rounded-full h-16 w-16  " src="/faces/BB.jpg"></img>
+                        <img className=" object-center mt-2 object-cover rounded-full h-11 w-11 md:h-16 md:w-16  " alt={data.name} src={data.photo_link}></img>
                       </div>
-                      <div className=" w-[85%]  p-2">
-                        <h1>{data.name}</h1>
-                        <h2 className=" text-sm text-gray-600"> {data.address}</h2>
+                      <div className=" w-[85%] p-1 md:p-2">
+                        <h1 className=" ">{data.name}</h1>
+                        <h2 className=" text-xs md:text-sm text-gray-600"> {data.address}</h2>
                         <h3>{data.description}</h3>
-                        <h1 className=" text-right text-gray-500 text-sm">{data.date}</h1>
+                        <h1 className=" text-right text-gray-500 md:text-sm text-xs ">{data.date}</h1>
                       </div>
                     </div>
                   ))}
                 </div>
-                <p className=" text-xs text-center mt-1">Your generosity makes a difference! 🙌</p>
+                <p className=" text-xs  text-center mt-1">Your generosity makes a difference! 🙌</p>
               </div>
             </div>
             {/* other half part */}
-            <div className=" relative shadow-md h-[99%]  w-[45%] p-2 flex  items-center flex-col ">
+            <div className=" relative shadow-md h-[99%] w-full mt-4 md:mt-0  md:w-[45%] p-2 flex  items-center flex-col ">
               <div>
                 <span className=" absolute top-10 floating01 -left-0 text-green-600/50  ">
                   <FaHandHoldingHeart className=" size-14 " />
@@ -73,7 +73,7 @@ const Donate_banner = () => {
                       SCAN <IoQrCode />{" "}
                     </p>
                     <div className=" size-64 zoom-in relative ">
-                      <FcCancel className=" absolute size-60 z-10  opacity-50" />
+                      <div className=" absolute inset-0 w-full h-full top-0 text-center z-10 text-red-600 flex justify-center items-center bg-gray-700/40">QR not available</div>
                       <img className="opacity-50 cursor-not-allowed" src={QR1}></img>
                     </div>
                     <div className="text-center">
@@ -106,9 +106,9 @@ const Donate_banner = () => {
                           <span className="font-bold uppercase">Koshi Province</span>
                           <ol className="text-sm list-[upper-alpha] list-inside indent-4">
                             <li>
-                              <span>Naresh Yadav</span>
-                              <span> (Biratnagar, Main Road)</span>
-                              <span className="text-gray-500"> Call +977 9812345678</span>
+                              <span>Peshal Parajuli</span>
+                              <span> (Jhapa)</span>
+                              <span className="text-gray-500"> Call +977 9848284634</span>
                             </li>
                             <li>
                               <span>Sita Rai</span>
@@ -122,14 +122,24 @@ const Donate_banner = () => {
                           <span className="font-bold fade-right delay-75 uppercase">Madhesh Province</span>
                           <ol className="text-sm list-[upper-alpha] list-inside indent-4">
                             <li>
-                              <span>Satish Kumar Singh</span>
-                              <span> (Janakpur, Railway Station)</span>
+                              <span>Gobin Yadav </span>
+                              <span> (Dharapani, Dhanusha )</span>
                               <span className="text-gray-500"> Call +977 9801234567</span>
                             </li>
                             <li>
-                              <span>Ramesh Mahato</span>
-                              <span> (Birgunj, Ghantaghar)</span>
-                              <span className="text-gray-500"> Call +977 9823456789</span>
+                              <span>Ram Julum Yadav</span>
+                              <span> (Tara-Patti, Sirsiya )</span>
+                              <span className="text-gray-500"> Call +977 9706666497</span>
+                            </li>
+                            <li>
+                              <span>Saroj Sah</span>
+                              <span> (Dadatol, Maisthan )</span>
+                              <span className="text-gray-500"> Call +977 9706666497</span>
+                            </li>
+                            <li>
+                              <span>Santosh Shah</span>
+                              <span> (Brindawan MNCP, Rautahat )</span>
+                              <span className="text-gray-500"> Call +977 9763431243</span>
                             </li>
                           </ol>
                         </li>
@@ -138,14 +148,19 @@ const Donate_banner = () => {
                           <span className="font-bold uppercase">Bagmati Province</span>
                           <ol className="text-sm list-[upper-alpha] list-inside indent-4">
                             <li>
-                              <span>Shalikram Jamkattel</span>
-                              <span> (Kathmandu, New Baneshwor)</span>
-                              <span className="text-gray-500"> Call +977 9811122334</span>
+                              <span>Prajwal Jung Thapa</span>
+                              <span> (Kathmandu)</span>
+                              <span className="text-gray-500"> Call +977 9860062697</span>
                             </li>
                             <li>
-                              <span>Pratiksha Shrestha</span>
-                              <span> (Lalitpur, Pulchowk)</span>
-                              <span className="text-gray-500"> Call +977 9865543210</span>
+                              <span>Nandini Karna</span>
+                              <span> (Lalitpur)</span>
+                              <span className="text-gray-500"> Call +977 9866041644</span>
+                            </li>
+                            <li>
+                              <span>Sagar Dhakal</span>
+                              <span> (Chabahil-7, Kathmandu )</span>
+                              <span className="text-gray-500"> Call +977 9840089996</span>
                             </li>
                           </ol>
                         </li>
@@ -170,14 +185,9 @@ const Donate_banner = () => {
                           <span className="font-bold uppercase">Lumbini Province</span>
                           <ol className="text-sm list-[upper-alpha] list-inside indent-4">
                             <li>
-                              <span>Dilli Bahadur Chaudhary</span>
-                              <span> (Butwal, Traffic Chowk)</span>
-                              <span className="text-gray-500"> Call +977 9805566778</span>
-                            </li>
-                            <li>
-                              <span>Aarati Thapa</span>
-                              <span> (Kapilvastu, Tilaurakot)</span>
-                              <span className="text-gray-500"> Call +977 9823344556</span>
+                              <span>Nischal Shrestha </span>
+                              <span> (Sandhikharka-12, Arghakhanchi )</span>
+                              <span className="text-gray-500"> Call +977 9766265376</span>
                             </li>
                           </ol>
                         </li>
