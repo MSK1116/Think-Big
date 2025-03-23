@@ -13,7 +13,6 @@ const Home = () => {
     <>
       <Navbar />
       <Home_banner />
-
       <Home_banner2 />
       <Gallery />
       <Footer />
