@@ -15,11 +15,39 @@ const Navbar = () => {
   }, []);
 
   useEffect(() => {
+    if (getEventToogleCookie()) {
+      return;
+    }
     const timer = setTimeout(() => {
-      setAlertEventToggle(false);
+      handleEventToogle();
     }, 7000);
     return () => clearTimeout(timer);
-  });
+  }, []);
+
+  const handleEventToogle = () => {
+    setAlertEventToggle(false);
+    setEventToogleCookie();
+  };
+
+  const getEventToogleCookie = () => {
+    const allcookies = document.cookie.split("; ");
+    if (allcookies) {
+      const parsedData = Object.fromEntries(allcookies.map((item) => item.split("=")));
+      if (parsedData.EventToogle == "closed") {
+        return true;
+      } else {
+        return false;
+      }
+    } else {
+      return false;
+    }
+  };
+
+  const setEventToogleCookie = () => {
+    const expires = new Date();
+    expires.setDate(expires.getDate() + 3);
+    document.cookie = `EventToogle=closed;expires=${expires.toDateString()};path=/`;
+  };
 
   const location = useLocation();
   const navItems = (
@@ -85,14 +113,14 @@ const Navbar = () => {
               <span
                 onClick={() => {
                   navigate("/event");
-                  alertToggle;
+                  handleEventToogle;
                 }}
                 className=" underline cursor-pointer">
                 Register for Mental Health Program (Episode: 4)
               </span>
             </p>
 
-            <button onClick={() => setAlertEventToggle(false)} aria-label="Dismiss" className="shrink-0 rounded-lg bg-black/10 p-1 transition hover:bg-black/20">
+            <button onClick={() => handleEventToogle} aria-label="Dismiss" className="shrink-0 rounded-lg bg-black/10 p-1 transition hover:bg-black/20">
               <svg xmlns="http://www.w3.org/2000/svg" className="size-5" viewBox="0 0 20 20" fill="currentColor">
                 <path
                   fillRule="evenodd"
