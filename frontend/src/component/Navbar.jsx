@@ -114,7 +114,7 @@ const Navbar = () => {
               <span
                 onClick={() => {
                   navigate("/event");
-                  handleEventToogle;
+                  handleEventToogle();
                 }}
                 className=" underline cursor-pointer">
                 Register for Mental Health Program (Episode: 4)
