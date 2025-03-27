@@ -16,6 +16,7 @@ const Navbar = () => {
 
   useEffect(() => {
     if (getEventToogleCookie()) {
+      setAlertEventToggle(false);
       return;
     }
     const timer = setTimeout(() => {
@@ -120,7 +121,7 @@ const Navbar = () => {
               </span>
             </p>
 
-            <button onClick={() => handleEventToogle} aria-label="Dismiss" className="shrink-0 rounded-lg bg-black/10 p-1 transition hover:bg-black/20">
+            <button onClick={handleEventToogle} aria-label="Dismiss" className="shrink-0 rounded-lg bg-black/10 p-1 transition hover:bg-black/20">
               <svg xmlns="http://www.w3.org/2000/svg" className="size-5" viewBox="0 0 20 20" fill="currentColor">
                 <path
                   fillRule="evenodd"
