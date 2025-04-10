@@ -6,7 +6,7 @@ export const subscriberReg = async (req, res) => {
   try {
     const { email } = req.body;
 
-    const user = await Event.findOne({ email });
+    const user = await subscriber.findOne({ email });
     if (user) {
       return res.status(400).json({ message: "You have already Subscribed" });
     }
