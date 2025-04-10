@@ -193,9 +193,9 @@ export const subscriberReg = async (req, res) => {
 <div>
 
 
- <p>Thank you for registering for <strong>${eventName}</strong>. We have received your registration successfully.</p>
+ <p>Thank you for registering for <strong>Newsletter</strong>. We have received your registration successfully.</p>
 
-            <p>Our team will send you an email in future about events, oppurtunities and news from Think Big</p>
+            <p>Our team will send you an email in future about events, opportunities and news from Think Big</p>
 
 
   </div>
