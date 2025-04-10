@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
@@ -15,6 +15,8 @@ const NewsletterSignup = () => {
   hours = hours ? hours : 12; // If hour is 0, make it 12
   const formattedDateTime = `${month}/${day}/${year} ${hours}:${minutes} ${ampm}`;
 
+  const [submitting, setSubmitting] = useState(false);
+
   const {
     register,
     handleSubmit,
@@ -27,15 +29,18 @@ const NewsletterSignup = () => {
       date: formattedDateTime,
     };
     const toastId = toast.loading("Subscribing...");
+    setSubmitting(true);
     await axios
       .post("https://think-big-backend.vercel.app/subscribe", dataToSend)
       .then((res) => {
         if (res.data) {
           toast.success(res.data.message, { id: toastId });
         }
+        setSubmitting(false);
       })
       .catch((err) => {
         toast.error(err.response.data.message, { id: toastId });
+        setSubmitting(false);
       });
   };
   return (
@@ -45,7 +50,7 @@ const NewsletterSignup = () => {
           <form className=" rounded-2xl pr-1 py-1 flex items-center w-full h-full" onSubmit={handleSubmit(onSubmit)}>
             {" "}
             <input {...register("email", { required: true })} type="email" data-aos="zoom-in-right" data-aos-duration="1000" className=" bg-slate-50 w-full h-full p-2 rounded-lg outline-none text-green-600 " placeholder=" youremail@mail.com"></input>
-            <button type="submit" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300" className=" cursor-pointer px-3 py-2 text-center rounded-r-2xl  bg-emerald-600  text-slate-50 ">
+            <button disabled={submitting} type="submit" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300" className=" cursor-pointer px-3 py-2 text-center rounded-r-2xl  bg-emerald-600  text-slate-50 ">
               Subscribe
             </button>
           </form>
