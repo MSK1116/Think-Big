@@ -38,14 +38,15 @@ const Bee = ({ num }) => {
   }, []);
 
   const beeSVG = (id) => (
-    <svg className="absolute max-w-12 z-50" key={id} id={id} viewBox="-10.9 -10.5 21 21">
+    <svg className="absolute  max-w-12 z-50" key={id} id={id} viewBox="-10.9 -10.5 21 21">
       <g transform="rotate(90) translate(0 -4)">
         <g className="text-black" stroke="currentColor">
           <circle className="text" r="4" strokeWidth="2.5" />
+
           <g fill="none" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
             <path transform="rotate(45) translate(0 -4)" d="M 0 0 v -3" />
             <path transform="rotate(-45) translate(0 -4)" d="M 0 0 v -3" />
-            <g fill="hsl(200, 80%, 90%)">
+            <g fill=" hsl(200, 80%, 90%)">
               <path transform="rotate(15)" d="M 0 0 h 7 a 3 3 0 0 1 0 6 q -4 0 -7 -6" />
               <path transform="scale(-1 1) rotate(15)" d="M 0 0 h 7 a 3 3 0 0 1 0 6 q -4 0 -7 -6" />
             </g>

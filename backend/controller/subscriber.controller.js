@@ -1,37 +1,28 @@
 import express from "express";
-import Event from "../model/event.model.js";
+import subscriber from "../model/subscriber.model.js";
 import { sendConfirmationEmail } from "./mail.controller.js";
 
-export const eventReg = async (req, res) => {
+export const subscriberReg = async (req, res) => {
   try {
-    const { eventName, Fullname, email, address, textarea, date } = req.body;
-    const nameParts = (Fullname || "N/A").trim().split(" ");
-    const firstName = nameParts.shift();
+    const { email } = req.body;
 
     const user = await Event.findOne({ email });
     if (user) {
-      return res.status(400).json({ message: "You have already registered" });
+      return res.status(400).json({ message: "You have already Subscribed" });
     }
 
-    const eventRegTemp = new Event({
-      eventName: eventName,
-      Fullname: Fullname,
+    const subscriberRegTemp = new subscriber({
       email: email,
-      address: address,
-      textarea: textarea,
       date: date,
     });
 
-    await eventRegTemp.save();
+    await subscriberRegTemp.save();
 
     const emailStatus = await sendConfirmationEmail({
-      eventName,
-      Fullname,
+      eventName: "Newsletter",
       email,
-      address,
-      textarea,
       date,
-      brevoListId: 11,
+      brevoListId: 12,
       emailContent: `
           <!DOCTYPE html>
 <html lang="en">

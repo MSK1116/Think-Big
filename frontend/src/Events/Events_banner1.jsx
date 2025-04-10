@@ -53,7 +53,7 @@ const Events_banner1 = () => {
       textarea: data.textarea,
       date: formattedDateTime,
     };
-    console.log(applicant);
+
     const toastId = toast.loading("Registering...");
     setRegStart(true);
     await axios

@@ -21,8 +21,8 @@ const SVGDollPlay = ({ Hei, Wid }) => {
           transform="translate(-86 -125.75)"
           fill="none"
           stroke="#3f3d56"
-          stroke-miterlimit="10"
-          stroke-width="4"
+          strokeMiterlimit="10"
+          strokeWidth="4"
         />
         <path d="M156.49,603.39a14,14,0,0,1,7-11.5l3.14,6.22-.1-7.53a14.22,14.22,0,0,1,4.63-.56,14,14,0,1,1-14.68,13.37Z" transform="translate(-86 -125.75)" fill="#57b894" />
         <path d="M181.52,698.38a14,14,0,1,0-.68-11.3l8.77,7.13L180,692A14,14,0,0,0,181.52,698.38Z" transform="translate(-86 -125.75)" fill="#57b894" />

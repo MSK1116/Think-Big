@@ -8,6 +8,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagramSquare } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { FaReact } from "react-icons/fa";
+import NewsletterSignup from "./NewsletterSignup";
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -26,7 +27,8 @@ const Footer = () => {
               </p>{" "}
               <p>Regd. No. 3435/080/081 </p>
             </div>
-            <div className="flex flex-col space-y-5">
+            <div className="flex flex-col space-y-5 ">
+              <NewsletterSignup />
               <ul data-aos="fade-up" className=" flex flex-wrap justify-center gap-6 md:gap-8 lg:mt-0 lg:justify-end lg:gap-12">
                 <li>
                   <a target="blank" className="text-gray-700 transition hover:text-gray-700/75" href="https://www.facebook.com/thinkbigbig18">
