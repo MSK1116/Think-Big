@@ -188,26 +188,15 @@ export const subscriberReg = async (req, res) => {
         <div class="email-content">
            <div >
   <div style="padding: 20px;">
-    <p>Hey BIG THINKER <span style="color:#2D9C6D">${firstName}</span>, </p>
+    <p>Hey <span style="color:#2D9C6D">BIG THINKER</span>, </p>
 
 <div>
 
 
  <p>Thank you for registering for <strong>${eventName}</strong>. We have received your registration successfully.</p>
 
-            <p>Our team will send you a follow-up email shortly, including all the details you'll need for the event.</p>
+            <p>Our team will send you an email in future about events, oppurtunities and news from Think Big</p>
 
-
-  <p>This program spans six episodes, and we aim to cover as much as possible. If you have any suggestions for topics you’d like us to include, please fill out  
-    <a href="https://www.thinkbig.org.np/contact" style="color: #007bff; text-decoration: none;">this form</a>  
-    or email us directly.
-  </p>
-
-  <p>Just in case you missed the first episode, you can use  
-    <a href="https://docs.google.com/presentation/d/1-7OnsbZ8e2vArNIfDJbu9gRIXnXOxjGv/edit?usp=sharing&ouid=116334907021628253115&rtpof=true&sd=true" style="color: #007bff; text-decoration: none;">this link</a>  
-    to access the PPT. </p>
-  <p>Don't forget to share our registration page so others can join too! </p>
-</div>
 
   </div>
 </div>
