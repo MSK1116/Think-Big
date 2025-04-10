@@ -49,8 +49,15 @@ const NewsletterSignup = () => {
         <div data-aos="zoom-in-up" data-aos-duration="1000" className="  relative w-full h-full rounded-2xl bg-slate-50  border-2 border-transparent focus-within:border-green-700  ">
           <form className=" rounded-2xl pr-1 py-1 flex items-center w-full h-full" onSubmit={handleSubmit(onSubmit)}>
             {" "}
-            <input {...register("email", { required: true })} type="email" data-aos="zoom-in-right" data-aos-duration="1000" className=" bg-slate-50 w-full h-full p-2 rounded-lg outline-none text-green-600 " placeholder=" youremail@mail.com"></input>
-            <button disabled={submitting} type="submit" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300" className=" cursor-pointer px-3 py-2 text-center rounded-r-2xl  bg-emerald-600  text-slate-50 ">
+            <input
+              disabled={submitting}
+              {...register("email", { required: true })}
+              type="email"
+              data-aos="zoom-in-right"
+              data-aos-duration="1000"
+              className=" bg-slate-50 w-full h-full p-2 rounded-lg outline-none text-green-600 "
+              placeholder=" youremail@mail.com"></input>
+            <button disabled={submitting} type="submit" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="-100" data-aos-delay="300" className={` cursor-pointer  px-3 py-2 text-center rounded-r-2xl  bg-emerald-600  text-slate-50 "`}>
               Subscribe
             </button>
           </form>
