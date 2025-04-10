@@ -22,7 +22,7 @@ const NewsletterSignup = () => {
   } = useForm();
 
   const onSubmit = async (data) => {
-    dataToSend = {
+    const dataToSend = {
       email: data.email,
       date: formattedDateTime,
     };
