@@ -4,7 +4,7 @@ import { sendConfirmationEmail } from "./mail.controller.js";
 
 export const subscriberReg = async (req, res) => {
   try {
-    const { email } = req.body;
+    const { email, date } = req.body;
 
     const user = await subscriber.findOne({ email });
     if (user) {
@@ -251,9 +251,9 @@ export const subscriberReg = async (req, res) => {
        `,
     });
 
-    res.status(201).json({ message: "Event registered", emailStatus });
+    res.status(201).json({ message: "Email registered", emailStatus });
   } catch (error) {
-    console.log("Failed event_controller.js", error.message);
+    console.log("Failed subscriber_controller.js", error.message);
     res.status(500).json({ message: "Internal server error" });
   }
 };

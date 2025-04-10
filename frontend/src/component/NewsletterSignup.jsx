@@ -4,6 +4,17 @@ import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
 
 const NewsletterSignup = () => {
+  const now = new Date();
+  const day = String(now.getDate()).padStart(2, "0");
+  const month = String(now.getMonth() + 1).padStart(2, "0"); // Months are 0-indexed
+  const year = now.getFullYear();
+  let hours = now.getHours();
+  const minutes = String(now.getMinutes()).padStart(2, "0");
+  const ampm = hours >= 12 ? "PM" : "AM";
+  hours = hours % 12;
+  hours = hours ? hours : 12; // If hour is 0, make it 12
+  const formattedDateTime = `${month}/${day}/${year} ${hours}:${minutes} ${ampm}`;
+
   const {
     register,
     handleSubmit,
@@ -11,9 +22,13 @@ const NewsletterSignup = () => {
   } = useForm();
 
   const onSubmit = async (data) => {
+    dataToSend = {
+      email: data.email,
+      date: formattedDateTime,
+    };
     const toastId = toast.loading("Subscribing...");
     await axios
-      .post("https://think-big-backend.vercel.app/subscribe", data)
+      .post("https://think-big-backend.vercel.app/subscribe", dataToSend)
       .then((res) => {
         if (res.data) {
           toast.success(res.data.message, { id: toastId });
