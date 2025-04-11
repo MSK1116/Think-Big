@@ -13,7 +13,7 @@ const Joinevent = () => {
     }, 1000);
 
     setTimeout(() => {
-      window.location.href = "https://meet.google.com/vck-gcnq-zqx"; // Redirect after 5 sec
+      window.location.href = "https://meet.google.com/cor-wgwy-wah";
     }, 5000);
 
     return () => {
