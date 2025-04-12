@@ -229,7 +229,7 @@ export const bulkMailer = async (req, res) => {
 
                         <p>The wait is over! Our fourth episode of the Mental Health Program is happening in less than
                             an hour — <strong>tonight</strong>,
-                            Saturday, April 11, 2025, at 8:00 PM. Please make sure to join on time using <a
+                            Saturday, April 12, 2025, at 8:00 PM. Please make sure to join on time using <a
                                 href="https://www.thinkbig.org.np/joinevent">this link</a>.</p>
                         <hr>
 
