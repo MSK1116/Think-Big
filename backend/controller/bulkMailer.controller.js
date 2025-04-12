@@ -8,26 +8,20 @@ export const bulkMailer = async (req, res) => {
     const brevoClient = sibApiV3Sdk.ApiClient.instance;
     const apiKey = brevoClient.authentications["api-key"];
     apiKey.apiKey = process.env.BREVO_API_KEY;
+
+    const { recipients, subject } = req.body;
+
+    if (!recipients || !subject) {
+      return res.status(400).json({ message: "Missing or invalid required fields" });
+    }
+
     const emailApi = new sibApiV3Sdk.TransactionalEmailsApi();
 
-    const { subject, listIds } = req.body;
-
-    if (!subject || !htmlContent || !listIds) {
-      return res.status(400).json({ message: "Missing required fields: subject, htmlContent or listIds" });
-    }
-
-    // Split the listIds from plain text into an array of integers
-    const listIdsArray = listIds.split(",").map((id) => parseInt(id.trim(), 10));
-
-    if (listIdsArray.length === 0 || listIdsArray.some((id) => isNaN(id))) {
-      return res.status(400).json({ message: "Invalid list IDs" });
-    }
+    const sender = { email: "no-reply@thinkbig.org.np", name: "Think Big | Event Wing" };
 
     const emailData = {
-      sender: {
-        email: "no-reply@thinkbig.org.np",
-        name: "Think Big | Event Wing",
-      },
+      sender,
+      to: [{ email: recipient.email }],
       subject,
       htmlContent: `<!DOCTYPE html>
 <html lang="en">
@@ -309,16 +303,12 @@ export const bulkMailer = async (req, res) => {
 </body>
 
 </html>`,
-      recipients: {
-        listIds: listIdsArray, // Pass the array of list IDs
-      },
     };
-
     await emailApi.sendTransacEmail(emailData);
 
-    res.status(200).json({ message: "Bulk email sent to list(s) successfully!" });
+    res.status(200).json({ message: "Emails sent successfully!" });
   } catch (error) {
-    console.error("Failed to send email:", error.message);
+    console.error("Failed to send emails:", error.message);
     res.status(500).json({ message: "Internal server error" });
   }
 };
