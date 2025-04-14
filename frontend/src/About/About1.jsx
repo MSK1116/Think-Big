@@ -34,7 +34,7 @@ const About1 = () => {
                 </h1>
                 <h1 className=" mt-6">
                   Legal Status<br></br> Regd. No. 3435/080/081 We are registered under the Association Registration Act, 2035 BS, Nepal. Complete details about our organization and legal framework, including our Social Welfare Council number, will be
-                  updated by March 1, 2025. <br></br>🌱 Together, we can create a future where every child has the opportunity to learn, grow, and thrive.
+                  updated by June 1, 2025. <br></br>🌱 Together, we can create a future where every child has the opportunity to learn, grow, and thrive.
                 </h1>
               </div>
             </div>
