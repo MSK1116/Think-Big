@@ -8,7 +8,7 @@ import Impact from "../component/Impact";
 import Gallery from "../Gallery/Gallery";
 
 const Home = () => {
-  document.title = "Think Big Org";
+  document.title = "Think Big Org - Together for Childhood, Against Injustice";
   return (
     <>
       <Navbar />

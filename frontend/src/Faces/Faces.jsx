@@ -10,7 +10,7 @@ import "aos/dist/aos.css";
 import Faces2 from "./Faces2";
 
 const Faces = () => {
-  document.title = "Faces | Think Big Org";
+  document.title = "Faces | Think Big Org - Together for Childhood, Against Injustice";
 
   return (
     <>

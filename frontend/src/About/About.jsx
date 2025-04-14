@@ -5,6 +5,7 @@ import SVGNature from "../svg/SVGNature";
 import About1 from "./About1";
 
 const About = () => {
+  document.title = "About us | Think Big Org - Together for Childhood, Against Injustice";
   return (
     <>
       <Navbar />

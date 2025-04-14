@@ -19,17 +19,17 @@ const GalleryCard = ({ items }) => {
         <div className="p-3">
           <div className="flex flex-col cursor-pointer space-y-3 md:flex justify-between">
             <div className="flex flex-row place-content-between">
-              <h3 data-aos="fade-up" className="font-medium">
+              <h2 data-aos="fade-up" className="font-medium">
                 {items.title}
-              </h3>
+              </h2>
               <span data-aos="fade-left" className="text-sm clamp text-gray-500">
                 {items.date}
               </span>
             </div>
             <div>
-              <span data-aos="fade-up" data-aos-delay="100" className="text-sm line-clamp-2 md:line-clamp-3 text-gray-500">
+              <h3 data-aos="fade-up" data-aos-delay="100" className="text-sm line-clamp-2 md:line-clamp-3 text-gray-500">
                 {items.description}
-              </span>
+              </h3>
             </div>
           </div>
         </div>

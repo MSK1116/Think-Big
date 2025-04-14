@@ -9,7 +9,7 @@ const ContactBanner1 = () => {
       <div className="w-full px-4 py-12 sm:px-6 sm:py-16 lg:w-1/2 lg:px-8 lg:py-24">
         <div className="mx-auto max-w-lg text-center">
           <h1 className="text-2xl font-bold text-green-600 sm:text-3xl">Get in Touch</h1>
-          <p className="mt-4 text-gray-500">At Think Big, we value your questions, feedback, and ideas. Whether you’re interested in joining our events, learning more about our programs, or simply want to connect, we’re here to help.</p>
+          <h2 className="mt-4 text-gray-500">At Think Big, we value your questions, feedback, and ideas. Whether you’re interested in joining our events, learning more about our programs, or simply want to connect, we’re here to help.</h2>
         </div>
 
         <form action="https://formsubmit.co/contact@thinkbig.org.np" method="POST" className="mx-auto mb-0 mt-8 max-w-md space-y-4">

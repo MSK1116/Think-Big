@@ -6,7 +6,7 @@ import Events_banner2 from "./Events_banner2";
 import Events_banner3 from "./Events_banner3";
 
 const Events = () => {
-  document.title = "Events | Think Big Org";
+  document.title = "Events | Think Big Org - Together for Childhood, Against Injustice";
   return (
     <>
       <Navbar />

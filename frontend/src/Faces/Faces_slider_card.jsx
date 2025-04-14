@@ -11,7 +11,7 @@ const Faces_slider_card = ({ items }) => {
                 <div className="flex gap-0.5 text-green-600">
                   <h1>{items.post}</h1>
                 </div>
-                <p className="text-2xl font-bold text-green-600 sm:text-3xl">{items.title}</p>{" "}
+                <h2 className="text-2xl font-bold text-green-600 sm:text-3xl">{items.title}</h2>{" "}
               </div>
               <div>
                 <img className=" object-center object-cover rounded-full w-20 h-20" src={`/faces/` + items.photo}></img>
@@ -19,11 +19,11 @@ const Faces_slider_card = ({ items }) => {
             </div>
 
             <div className="mt-4">
-              <p className="mt-4 leading-relaxed text-gray-700">{items.description} </p>
+              <h3 className="mt-4 leading-relaxed text-gray-700">{items.description} </h3>
             </div>
           </div>
 
-          <footer className="mt-4 text-sm font-medium text-gray-700 sm:mt-6">Email &mdash; {items.email}</footer>
+          <h4 className="mt-4 text-sm font-medium text-gray-700 sm:mt-6">Email &mdash; {items.email}</h4>
         </blockquote>
       </div>
     </>

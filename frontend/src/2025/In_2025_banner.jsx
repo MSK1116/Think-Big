@@ -1,21 +1,16 @@
 import React from "react";
 import Butterfly from "../component/Butterfly";
 import SVGFriend1 from "../svg/SVGFriend1";
-import { FaSchool } from "react-icons/fa6";
-import { LuSchool } from "react-icons/lu";
+import { FaSchool, FaBookOpenReader } from "react-icons/fa6";
+import { LuSchool, LuBookCopy } from "react-icons/lu";
 import { IoSchoolSharp } from "react-icons/io5";
 import { TiGroup } from "react-icons/ti";
 import { FaHandsHelping } from "react-icons/fa";
-import { FaBookOpenReader } from "react-icons/fa6";
-import { LuBookCopy } from "react-icons/lu";
-import { GiSecretBook } from "react-icons/gi";
-import { MdLocalMovies } from "react-icons/md";
+import { GiSecretBook, GiHealthCapsule } from "react-icons/gi";
+import { MdLocalMovies, MdHealthAndSafety } from "react-icons/md";
 import { BiSolidCameraMovie } from "react-icons/bi";
-import { RiMovie2Fill } from "react-icons/ri";
+import { RiMovie2Fill, RiWomenLine } from "react-icons/ri";
 import SVGDollPlay from "../svg/SVGDollPlay";
-import { GiHealthCapsule } from "react-icons/gi";
-import { MdHealthAndSafety } from "react-icons/md";
-import { RiWomenLine } from "react-icons/ri";
 
 const In_2025_banner = () => {
   return (
@@ -37,11 +32,11 @@ const In_2025_banner = () => {
             <h1 data-aos="fade-right" data-aos-duration="1000" className=" font-semibold md:text-xl  uppercase">
               <span className=" font-playwrite  text-3xl lowercase font-bold">1.</span> Establishment of sub-club at schools
             </h1>
-            <h1 data-aos="fade-up" data-aos-duration="1000" className=" indent-8">
+            <h2 data-aos="fade-up" data-aos-duration="1000" className=" indent-8">
               In rural areas of Nepal, students rarely get the chance to showcase their skills or access platforms that help them grow into the leaders they could become. That’s why we want to create sub-clubs of our organization in schools. These
               clubs will give teenagers a chance to uncover their hidden talents, take part in extracurricular activities, and develop as future leaders. We don’t believe in being leaders or big thinkers on our own—we want to rise together with all
               the underprivileged young minds who deserve the same opportunities.{" "}
-            </h1>
+            </h2>
           </div>
           <div className=" hidden md:block">
             <TiGroup data-aos="zoom-in" data-aos-duration="1000" className=" floating03 absolute top-0 right-80 size-14 text-green-700/20" />
@@ -61,11 +56,11 @@ const In_2025_banner = () => {
             <h1 data-aos="fade-right" data-aos-duration="1000" className=" font-semibold text-xl  uppercase">
               <span className=" font-playwrite text-3xl lowercase font-bold">2.</span> Scholarship for 20 students
             </h1>
-            <h1 data-aos="fade-up" data-aos-duration="1000" className=" indent-8">
+            <h2 data-aos="fade-up" data-aos-duration="1000" className=" indent-8">
               We plan to partner with online education platforms to reach underprivileged students in rural areas and offer them full scholarships for board exam preparation. In many rural schools, there’s a shortage of skilled teachers, and courses
               often remain incomplete, leaving students unprepared. As a result, over 50% of students fail their exams. To address this, we will provide free online courses to help these students pass their exams and take a crucial step toward
               achieving their dreams.{" "}
-            </h1>
+            </h2>
           </div>
           <div className=" hidden md:block">
             <FaSchool data-aos="zoom-in" data-aos-duration="1000" className=" floating03 absolute top-0 right-80 size-14 text-green-700/20" />
@@ -84,10 +79,10 @@ const In_2025_banner = () => {
             <h1 data-aos="fade-right" data-aos-duration="1000" className=" font-semibold text-xl  uppercase">
               <span className=" font-playwrite text-3xl lowercase font-bold">3.</span> Distribution of Novel, self help & academic books
             </h1>
-            <h1 data-aos="fade-up" data-aos-duration="1000" className=" indent-8">
+            <h2 data-aos="fade-up" data-aos-duration="1000" className=" indent-8">
               We will gather books through donations or sponsorships and collaborate with the village development committee to create dedicated spaces for these books and their readers within community buildings. This initiative will provide a
               valuable resource hub where curious minds, big thinkers, and active learners can dream big and take meaningful steps toward turning those dreams into reality.
-            </h1>
+            </h2>
           </div>
           <div className=" hidden md:block">
             <LuBookCopy data-aos="zoom-in" data-aos-duration="1000" className=" floating03 absolute -top-14 right-80 size-14 text-green-700/20" />
@@ -106,11 +101,11 @@ const In_2025_banner = () => {
             <h1 data-aos="fade-right" data-aos-duration="1000" className=" font-semibold text-xl  uppercase">
               <span className=" font-playwrite text-3xl lowercase font-bold">4.</span> Documentary on child marriage
             </h1>
-            <h1 data-aos="fade-up" data-aos-duration="1000" className=" indent-8">
+            <h2 data-aos="fade-up" data-aos-duration="1000" className=" indent-8">
               We plan to create a documentary that tells the stories of two families: one that marries their daughter off while she is underage and another that supports their daughter in completing her education and marrying when and whom she
               chooses. The documentary will conclude by showcasing the long-term effects on their mental, social, physical, and relational well-being years after marriage. By allowing the audience to visually compare the outcomes of these two paths,
               we aim to leave a lasting impact. Video storytelling has a unique power to connect deeply with people, and if we can resonate with the roots and realities of our target audience, this documentary could inspire meaningful change.{" "}
-            </h1>
+            </h2>
           </div>
           <div className=" hidden md:block  ">
             <BiSolidCameraMovie data-aos="zoom-in" data-aos-duration="1000" className=" floating01 absolute  -top-14 right-80 size-14 text-green-700/20" />
@@ -129,11 +124,11 @@ const In_2025_banner = () => {
             <h1 data-aos="fade-right" data-aos-duration="1000" className=" font-semibold text-xl  uppercase">
               <span className=" font-playwrite text-3xl lowercase font-bold">5.</span> Awarness and distribution of sanitary <span className=" text-emerald-700">goods</span>
             </h1>
-            <h1 data-aos="fade-up" data-aos-duration="1000" className=" indent-8">
+            <h2 data-aos="fade-up" data-aos-duration="1000" className=" indent-8">
               We are committed to addressing the critical issues surrounding menstrual health and hygiene. As part of our initiative, we plan to conduct awareness campaigns and distribute sanitary goods four times a year. Our efforts aim to reach as
               many communities as possible, and we hope to expand further as our budget allows. In addition to distributing sanitary pads and other hygiene products, our campaigns will focus on raising awareness about menstrual health, the importance
               of hygiene, and the impact of early marriage on young girls' lives. Through education and resource distribution, we strive to empower individuals and create a supportive environment for women's health and well-being.{" "}
-            </h1>
+            </h2>
           </div>
           <div className=" hidden md:block">
             <GiHealthCapsule data-aos="zoom-in" data-aos-duration="1000" className=" floating03 absolute -top-14 right-80 size-14 text-green-700/20" />
