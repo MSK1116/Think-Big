@@ -26,6 +26,9 @@ const Footer = () => {
                 Think Big<br></br>Dhanusha, Nepal{" "}
               </p>{" "}
               <p>Regd. No. 3435/080/081 </p>
+              <a className=" text-sm" target="blank" href="mailto:contact@thinkbig.org.np">
+                contact@thinkbig.org.np
+              </a>
             </div>
             <div className="flex flex-col space-y-5 ">
               <NewsletterSignup />
@@ -54,7 +57,7 @@ const Footer = () => {
                   </Link>
                 </li>
               </ul>
-              <ul data-aos="fade-up" data-aos-offset="50" data-aos-delay="100" className=" flex flex-wrap justify-center gap-6 md:gap-8 lg:mt-0 lg:justify-end lg:gap-12">
+              <ul data-aos="fade-up" data-aos-offset="10" data-aos-delay="100" className=" flex flex-wrap justify-center gap-6 md:gap-8 lg:mt-0 lg:justify-end lg:gap-12">
                 <li>
                   <a onClick={() => navigate("/about")} href="#" className="text-gray-700 transition hover:text-gray-700/75">
                     About{" "}
