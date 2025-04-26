@@ -46,13 +46,13 @@ const Footer = () => {
                 </li>
 
                 <li>
-                  <Link to={"/contact"} className="text-gray-700 transition hover:text-gray-700/75" href="#">
+                  <Link to={"/contact"} className="text-gray-700 cursor-not-allowed transition hover:text-gray-700/75" href="#">
                     <FaXTwitter className="h-8 w-8" />
                   </Link>
                 </li>
 
                 <li>
-                  <Link to={"/giveus"} className="text-gray-700 transition hover:text-gray-700/75" href="#">
+                  <Link to={"/giveus"} className="text-gray-700 cursor-not-allowed transition hover:text-gray-700/75" href="#">
                     <FaYoutube className="h-8 w-8" />
                   </Link>
                 </li>
