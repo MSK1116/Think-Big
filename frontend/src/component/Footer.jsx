@@ -2,7 +2,7 @@ import React from "react";
 import logo from "/Logo_noBg.png";
 import { Link } from "react-router-dom";
 
-import { FaFacebook } from "react-icons/fa";
+import { FaFacebook, FaLinkedin } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagramSquare } from "react-icons/fa";
@@ -40,8 +40,8 @@ const Footer = () => {
                 </li>
 
                 <li>
-                  <a target="blank" className="text-gray-700 transition hover:text-gray-700/75" href="#">
-                    <FaInstagramSquare className="h-8 w-8" />
+                  <a target="blank" className="text-gray-700 transition hover:text-gray-700/75" href="https://www.linkedin.com/company/think-big-org">
+                    <FaLinkedin className="h-8 w-8" />
                   </a>
                 </li>
 
