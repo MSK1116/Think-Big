@@ -47,7 +47,7 @@ const Apply = () => {
             <ul className=" mt-2 list-inside text-gray-600 list-decimal ml-3">
               <li> One full year of scholarship from Ambition Guru. </li>
               <li>Daily Live classes, Ask any time, Recorded Videos, chapter's MCQs & Notes etc. </li>
-              <li> Early access to Think Big's program </li>
+              <li> Early access to Think Big's program. </li>
               <li> New connection and experience... </li>
             </ul>
           </div>
