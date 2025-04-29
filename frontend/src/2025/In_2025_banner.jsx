@@ -54,7 +54,7 @@ const In_2025_banner = () => {
           </div>
           <div className=" md:ml-20 md:w-1/2 md:h-3/4 ">
             <h1 data-aos="fade-right" data-aos-duration="1000" className=" font-semibold text-xl  uppercase">
-              <span className=" font-playwrite text-3xl lowercase font-bold">2.</span> Scholarship for 20 students
+              <span className=" font-playwrite text-3xl lowercase font-bold">2.</span> Scholarship for SEE & SLC students
             </h1>
             <h2 data-aos="fade-up" data-aos-duration="1000" className=" indent-8">
               We plan to partner with online education platforms to reach underprivileged students in rural areas and offer them full scholarships for board exam preparation. In many rural schools, there’s a shortage of skilled teachers, and courses
@@ -62,6 +62,9 @@ const In_2025_banner = () => {
               achieving their dreams.{" "}
             </h2>
           </div>
+          <a data-aos="fade-right" className=" md:text-sm text-xs  p-2 text-right bg-emerald-600 hover:bg-emerald-700 absolute bottom-7 z-10  -left-9 text-white rounded-r-md  max-w-fit" href="/apply">
+            Apply now!
+          </a>
           <div className=" hidden md:block">
             <FaSchool data-aos="zoom-in" data-aos-duration="1000" className=" floating03 absolute top-0 right-80 size-14 text-green-700/20" />
             <LuSchool data-aos="zoom-in" data-aos-duration="1000" className=" floating01 absolute bottom-0  left-52 size-14 text-green-700/20" />

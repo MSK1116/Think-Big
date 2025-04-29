@@ -12,6 +12,7 @@ import Decoder from "./component/Decoder";
 import In_2025 from "./2025/In_2025";
 // import Mailer from "./component/Mailer";
 import Joinevent from "./component/Joinevent";
+import Apply from "./apply/Apply";
 
 const App = () => {
   useEffect(() => {
@@ -31,6 +32,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/decoder" element={<Decoder />} />
         <Route path="/2025" element={<In_2025 />} />
+        <Route path="/apply" element={<Apply />} />
         {/* <Route path="/mailer" element={<Mailer />} /> */}
         <Route path="/joinevent" element={<Joinevent />} />
       </Routes>

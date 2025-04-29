@@ -4,7 +4,7 @@ import mongoose from "mongoose";
 import bulkMailer from "../backend/route/bulkMailer.route.js";
 import eventReg from "../backend/route/event.route.js";
 import subscriberReg from "../backend/route/subscriber.route.js";
-import { applicationReg } from "../backend/route/apply.controller.js";
+import applicationReg from "../backend/route/apply.route.js";
 import cors from "cors";
 
 const app = express();

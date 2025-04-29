@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const subscriberSchema = mongoose.Schema({
+const applicationSchema = mongoose.Schema({
   fullName: {
     type: String,
     required: true,

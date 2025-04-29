@@ -1,0 +1,63 @@
+import React, { useEffect } from "react";
+import Navbar from "../component/Navbar";
+import Footer from "../component/Footer";
+import Apply_form from "./Apply_form";
+import Apply_timeline from "./Apply_timeline";
+
+const Apply = () => {
+  useEffect(() => {
+    document.title = " Arjuna Scholarship | Scholarship Application for SLC & SEE students | Think Big Org - Together for Childhood, Against Injustice ";
+  }, []);
+  return (
+    <>
+      <Navbar />
+      <div className=" max-w-screen-2xl w-full h-full overflow-hidden p-8">
+        <div>
+          <h1 className=" text-2xl mt-20 font-semibold text-gray-700">
+            {" "}
+            Scholarship for needy SLC & SEE students. <span className=" text-xs text-red-600">(Deadline: May 20, 2025 ) </span> <span className=" text-xs text-red-700/75">Fee: $0</span>
+          </h1>
+          <h2 className=" text-gray-700/80 mt-2">
+            Education is at the heart of Think Big’s mission, and this scholarship represents a small yet meaningful step toward that goal. <br></br>
+            <br></br> <strong>The Arjuna </strong>Scholarship is an annual initiative supporting students from underprivileged backgrounds in Nepal, made possible through partnerships with various online education platforms (This round: Ambition Guru
+            Pvt Ltd). Each year, the scholarship is awarded to at least five students from Grade 10 and five from Grade 12, helping them continue their academic journey despite financial hardship. This effort addresses the ongoing gap in quality
+            education, especially in public institutions where students often lack access to adequate academic support beyond school.{" "}
+          </h2>
+          <h2 className="text-gray-700/80 mt-2">With this scholarship, students will receive free access to the Ambition Guru online portal, which includes daily live classes, ask any time, model sets, notes, and more—completely free of charge.</h2>
+          <p className=" text-gray-700/80 mt-2">
+            For more information visit:{" "}
+            <a className=" text-green-600 underline" href="https://www.ambition.guru/">
+              Ambition Guru
+            </a>
+          </p>
+        </div>
+        <div className=" flex mt-6 md:flex-row flex-col md:justify-between">
+          <div className=" w-full text-gray-700 p-4">
+            <h3 className="  ">What we are expecting?</h3>
+            <ul className=" list-inside mt-2 text-gray-600 list-decimal ml-3">
+              <li>A person with good morals.</li>
+              <li>Active involvement in extracurricular activities.</li>
+              <li>A passion for learning and teaching.</li>
+              <li>From a financially disadvantaged background.</li>
+            </ul>
+          </div>
+
+          <div className=" w-full md:border-l border-emerald-600 text-gray-700 p-4">
+            <h3 className="  ">What you should except?</h3>
+            <ul className=" mt-2 list-inside text-gray-600 list-decimal ml-3">
+              <li> One full year of scholarship from Ambition Guru. </li>
+              <li>Daily Live classes, Ask any time, Recorded Videos, chapter's MCQs & Notes etc. </li>
+              <li> Early access to Think Big's program </li>
+              <li> New connection and experience... </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <Apply_form />
+      <Apply_timeline />
+      <Footer />
+    </>
+  );
+};
+
+export default Apply;

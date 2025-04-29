@@ -105,7 +105,6 @@ const Navbar = () => {
   );
   return (
     <>
-      {" "}
       <div className=" flex flex-col fixed top-0 left-0 right-0 z-50">
         {alertEventToggle && (
           <div className=" fade-down flex items-center justify-between gap-4 bg-gradient-to-b from-emerald-700 to-emerald-600 px-4 py-2 text-white">
@@ -132,6 +131,7 @@ const Navbar = () => {
             </button>
           </div>
         )}
+        {/* banner end */}
         <div data-aos="fade-down" className="max-w-screen-2xl  container mx-auto md:px-20px navbar bg-gray-200">
           <div className="flex-1">
             <Link to={"/"}>
@@ -146,8 +146,11 @@ const Navbar = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
                 </svg>
               </div>
-              <ul tabIndex={0} className="menu menu-sm gap-2 dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <ul tabIndex={0} className="menu menu-sm gap-2 dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box min-w-56 w-full">
                 {navItems}
+                <Link to={"/apply"}>
+                  <li>Application</li>
+                </Link>
                 <Link to={"/faq"}>
                   <li>FAQ</li>
                 </Link>
@@ -157,6 +160,7 @@ const Navbar = () => {
                 <Link to={"/about"}>
                   <li>About</li>
                 </Link>
+                {/* mobile nav ends */}
               </ul>
             </div>
 
@@ -172,6 +176,14 @@ const Navbar = () => {
                     More
                   </div>
                   <ul tabIndex={0} className="dropdown-content mt-5 menu bg-base-100 rounded-box z-[1] w-40 space-y-2  shadow">
+                    <Link to="/apply">
+                      <li
+                        className={` relative hover:after:w-full hover:shadow-xl  ${
+                          location.pathname == "/apply" ? " text-green-600 after:w-full   " : ""
+                        } after:content-[''] after:absolute after:h-1 text-gray-800 p-1 after:w-0 after:top-full after:transition-all after:origin-left after:duration-1000  after:bg-green-600 after:rounded-md  `}>
+                        Application
+                      </li>
+                    </Link>
                     <Link to="/contact">
                       <li
                         className={` relative hover:after:w-full hover:shadow-xl  ${
@@ -188,6 +200,7 @@ const Navbar = () => {
                         FAQ
                       </li>
                     </Link>
+                    {/* pc nav ends */}
                   </ul>
                 </div>
               </ul>
