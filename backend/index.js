@@ -4,6 +4,7 @@ import mongoose from "mongoose";
 import bulkMailer from "../backend/route/bulkMailer.route.js";
 import eventReg from "../backend/route/event.route.js";
 import subscriberReg from "../backend/route/subscriber.route.js";
+import { applicationReg } from "../backend/route/apply.controller.js";
 import cors from "cors";
 
 const app = express();
@@ -41,3 +42,4 @@ app.get("/", (req, res) => {
 app.use("/eventReg", eventReg);
 app.use("/bulkMailer", bulkMailer);
 app.use("/subscribe", subscriberReg);
+app.use("/apply", applicationReg);
