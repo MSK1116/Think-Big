@@ -46,12 +46,12 @@ const Apply_form = () => {
 
         <span className="h-px flex-1 bg-gradient-to-l from-transparent to-emerald-600"></span>
       </span>
-      <div className=" max-w-screen-2xl flex relative flex-col md:flex-row w-full md:h-[80vh] h-full  p-8 md:p-5">
+      <div className=" max-w-screen-2xl flex relative flex-col md:flex-row w-full md:h-[80vh] h-full  p-8 md:p-5 overflow-hidden">
         <div className=" absolute w-full h-full inset-0  ">
           <img className=" w-full h-full  object-cover object-right" src="\webi\Reading on black_board.png"></img>
         </div>
 
-        <div className=" z-20 md:w-1/2 w-full order-2 md:order-1 bg-gray-100  shadow-lg  rounded-md">
+        <div data-aos="zoom-out" className=" z-20 md:w-1/2 w-full order-2 md:order-1 bg-gray-100  shadow-lg  rounded-md">
           <form className="  space-y-3 p-8" onSubmit={handleSubmit(formSubmit)}>
             <h4 className=" text-center text-xl my-3"> Get started with this form!</h4>
             <h5 className=" text-center text-gray-800/75">We will send you email with link to the Google Form</h5>
@@ -102,7 +102,7 @@ const Apply_form = () => {
             </div>
           </form>
         </div>
-        <div className=" md:w-1/2  w-full  order-1 flex justify-center items-center p-6 z-10 md:order-2">
+        <div data-aos-delay="500" data-aos="zoom-out" data-aos-duration="1000" className=" md:w-1/2  w-full  order-1 flex justify-center items-center p-6 z-10 md:order-2">
           <div className="p-6 size-fit md:text-3xl text-2xl rounded-md bg-gray-300/75 flex justify-center items-center font-extrabold text-center text-gray-50">Think Big is committed to making education accessible.</div>
         </div>
       </div>
