@@ -26,7 +26,7 @@ export const eventReg = async (req, res) => {
 
     const emailStatus = await sendConfirmationEmail({
       eventName,
-      Fullname,
+      fullName: Fullname,
       email,
       address,
       textarea,

@@ -13,8 +13,8 @@ export const sendConfirmationEmail = async (userDetails) => {
     const emailApi = new sibApiV3Sdk.TransactionalEmailsApi();
     const contactApi = new sibApiV3Sdk.ContactsApi();
 
-    if (userDetails.Fullname) {
-      const nameParts = (userDetails.Fullname || "N/A").trim().split(" ");
+    if (userDetails.fullName) {
+      const nameParts = (userDetails.fullName || "N/A").trim().split(" ");
       firstName = nameParts.shift();
       lastName = nameParts.join(" ");
     }
