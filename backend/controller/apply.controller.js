@@ -29,6 +29,7 @@ export const applicationReg = async (req, res) => {
     }
     const emailStatus = await sendConfirmationEmail({
       fullName: fullName,
+      address,
       eventName: "Application for Arjuna",
       email,
       date,
