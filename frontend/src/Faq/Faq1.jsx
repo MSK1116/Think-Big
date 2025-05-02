@@ -52,7 +52,7 @@ const Faq1 = () => {
             <input type="radio" name="my-accordion-2" />
             <h2 className="collapse-title text-xl font-medium">Where is ThinkBig located?</h2>
             <div className="collapse-content">
-              <h3 className="text-gray-400">ThinkBig is headquartered in [Location], but we have various chapters and programs running in different regions.</h3>
+              <h3 className="text-gray-400">ThinkBig is headquartered in Dhanusha, but we have various chapters and programs running in different regions.</h3>
             </div>
           </div>
           <div className="collapse collapse-arrow bg-gray-200">
