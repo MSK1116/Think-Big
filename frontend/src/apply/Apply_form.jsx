@@ -17,7 +17,7 @@ const Apply_form = () => {
   const [status, setStatus] = useState({ sending: false, sent: null, failed: null });
 
   const formSubmit = async (data) => {
-    const date = new Date().toUTCString();
+    const date = new Date().toLocaleString();
     setStatus({ sending: true, sent: false, failed: false });
     const dataToSend = {
       fullName: data.fullName,
