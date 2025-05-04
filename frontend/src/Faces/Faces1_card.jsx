@@ -1,12 +1,13 @@
 import React from "react";
+import Image_Loader from "../component/Img_Loader";
 
 const Faces1_card = ({ items }) => {
   return (
     <>
       <div>
         <div className="w-full rounded-lg p-12 flex z-0 flex-col justify-center items-center hover:shadow-lg">
-          <div className="mb-8 rounded-full overflow-hidden">
-            <img alt={items.title} data-aos="zoom-in" className="object-center object-cover rounded-full h-36 w-36 " src={`/faces/` + items.photo}></img>
+          <div data-aos="zoom-in" className="mb-8 rounded-full overflow-hidden">
+            <Image_Loader src={`/faces/` + items.photo} styleForPar={" h-36 w-36"} styleForImg={"object-center object-cover rounded-full h-36 w-36"} alt={items.title} />
           </div>
           <div className="text-center">
             <h1 data-aos="fade-up" className="text-xl text-gray-700 font-bold mb-2">

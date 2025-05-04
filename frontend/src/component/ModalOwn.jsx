@@ -8,7 +8,6 @@ const ModalOwn = ({ text, children }) => {
     <>
       <div className=" relative inline-block" onClick={() => document.getElementById(`${randomNumber}`).showModal()}>
         {children}
-
         <dialog id={`${randomNumber}`} className="modal">
           <div className="modal-box">
             <h3 className="font-bold">{text}</h3>

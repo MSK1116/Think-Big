@@ -11,6 +11,7 @@ import { MdLocalMovies, MdHealthAndSafety } from "react-icons/md";
 import { BiSolidCameraMovie } from "react-icons/bi";
 import { RiMovie2Fill, RiWomenLine } from "react-icons/ri";
 import SVGDollPlay from "../svg/SVGDollPlay";
+import Image_Loader from "../component/Img_Loader";
 
 const In_2025_banner = () => {
   return (

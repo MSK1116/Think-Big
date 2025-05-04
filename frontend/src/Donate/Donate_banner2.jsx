@@ -55,8 +55,8 @@ const Donate_banner2 = () => {
       <div className="  max-w-screen-2xl overflow-hidden w-full ">
         <div className="md:mt-14 mt-16  relative">
           {isLoading && (
-            <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
-              <div className="h-12 w-12 border-4 border-gray-300 border-t-transparent rounded-full animate-spin"></div>
+            <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-b from-slate-100 to-gray-200 bg-opacity-50">
+              <div className="h-12 w-12 loader"></div>
             </div>
           )}
           <video onTimeUpdate={handleDuration} ref={bgVideo} className="w-full h-full outline-none inset-0 " autoPlay muted loop playsInline>

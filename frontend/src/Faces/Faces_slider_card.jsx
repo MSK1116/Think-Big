@@ -1,4 +1,5 @@
 import React from "react";
+import Image_Loader from "../component/Img_Loader";
 
 const Faces_slider_card = ({ items }) => {
   return (
@@ -14,7 +15,7 @@ const Faces_slider_card = ({ items }) => {
                 <h2 className="text-2xl font-bold text-green-600 sm:text-3xl">{items.title}</h2>{" "}
               </div>
               <div>
-                <img className=" object-center object-cover rounded-full w-20 h-20" src={`/faces/` + items.photo}></img>
+                <Image_Loader src={`/faces/` + items.photo} styleForPar={"rounded-full w-20 h-20"} styleForImg={"object-center object-cover rounded-full w-20 h-20"} alt={items.title} />
               </div>
             </div>
 

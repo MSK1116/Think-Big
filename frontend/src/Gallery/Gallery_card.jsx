@@ -1,4 +1,5 @@
 import React from "react";
+import Image_Loader from "../component/Img_Loader";
 
 const GalleryCard = ({ items }) => {
   // Construct the background image URL
@@ -8,12 +9,12 @@ const GalleryCard = ({ items }) => {
     <div className="w-full p-6 mx-auto">
       <div data-aos="fade-up" data-aos-offset="50" onClick={() => document.getElementById(items.id).showModal()} className="shadow-md hover:shadow-xl rounded bg-white overflow-hidden cursor-pointer">
         <div className="grid grid-cols-2 h-64">
-          <div className="h-64 border overflow-hidden">
-            <img className="object-cover hover:scale-105 transition-all duration-300 h-64 w-full" src={`/prg/${items.img1}.jpg`} alt="Image 1" />
+          <div className="h-64 border overflow-hidden ">
+            <Image_Loader styleForPar={" size-full"} src={`/prg/${items.img1}.jpg`} styleForImg={"object-cover hover:scale-105 transition-all duration-300 h-64 w-full"} alt={items.description} />
           </div>
           <div className="h-64 border overflow-hidden">
-            <img className="object-cover hover:scale-105 transition-all duration-300 h-32 w-full" src={`/prg/${items.img2}.jpg`} alt="Image 2" />
-            <img className="object-cover hover:scale-105 transition-all duration-300 h-32 w-full" src={`/prg/${items.img3}.jpg`} alt="Image 3" />
+            <Image_Loader styleForPar={" h-32 w-full"} src={`/prg/${items.img2}.jpg`} styleForImg={"object-cover hover:scale-105 transition-all duration-300 h-32 w-full "} alt={items.description} />
+            <Image_Loader styleForPar={" h-32 w-full"} src={`/prg/${items.img3}.jpg`} styleForImg={"object-cover hover:scale-105 transition-all duration-300 h-32 w-full "} alt={items.description} />
           </div>
         </div>
         <div className="p-3">
