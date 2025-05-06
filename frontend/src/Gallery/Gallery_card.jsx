@@ -2,7 +2,6 @@ import React from "react";
 import Image_Loader from "../component/Img_Loader";
 
 const GalleryCard = ({ items }) => {
-  // Construct the background image URL
   const backgroundImageUrl = `/prg/${items.img1}.jpg`;
 
   return (

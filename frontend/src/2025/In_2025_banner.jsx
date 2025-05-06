@@ -63,7 +63,7 @@ const In_2025_banner = () => {
               achieving their dreams.{" "}
             </h2>
           </div>
-          <a data-aos="fade-right" className=" md:text-sm text-xs  p-2 text-right bg-emerald-600 hover:bg-emerald-700 absolute bottom-7 z-10  -left-9 text-white rounded-r-md  max-w-fit" href="/apply">
+          <a data-aos="fade-right" className=" md:text-sm text-xs  p-2 text-right bg-emerald-600 hover:bg-emerald-700 absolute md:bottom-7 -bottom-7 z-10  -left-9 text-white rounded-r-md  max-w-fit" href="/apply">
             Apply now!
           </a>
           <div className=" hidden md:block">

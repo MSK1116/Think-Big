@@ -70,5 +70,32 @@
     "img3": "prgh3",
     "description": "Thanks to everyone for participating in this virtual session. We hope it would be great an endeavour for reaching you goal, and we believe that everyone participating this program could get some grasps of future path. And thanks to all the participants and our Guest Mr. Aashish Panta for making this event happen. Please reach out to us if you need any sort of help and advice regarding any confusion for that session.",
     "date": "Sunday, August 25, 2024"
+  },
+  {
+    "title": "Mental Disorder's Symptoms & Cause ",
+    "id": 9,
+    "img1": "prgi1",
+    "img2": "prgi2",
+    "img3": "prgi3",
+    "description": "In Episode 1 of the Mental Health Program titled 'Mental Disorder's Symptoms & Cause,' Dr. Santosh Shah discusses the WHO definition of health, explains what mental health truly means, and outlines the core symptom categories—cognitive, emotional, behavioral, physical, and perceptual—highlighting how they can indicate underlying mental disorders.",
+    "date": "Saturday, February 22, 2025"
+  },
+  {
+    "title": " Depression & Anxiety",
+    "id": 10,
+    "img1": "prgj1",
+    "img2": "prgj2",
+    "img3": "prgj3",
+    "description": "In Episode 2, Dr. Santosh Shah explores the impact of depression and anxiety, detailing their cognitive, emotional, and physical symptoms, as well as the personal, social, and economic burdens including suicide risk, substance use, and reduced quality of life.",
+    "date": "Saturday, March 1, 2025"
+  },
+  {
+    "title": "Suicide & Prevention ",
+    "id": 11,
+    "img1": "prgk1",
+    "img2": "prgk2",
+    "img3": "prgk3",
+    "description": "In Episode 3, Dr. Santosh Shah addresses suicide and its prevention, discussing risk factors, warning signs, underlying mental health conditions, and strategies for early intervention, support, and community-based prevention efforts.",
+    "date": "Saturday, March 15, 2025"
   }
 ]

@@ -4,13 +4,13 @@ import eventsList from "./Events.json";
 import { useNavigate } from "react-router-dom";
 const Events_banner2 = () => {
   const navigate = useNavigate();
-  const events3 = eventsList.filter((data) => data.id < 9);
+  const events3 = eventsList.filter((data) => data.id < 12).sort((a, b) => b.id - a.id);
 
   return (
     <>
       <section className="md:p-8 p-5 block  ">
         <h1 data-aos="fade-up" className="font-bold text-green-600 text-center md:text-left text-xl md:text-2xl ">
-          See more
+          Events at glance
         </h1>
         <div className="grid md:grid-cols-3">
           {events3.map((events3) => (
