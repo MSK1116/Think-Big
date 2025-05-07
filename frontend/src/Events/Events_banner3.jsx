@@ -20,8 +20,7 @@ const Events_banner3 = () => {
               <FaSquare className=" md:size-40  size-32 text-emerald-700 " />
               <ScrollTrigger onEnter={() => setCounterState(true)} onExit={() => setCounterState(false)}>
                 <span className=" absolute top-10  flex flex-col w-full justify-center items-center md:text-7xl text-5xl text-white">
-                  {" "}
-                  {counterState && <CountUp start={0} end={8} duration={4} />} <span className="  text-sm text-white ">Event counter</span>
+                  {counterState && <CountUp start={0} end={11} duration={4} />} <span className="  text-sm text-white ">Event counter</span>
                 </span>
               </ScrollTrigger>
             </div>
