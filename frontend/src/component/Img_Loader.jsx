@@ -8,21 +8,21 @@ const Image_Loader = ({ lowSrc, src, alt, styleForImg, styleForPar, size = 24 })
       setLoad2(false);
     }
   }, [lowSrc, Load]);
-  const onLoadimg = () => {
+  const onLoading = () => {
     setLoad(false);
   };
-  const onLoadimg2 = () => {
+  const onLoading2 = () => {
     setLoad2(false);
   };
 
   return (
     <div className={`relative  " " ${styleForPar}`}>
-      <img className={` hidden  `} onLoad={onLoadimg} src={src} alt={alt} />
-      {!Load && <img className={` ${styleForImg} line-clamp-6 `} onLoad={onLoadimg} src={src} alt={alt} />}
+      <img className={` hidden  `} onLoad={onLoading} src={src} alt={alt} />
+      {!Load && <img className={` ${styleForImg} line-clamp-6 `} onLoad={onLoading} src={src} alt={alt} />}
       {Load &&
         (lowSrc ? (
           <>
-            <img className={`${styleForImg} line-clamp-6 `} onLoad={onLoadimg2} src={lowSrc} alt={alt} />
+            <img className={`${styleForImg} line-clamp-6 `} onLoad={onLoading2} src={lowSrc} alt={alt} />
             <div className=" flex space-x-2 items-center absolute text-green-600 bottom-2 left-2 text-xs">
               <div> Fetching HD version...</div>
               <svg className="animate-spin text-black" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width={10} height={10}>
