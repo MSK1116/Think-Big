@@ -1,8 +1,10 @@
-import React from "react";
-import Faces from "./MFaces.json";
+import React, { useEffect } from "react";
+import faces_list from "./MFaces.json";
 import Faces1_card from "./Faces1_card";
 
 const Faces2 = () => {
+  const Faces = faces_list.sort((a, b) => a.id - b.id);
+
   return (
     <>
       <div name="mentor" className="bg-gray-50 p-8 h-full z-0">
