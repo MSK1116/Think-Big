@@ -68,13 +68,13 @@ const Faces_slider = () => {
                 collective vision shapes the world for the better.
               </p>
               <div className="hidden lg:mt-8 lg:flex lg:gap-4">
-                <button aria-label="Previous slide" id="keen-slider-previous-desktop" className="rounded-full border border-green-600 p-3 text-green-600 transition hover:bg-green-600 hover:text-white">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-5 rtl:rotate-180">
+                <button aria-label="Previous slide" id="keen-slider-previous-desktop" className="rounded-full border group border-green-600 p-3 text-green-600 transition hover:bg-green-600 hover:text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-5 group-active:-translate-x-1 transition-all  rtl:rotate-180">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
                   </svg>
                 </button>
-                <button aria-label="Next slide" id="keen-slider-next-desktop" className="rounded-full border border-green-600 p-3 text-green-600 transition hover:bg-green-600 hover:text-white">
-                  <svg className="size-5 rtl:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <button aria-label="Next slide" id="keen-slider-next-desktop" className="rounded-full group border border-green-600 p-3 text-green-600 transition hover:bg-green-600 hover:text-white">
+                  <svg className="size-5 rtl:rotate-180 group-active:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M9 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />
                   </svg>
                 </button>
@@ -90,7 +90,7 @@ const Faces_slider = () => {
           </div>
           <div className="mt-8 flex justify-center gap-4 lg:hidden">
             <button aria-label="Previous slide" id="keen-slider-previous" className="rounded-full border border-green-600 p-4 text-green-600 transition hover:bg-green-600 hover:text-white">
-              <svg className="size-5 -rotate-180 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <svg className="size-5 -rotate-180 transform " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M9 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />
               </svg>
             </button>
