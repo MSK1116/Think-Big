@@ -9,6 +9,7 @@ import { FaInstagramSquare } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { FaReact } from "react-icons/fa";
 import NewsletterSignup from "./NewsletterSignup";
+import SVGMountainAndTemples from "../svg/SVGMountainAndTemples";
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -18,9 +19,19 @@ const Footer = () => {
         <div className=" absolute md:right-80 md:top-16 md:size-full -bottom-28 -right-24 size-72   -rotate-[40deg]">
           <img data-aos="zoom-in-left" data-aos-duration="1500" className=" w-full h-full object-contain " src="\webi\slogan_flag.png"></img>
         </div>
-        <div className="relative mx-auto max-w-screen-xl p-8 ">
+        <div
+          data-aos-delay="200"
+          data-aos-duration="700"
+          data-aos-easing="ease-in-out-back"
+          data-aos="fade-down"
+          data-aos-anchor="#anchorForSVG"
+          data-aos-anchor-placement="bottom-bottom"
+          className="hidden md:block absolute top-2  right-44  size-fit">
+          <SVGMountainAndTemples Hei={65} Wid={300} />
+        </div>
+        <div className="relative mx-auto max-w-screen-xl p-8">
           <div className="lg:flex space-y-7 lg:items-end lg:justify-between">
-            <div data-aos="zoom-in" className=" md:text-left text-center  flex flex-col md:items-start items-center">
+            <div data-aos="zoom-in" className=" md:text-left text-center flex flex-col md:items-start items-center">
               <img className="h-20 w-20" src={logo}></img>
               <p className=" text-green-600 leading-relaxed  ">
                 Think Big<br></br>Dhanusha, Nepal{" "}
@@ -30,7 +41,7 @@ const Footer = () => {
                 contact@thinkbig.org.np
               </a>
             </div>
-            <div className="flex flex-col space-y-5 ">
+            <div id="anchorForSVG" className="flex flex-col space-y-5  ">
               <NewsletterSignup />
               <ul data-aos="fade-up" className=" flex flex-wrap justify-center gap-6 md:gap-8 lg:mt-0 lg:justify-end lg:gap-12">
                 <li>

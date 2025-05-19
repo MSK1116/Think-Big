@@ -207,11 +207,17 @@ const Navbar = () => {
             </div>
             <div className="flex-none space-x-4">
               {/* <Notification /> */}
-              <Link onClick={() => document.getElementById("my_modal_2").showModal()}>
+              {/* <Link onClick={() => document.getElementById("my_modal_2").showModal()}>
                 <button className=" after:content-['']  hover:after:content-['CALL'] after:text-center after:flex after:justify-center after:items-center after:absolute  after:z-10 after:w-full after:h-full after:scale-x-0 hover:after:scale-x-100 after:origin-left after:rounded-lg after:transition-all after:duration-700 after:ease-out  after:bg-red-600  btn relative  hover:bg-emerald-600 bg-emerald-600  transition-all border-none text-white uppercase font-semibold md:tracking-wide  tracking-normal after:font-semibold after:md:tracking-wide  after:tracking-normal ">
                   In trouble?
                 </button>
-              </Link>
+              </Link> */}
+              <button type="button" onClick={() => document.getElementById("my_modal_2").showModal()} className=" group/callBtn overflow-hidden relative bg-emerald-600 rounded-md text-white font-semibold px-3 py-2">
+                <div className=" justify-center items-center">
+                  <div className=" absolute -translate-x-36 group-hover/callBtn:translate-x-0 transition-all duration-700 flex inset-0 justify-center items-center bg-red-600"> Call</div>
+                  <div className="group-hover/callBtn:-translate-x-36  transition-all duration-700">In trouble?</div>
+                </div>
+              </button>
             </div>
           </div>
         </div>

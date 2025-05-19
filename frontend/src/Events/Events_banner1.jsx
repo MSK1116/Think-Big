@@ -140,13 +140,21 @@ const Events_banner1 = () => {
             </div>
 
             <div className="mt-4 md:mt-8">
-              <button
+              {/* <button
                 onClick={formVisibility}
                 disabled={false}
                 className={` ${
                   !registerForm ? " after:scale-x-100  " : " "
                 } relative cursor-pointer after:transition-all after:flex after:items-center after:justify-center after:origin-left after:duration-700 after:ease-in-out  after:absolute after:top-0 after:right-0 after:rounded after:z-10 after:content-['Fill_the_form'] after:h-full after:w-full after:scale-x-0 after:bg-red-600 hover:after:bg-red-700 inline-block rounded bg-emerald-600 px-12 py-3   text-sm font-medium text-white transition-all hover:bg-emerald-700 outline-none `}>
                 Register
+
+              </button> */}
+
+              <button className=" px-8 py-2 bg-emerald-600 text-white rounded-md overflow-hidden relative" onClick={formVisibility} disabled={false} type="button">
+                <div className=" size-full">
+                  <div className={` ${registerForm ? "-translate-x-36" : "translate-x-0"} transition-all duration-700 bg-emerald-700  absolute inset-0 flex justify-center items-center `}>Fill the form</div>
+                  <div className={` ${registerForm ? " translate-x-0" : " translate-x-36 "} transition-all duration-700 `}>Register</div>
+                </div>
               </button>
             </div>
           </div>

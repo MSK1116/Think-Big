@@ -18,7 +18,8 @@ const Home_banner = () => {
       <div className="hidden md:block max-w-screen-2xl">
         <Bee num={6} />
       </div>
-      <section className="max-w-screen-2xl mt-9 md:mt-0   md:h-screen p-8 flex  flex-col items-center md:justify-center ">
+      <section className="max-w-screen-2xl relative  mt-9 md:mt-0 md:h-screen p-8 flex  flex-col items-center md:justify-center ">
+        <div className=" w-full h-full absolute inset-0 bg-[url(/webi/mountains.png)] bg-cover bg-center opacity-10 md:opacity-5  bg-no-repeat "></div>
         <div className=" w-full  flex flex-col items-center">
           <div data-aos="zoom-out" data-aos-duration="1000" className="">
             <Image_Loader styleForPar={" w-56 "} styleForImg={"w-full h-full "} src={Logo1} />
