@@ -57,7 +57,7 @@ const Navbar = () => {
         <li
           className={` relative hover:after:w-full  ${
             location.pathname == "/" ? " text-green-600 after:w-full   " : ""
-          } after:content-[''] after:absolute after:h-1 after:w-0 after:top-full after:transition-all after:origin-left after:duration-1000  after:bg-green-600 after:rounded-md  `}>
+          } active:-translate-y-[1px] after:content-[''] after:absolute after:h-1 after:w-0 after:top-full after:transition-all after:origin-left after:duration-1000  after:bg-green-600 after:rounded-md  `}>
           Home
         </li>
       </Link>
@@ -65,7 +65,7 @@ const Navbar = () => {
         <li
           className={` relative hover:after:w-full  ${
             location.pathname == "/2025" ? " text-green-600 after:w-full  " : ""
-          } after:content-[''] after:absolute after:h-1 after:w-0 after:top-full after:transition-all after:origin-left after:duration-1000  after:bg-green-600 after:rounded-md  `}>
+          } active:-translate-y-[1px]  after:content-[''] after:absolute after:h-1 after:w-0 after:top-full after:transition-all after:origin-left after:duration-1000  after:bg-green-600 after:rounded-md  `}>
           In 2025
         </li>
       </Link>
@@ -73,7 +73,7 @@ const Navbar = () => {
         <li
           className={` relative hover:after:w-full  ${
             location.pathname == "/member" ? " text-green-600 after:w-full   " : ""
-          } after:content-[''] after:absolute after:h-1 after:w-0 after:top-full after:transition-all after:origin-left after:duration-1000  after:bg-green-600 after:rounded-md  `}>
+          } active:-translate-y-[1px]  after:content-[''] after:absolute after:h-1 after:w-0 after:top-full after:transition-all after:origin-left after:duration-1000  after:bg-green-600 after:rounded-md  `}>
           Faces
         </li>
       </Link>
@@ -81,7 +81,7 @@ const Navbar = () => {
         <li
           className={` relative hover:after:w-full  ${
             location.pathname == "/event" ? " text-green-600 after:w-full   " : ""
-          } after:content-[''] after:absolute after:h-1 after:w-0 after:top-full after:transition-all after:origin-left after:duration-1000  after:bg-green-600 after:rounded-md  `}>
+          } active:-translate-y-[1px]  after:content-[''] after:absolute after:h-1 after:w-0 after:top-full after:transition-all after:origin-left after:duration-1000  after:bg-green-600 after:rounded-md  `}>
           Events
         </li>
       </Link>
@@ -89,7 +89,7 @@ const Navbar = () => {
         <li
           className={` relative hover:after:w-full  ${
             location.pathname == "/about" ? " text-green-600 after:w-full   " : ""
-          } after:content-[''] after:absolute after:h-1 after:w-0 after:top-full after:transition-all after:origin-left after:duration-1000  after:bg-green-600 after:rounded-md  `}>
+          } active:-translate-y-[1px]  after:content-[''] after:absolute after:h-1 after:w-0 after:top-full after:transition-all after:origin-left after:duration-1000  after:bg-green-600 after:rounded-md  `}>
           About
         </li>
       </Link>
@@ -97,7 +97,7 @@ const Navbar = () => {
         <li
           className={` relative hover:after:w-full  ${
             location.pathname == "/giveus" ? " text-green-600 after:w-full   " : ""
-          } after:content-[''] after:absolute after:h-1 after:w-0 after:top-full after:transition-all after:origin-left after:duration-1000  after:bg-green-600 after:rounded-md  `}>
+          } active:-translate-y-[1px]  after:content-[''] after:absolute after:h-1 after:w-0 after:top-full after:transition-all after:origin-left after:duration-1000  after:bg-green-600 after:rounded-md  `}>
           Donate
         </li>
       </Link>
@@ -172,7 +172,7 @@ const Navbar = () => {
                     ["/contact", "/faq"].includes(location.pathname) ? " text-green-600 after:w-full   " : ""
                   } after:content-[''] after:absolute after:h-1 after:w-0 after:top-full after:transition-all after:origin-left after:duration-1000  after:bg-green-600 after:rounded-md  `}>
                   {" "}
-                  <div tabIndex={0} role="button" className="">
+                  <div tabIndex={0} role="button" className="active:-translate-y-[1px] ">
                     More
                   </div>
                   <ul tabIndex={0} className="dropdown-content mt-5 menu bg-base-100 rounded-box z-[1] w-40 space-y-2  shadow">
@@ -180,7 +180,7 @@ const Navbar = () => {
                       <li
                         className={` relative hover:after:w-full hover:shadow-xl  ${
                           location.pathname == "/apply" ? " text-green-600 after:w-full   " : ""
-                        } after:content-[''] after:absolute after:h-1 text-gray-800 p-1 after:w-0 after:top-full after:transition-all after:origin-left after:duration-1000  after:bg-green-600 after:rounded-md  `}>
+                        } active:-translate-y-[1px]  after:content-[''] after:absolute after:h-1 text-gray-800 p-1 after:w-0 after:top-full after:transition-all after:origin-left after:duration-1000  after:bg-green-600 after:rounded-md  `}>
                         Application
                       </li>
                     </Link>
@@ -188,7 +188,7 @@ const Navbar = () => {
                       <li
                         className={` relative hover:after:w-full hover:shadow-xl  ${
                           location.pathname == "/contact" ? " text-green-600 after:w-full   " : ""
-                        } after:content-[''] after:absolute after:h-1 text-gray-800 p-1 after:w-0 after:top-full after:transition-all after:origin-left after:duration-1000  after:bg-green-600 after:rounded-md  `}>
+                        } active:-translate-y-[1px]  after:content-[''] after:absolute after:h-1 text-gray-800 p-1 after:w-0 after:top-full after:transition-all after:origin-left after:duration-1000  after:bg-green-600 after:rounded-md  `}>
                         Contact
                       </li>
                     </Link>
@@ -196,7 +196,7 @@ const Navbar = () => {
                       <li
                         className={` relative hover:after:w-full hover:shadow-xl  ${
                           location.pathname == "/faq" ? " text-green-600 after:w-full   " : ""
-                        } after:content-[''] after:absolute after:h-1 text-gray-800 p-1 after:w-0 after:top-full after:transition-all after:origin-left after:duration-1000  after:bg-green-600 after:rounded-md  `}>
+                        } active:-translate-y-[1px]  after:content-[''] after:absolute after:h-1 text-gray-800 p-1 after:w-0 after:top-full after:transition-all after:origin-left after:duration-1000  after:bg-green-600 after:rounded-md  `}>
                         FAQ
                       </li>
                     </Link>
