@@ -1,29 +1,4 @@
-import sibApiV3Sdk from "sib-api-v3-sdk";
-import dotenv from "dotenv";
-
-dotenv.config();
-
-export const bulkMailer = async (req, res) => {
-  try {
-    const brevoClient = sibApiV3Sdk.ApiClient.instance;
-    const apiKey = brevoClient.authentications["api-key"];
-    apiKey.apiKey = process.env.BREVO_API_KEY;
-
-    const { recipient, subject } = req.body;
-
-    if (!recipient || !subject) {
-      return res.status(400).json({ message: "Missing or invalid required fields" });
-    }
-
-    const emailApi = new sibApiV3Sdk.TransactionalEmailsApi();
-
-    const sender = { email: "manishsingh-no-reply@thinkbig.org.np", name: "Manish Singh Mahato | Think Big Org" };
-
-    const emailData = {
-      sender,
-      to: [{ email: recipient.email }],
-      subject,
-      htmlContent: ` <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -289,13 +264,4 @@ export const bulkMailer = async (req, res) => {
 
 </body>
 
-</html>`,
-    };
-    await emailApi.sendTransacEmail(emailData);
-
-    res.status(200).json({ message: "Emails sent successfully!" });
-  } catch (error) {
-    console.error("Failed to send emails:", error.message);
-    res.status(500).json({ message: "Internal server error" });
-  }
-};
+</html>
