@@ -8,11 +8,22 @@ import { MdOutlineMessage } from "react-icons/md";
 const Navbar = () => {
   const navigate = useNavigate();
   const [alertEventToggle, setAlertEventToggle] = useState(true);
+  const [sticky, setSticky] = useState(false);
 
   useEffect(() => {
     Aos.init();
     Aos.refresh();
   }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      window.scrollY > 0 ? setSticky(true) : setSticky(false);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  });
 
   useEffect(() => {
     if (getEventToogleCookie()) {
@@ -103,9 +114,10 @@ const Navbar = () => {
       </Link>
     </>
   );
+
   return (
     <>
-      <div className=" flex flex-col fixed top-0 left-0 right-0 z-50">
+      <div data-aos="fade-down" data-aso-offset="100" className=" flex flex-col fixed top-0 left-0 right-0 z-50">
         {alertEventToggle && (
           <div className=" fade-down flex items-center justify-between gap-4 bg-gradient-to-b from-emerald-700 to-emerald-600 px-4 py-2 text-white">
             <p className="md:text-sm text-xs font-medium cursor-default">
@@ -132,7 +144,7 @@ const Navbar = () => {
           </div>
         )}
         {/* banner end */}
-        <div data-aos="fade-down" className="max-w-screen-2xl  container mx-auto md:px-20px navbar bg-gray-200">
+        <div className={`  transition-all duration-500 max-w-screen-2xl shadow-md container mx-auto md:px-20px navbar bg-slate-200 ${sticky ? " bg-slate-300  shadow-xl " : ""} `}>
           <div className="flex-1">
             <Link to={"/"}>
               {" "}
