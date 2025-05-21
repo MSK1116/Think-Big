@@ -5,8 +5,6 @@ import Butterfly from "../component/Butterfly";
 import { ReactTyped } from "react-typed";
 import Bee from "../component/Bee";
 import AOS from "aos";
-import { Link } from "react-router-dom";
-import Image_Loader from "../component/Img_Loader";
 
 const Home_banner = () => {
   useEffect(() => {

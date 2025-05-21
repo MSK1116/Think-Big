@@ -14,7 +14,7 @@ const Apply = () => {
       <div className=" max-w-screen-2xl w-full h-full overflow-hidden p-8">
         <div>
           <h1 data-aos="fade-right" data-aos-duration="1000" className=" text-2xl flex md:flex-row flex-col items-baseline mt-20 font-semibold  text-gray-700">
-            Scholarship for needy SLC & SEE students. <span className=" text-xs text-red-600">(Deadline: May 20, 2025 ) </span> <span className=" text-xs text-red-700/75">Fee: $0</span>
+            Scholarship for needy SLC & SEE students. <span className=" text-xs text-red-600">(New deadline: June 04, 2025 ) </span> <span className=" text-xs text-red-700/75">Fee: $0</span>
           </h1>
           <h2 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400" className=" text-gray-700/80 mt-2">
             Education is at the heart of Think Big’s mission, and this scholarship represents a small yet meaningful step toward that goal. <br></br>
