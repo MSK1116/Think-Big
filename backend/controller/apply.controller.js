@@ -38,11 +38,11 @@ export const applicationReg = async (req, res) => {
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Event Registration Confirmation</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -59,234 +59,124 @@ export const applicationReg = async (req, res) => {
             padding: 20px;
             border-radius: 8px;
         }
-
-        .header {
-            display: flex;
-            align-items: center;
-            padding-bottom: 20px;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #f0f0f0;
-            position: relative;
-        }
-
-        .logo-col {
-            flex: 0 0 50px;
-        }
-
-        .logo-col img {
-            max-width: 100px;
-        }
-
-        .text-col {
-            flex: 1;
-            padding-left: 15px;
-        }
-
-        .text-col h1 {
-            font-family: 'Poppins', sans-serif;
-            font-weight: 600;
-            font-size: 28px;
-            color: #2D9C6D;
-            /* bg-emeralad-700 color */
-            margin: 0;
-            text-align: center;
-        }
-
-        .text-col p {
-            font-family: 'Poppins', sans-serif;
-            font-weight: 400;
-            font-size: 14px;
-            color: #777;
-            margin: 5px 0 0 0;
-            text-align: center;
-        }
-
-        .reg-number {
-            font-family: 'Poppins', sans-serif;
-            font-weight: 400;
-            font-size: 10px;
-            color: #777;
-            text-align: center;
-        }
-
-        .email-content {
-            font-size: 16px;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        .btn-container {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 20px;
-            gap: 10px;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 10px 10px;
-            background-color: #2D9C6D;
-            /* bg-emeralad-700 */
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            text-align: center;
-            width: 48%;
-            /* Adjust width for side-by-side */
-            margin-bottom: 10px;
-            margin-left: 10px;
-            /* Add gap between buttons on mobile */
-        }
-
-        .btn i {
-            margin-right: 8px;
-            /* Add some space between the icon and the text */
-        }
-
-        .footer {
-            font-size: 14px;
-            text-align: center;
-            color: #777;
-            padding-top: 20px;
-        }
-
-        .footer p {
-            margin: 5px 0;
-        }
-
-        .footer a {
-            color: #3498db;
-            text-decoration: none;
-        }
-
-        .footer a:hover {
-            text-decoration: none;
-        }
-
-        /* Footer Styles */
-        .footer-container {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 30px;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        .footer-left {
-            font-family: 'Poppins', sans-serif;
-            font-size: 12px;
-            color: #777;
-            text-align: left;
-            width: 50%;
-        }
-
-        .footer-left p {
-            margin: 0;
-        }
-
-        .footer-right {
-            font-family: 'Playfair Display', serif;
-            font-size: 16px;
-            color: #333;
-            text-align: center;
-            width: 50%;
-        }
-
-        /* Responsive adjustments */
-        @media screen and (max-width: 600px) {
-            .btn {
-                width: 100%;
-                /* Stack buttons full width on small screens */
-            }
-
-            .footer-container {
-                flex-direction: column;
-                text-align: center;
-            }
-        }
     </style>
 </head>
 
 <body>
-
     <div class="email-container">
+        <!-- Header -->
+        <table role="presentation" cellpadding="0" cellspacing="0" width="100%"
+            style="max-width: 600px; margin: 0 auto; border-bottom: 2px solid #f0f0f0; padding-bottom: 5px; margin-bottom: 5px;">
+            <tr>
+                <!-- Logo Column -->
+                <td style="width: 100px; padding: 10px;">
+                    <img src="https://www.thinkbig.org.np/Logo_noBg.png" alt="Think Big Logo"
+                        style="max-width: 100%; height: auto; display: block; margin: 0 auto;" />
+                </td>
 
-        <div class="header">
-            <div class="logo-col">
-                <img src="https://www.thinkbig.org.np/Logo_noBg.png" alt="Think Big Logo">
-            </div>
-            <div class="text-col">
-                <h1>Think Big Organization</h1>
-                <p>Serving since 2023</p>
-                <div class="reg-number">
-                    Regd. No. 3435/080/081
+                <!-- Text Column -->
+                <td style="padding: 10px; text-align: center; font-family: 'Poppins', Arial, sans-serif;">
+                    <h1 style="margin: 0; font-size: 24px; color: #2D9C6D;">Think Big Organization</h1>
+                    <p style="margin: 0 0; font-size: 12px; color: #777;">Serving since 2023</p>
+                    <p style="margin: 0 0; font-size: 10px; color: #777;">Regd. No. 3435/080/081</p>
+                    <p style="margin: 5px 0; font-size: 14px;">
+                        <a href="https://www.thinkbig.org.np" target="_blank"
+                            style="color: #2D9C6D; text-decoration: none;">thinkbig.org.np</a>
+                    </p>
+                </td>
+            </tr>
+        </table>
+
+        <!-- email body -->
+        <div style="color: #333; font-size: 15px;">
+            <div style="padding: 0px;">
+                <p>Dear <span style="color:#2D9C6D">${recipient.firstName}</span>,</p>
+
+                <div>
+                    <p>Thank you for your interest in Arjuna Scholarship-2025.</p>
+
+                    <p style="text-wrap:none;">Please complete your registration by filling up this
+                        <a style="color: #2D9C6D; font-weight: 800; text-decoration:none;"
+                            href="https://forms.gle/PjGDjcGYksch7iky5"> Google
+                            form</a>
+
+                    </p>
+                    <p style=" font-size:11px; font-weight: 700;">Note: We recommend you to not share this google form
+                        randomly, instead,
+                        you may share our
+                        website's application page.</p>
+                    <table cellspacing="0" cellpadding="0" style="  color: #333; line-height: 1.2;">
+                        <tr>
+                            <td style="padding-bottom: 0px;">Wishing you all the best,</td>
+                        </tr>
+                    </table>
                 </div>
-                <p><a href="https://www.thinkbig.org.np"
-                        style="color: #2D9C6D; text-decoration: none;">thinkbig.org.np</a></p>
             </div>
         </div>
-
-
-        <div class="email-content">
-            <div>
-                <div style="padding: 20px;">
-                    <p>Hey <span style="color:#2D9C6D">${firstName}</span>, </p>
-
-                    <div>
-
-
-                        <p>Thank you for your interest in <strong>Arjuna Scholarship-2025</strong>.
-                        </p>
-
-                        <div>
-                            Please complete your registration by filling up this <a target="_blank"
-                                href="https://forms.gle/dk4v59y7tk3HSU8g7">Google form</a>
-                        </div>
-
-                        <div style="margin-top: 3px; font-size: 12px;">
-                            Note: We recommend you to not share this google form randomly, instead, you may share our
-                            website's application page.
-                        </div>
-
-
-                    </div>
-                </div>
-                <hr>
-
-
-                <div class="btn-container">
-                    <a href="https://www.thinkbig.org.np/giveus" class="btn">
-                        <i class="fa fa-heart"></i> Support Our Mission
+        <hr />
+        <!-- three button -->
+        <table role="presentation" cellpadding="0" cellspacing="0" style=" width: 100%; max-width: 600px;">
+            <tr>
+                <td style="padding: 5px; width: 33.33%; text-align: center;">
+                    <a href="https://www.thinkbig.org.np/giveus" target="_blank"
+                        style="display: inline-block; width: 90%; padding: 10px 0; background-color: #2D9C6D; color: #ffffff; border-radius: 5px; text-decoration: none; font-size: 14px; font-family: Arial, sans-serif;">
+                        ❤️ Support
                     </a>
-                    <a href="https://www.thinkbig.org.np/2025" class="btn">
-                        Our 2025 Goal
+                </td>
+                <td style="padding: 5px; width: 33.33%; text-align: center;">
+                    <a href="https://www.thinkbig.org.np/2025" target="_blank"
+                        style="display: inline-block; width: 90%; padding: 10px 0; background-color: #2D9C6D; color: #ffffff; border-radius: 5px; text-decoration: none; font-size: 14px; font-family: Arial, sans-serif;">
+                        🎯 2025 Goal
                     </a>
-                    <a href="https://www.thinkbig.org.np/event" class="btn">
-                        Event
+                </td>
+                <td style="padding: 5px; width: 33.33%; text-align: center;">
+                    <a href="https://www.thinkbig.org.np/event" target="_blank"
+                        style="display: inline-block; width: 90%; padding: 10px 0; background-color: #2D9C6D; color: #ffffff; border-radius: 5px; text-decoration: none; font-size: 14px; font-family: Arial, sans-serif;">
+                        📅 Events
                     </a>
-                </div>
-            </div>
+                </td>
+            </tr>
+        </table>
 
-            <!-- Footer -->
-            <div class="footer-container">
-                <div class="footer-left">
-                    <p>Think Big<br>Dhanusha, Nepal<br>Regd. No. 3435/080/081</p>
-                    <p>Email: <a href="mailto:contact@thinkbig.org.np"
-                            style="color: #2D9C6D;">contact@thinkbig.org.np</a></p>
-                    <p>Copyright © 2025. All rights reserved.</p>
-                </div>
-                <div class="footer-right">
-                    <p>"Ending Exploitation, Ensuring Education"</p>
+        <!-- main Footer -->
+        <table role="presentation" cellpadding="0" cellspacing="0" width="100%"
+            style="max-width: 600px; margin: 10px auto 0 auto; font-family: 'Poppins', Arial, sans-serif;">
+            <tr>
+                <!-- Left Column -->
+                <td style="width: 50%; padding: 10px; font-size: 12px; color: #777; vertical-align: top;">
+                    <p style="margin: 0 0 0 0;">Think Big<br />Dhanusha, Nepal<br />Regd. No. 3435/080/081</p>
+                    <p style="margin: 0 0 0 0;">
+                        Email:
+                        <a href="mailto:contact@thinkbig.org.np" style="color: #2D9C6D; text-decoration: none;">
+                            contact@thinkbig.org.np </a>
+                    </p>
+                    <p style="margin: 0;">© 2025 Think Big. All rights reserved.</p>
+                </td>
 
-                </div>
-            </div>
-            <hr>
-            <div class="footer">
-                <p>This is an automated email. Please do not reply to this message.</p>
-                <p>For immediate technical support mail at: <a
-                        href="mailto:email@manishmahato.info.np">email@manishmahato.info.np</a> </p>
-            </div>
-        </div>
+                <!-- Right Column -->
+                <td
+                    style="width: 50%; padding: 10px; text-align: center; font-family: 'Playfair Display', serif; font-size: 16px; color: #333; vertical-align: middle;">
+                    <p style="margin: 0;">"Ending Exploitation, Ensuring Education"</p>
+                </td>
+            </tr>
+        </table>
+        <!-- footer -->
 
+        <table role="presentation" cellpadding="0" cellspacing="0" width="100%"
+            style="max-width: 600px; margin: 1px auto 0 auto; border-top: 1px solid #ccc; font-family: 'Poppins', Arial, sans-serif;">
+            <tr>
+                <td style="padding: 15px 10px; text-align: center; font-size: 12px; color: #777;">
+                    <p style="margin: 0 0 0px 0;">This is an automated email. Please do not reply to this message.</p>
+                    <p style="margin: 0;">
+                        For immediate technical support mail at:
+                        <a href="mailto:email@manishmahato.info.np" style="color: #2D9C6D; text-decoration: none;">
+                            email@manishmahato.info.np </a>
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <img style="height: 100%; width: 100%;" src="https://www.thinkbig.org.np/webi/Mountains&Temples.png" />
+    </div>
 </body>
 
 </html>`,
