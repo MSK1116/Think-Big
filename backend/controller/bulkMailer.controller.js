@@ -17,13 +17,13 @@ export const bulkMailer = async (req, res) => {
 
     const emailApi = new sibApiV3Sdk.TransactionalEmailsApi();
 
-    const sender = { email: "manishsingh-no-reply@thinkbig.org.np", name: "Manish Singh Mahato | Think Big Org" };
+    const sender = { email: "no-reply@thinkbig.org.np", name: "Think Big Org" };
 
     const emailData = {
       sender,
       to: [{ email: recipient.email }],
       subject,
-      htmlContent: ` <!DOCTYPE html>
+      htmlContent: `<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -76,46 +76,49 @@ export const bulkMailer = async (req, res) => {
             </tr>
         </table>
 
-
         <!-- email body -->
         <div style="color: #333; font-size: 15px;">
             <div style="padding: 0px;">
-                <p>Dear <span style="color:#2D9C6D">${recipient.firstName}</span>,</p>
+                <p>Hey <span style="color:#2D9C6D">${recipient.firstName}</span>,</p>
 
                 <div>
-                    <p>
-                        Thank you for your interest in the Arjuna Scholarship.
-                    </p>
+                    <p>Thanks again for being a part of the Big Thinker family!</p>
 
+                    <p>If you haven’t followed us on Facebook or LinkedIn yet, we’d love to see you there. We regularly
+                        share:</p>
 
-                    <p>
-                        As of now, we haven’t received your application. If you’re still planning to apply, I encourage
-                        you to do so as soon as
-                        possible to ensure your consideration.
-                    <p><strong style="color: #2D9C6D;">Important Update:</strong>
-                        In light of the ongoing Grade 11 examinations and Grade 10 students currently on vacation, we
-                        have extended the
-                        application deadline to June 4, 2025.</p>
-                    </p>
-                    <P>If you have any questions or need assistance with your application, feel free to reach out to me
-                        at
-                        <span style="color: #2D9C6D;">contact@manishmahato.info.np.</span> I'm always here to help.
-                    </P>
+                    <ul>
+                        <li>Upcoming events</li>
+                        <li>Scholarship opportunities</li>
+                        <li>Program updates</li>
+                        <li>And everything happening within our community</li>
+                    </ul>
+                    <table role="presentation" cellpadding="0" cellspacing="0"
+                        style=" text-align: center; margin: auto; margin-bottom: 10px;">
+                        <tbody>
+                            <tr>
+                                <td style="padding: 5px;  text-align: center;">
+                                    <a href="https://www.facebook.com/thinkbigbig18" target="_blank"
+                                        style="display: inline-block; padding: 8px 16px; background-color: rgb(66, 103, 178); color: rgb(255, 255, 255); border-radius: 5px; text-decoration: none; font-size: 14px; font-family: Arial, sans-serif">Facebook</a>
+
+                                </td>
+                                <td style="padding: 5px;  text-align: center;">
+                                    <a href="https://www.linkedin.com/company/think-big-org" target="_blank"
+                                        style="display: inline-block; padding: 8px 16px; background-color: rgb(0, 119, 181); color: rgb(255, 255, 255); border-radius: 5px; text-decoration: none; font-size: 14px; font-family: Arial, sans-serif">
+                                        LinkedIn
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                     <table cellspacing="0" cellpadding="0" style="  color: #333; line-height: 1.2;">
                         <tr>
-                            <td style="padding-bottom: 0px;">Wishing you all the best,</td>
-                        </tr>
-                        <tr>
                             <td style="padding-bottom: 0px;">
-                                <a href="https://manishmahato.info.np" target="_blank"
-                                    style="color: #333; text-decoration: none;">
-                                    Manish Singh Mahato
-                                </a>
+                                Let’s grow and learn together.<br>
+                                Stay inspired, stay curious!
                             </td>
                         </tr>
-
                     </table>
-
                 </div>
             </div>
         </div>
@@ -154,8 +157,7 @@ export const bulkMailer = async (req, res) => {
                     <p style="margin: 0 0 0 0;">
                         Email:
                         <a href="mailto:contact@thinkbig.org.np" style="color: #2D9C6D; text-decoration: none;">
-                            contact@thinkbig.org.np
-                        </a>
+                            contact@thinkbig.org.np </a>
                     </p>
                     <p style="margin: 0;">© 2025 Think Big. All rights reserved.</p>
                 </td>
@@ -177,16 +179,13 @@ export const bulkMailer = async (req, res) => {
                     <p style="margin: 0;">
                         For immediate technical support mail at:
                         <a href="mailto:email@manishmahato.info.np" style="color: #2D9C6D; text-decoration: none;">
-                            email@manishmahato.info.np
-                        </a>
+                            email@manishmahato.info.np </a>
                     </p>
                 </td>
             </tr>
-
         </table>
-        <img style="height: 100%; width: 100%;" src="https://www.thinkbig.org.np/webi/Mountains&Temples.png">
+        <img style="height: 100%; width: 100%;" src="https://www.thinkbig.org.np/webi/Mountains&Temples.png" />
     </div>
-
 </body>
 
 </html>`,
