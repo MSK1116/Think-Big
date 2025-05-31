@@ -13,7 +13,7 @@ const Joinevent = () => {
     }, 1000);
 
     setTimeout(() => {
-      window.location.href = "https://meet.google.com/cor-wgwy-wah";
+      window.location.href = "https://meet.google.com/oio-aexx-aum";
     }, 5000);
 
     return () => {
