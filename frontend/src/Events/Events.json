@@ -97,5 +97,14 @@
     "img3": "prgk3",
     "description": "In Episode 3, Dr. Santosh Shah addresses suicide and its prevention, discussing risk factors, warning signs, underlying mental health conditions, and strategies for early intervention, support, and community-based prevention efforts.",
     "date": "Saturday, March 15, 2025"
+  },
+  {
+    "title": "Conversion Disorder ",
+    "id": 12,
+    "img1": "prgl1",
+    "img2": "prgl2",
+    "img3": "prgl3",
+    "description": "In Episode 4, Dr. Santosh Shah explores Conversion Disorder, a condition where psychological stress manifests as physical symptoms. He discusses common presentations such as paralysis, tremors, or non-epileptic seizures, the importance of accurate diagnosis, and approaches for compassionate care and treatment.",
+    "date": "Saturday, May 31, 2025"
   }
 ]
