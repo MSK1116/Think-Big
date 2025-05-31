@@ -79,44 +79,23 @@ export const bulkMailer = async (req, res) => {
         <!-- email body -->
         <div style="color: #333; font-size: 15px;">
             <div style="padding: 0px;">
-                <p>Hey <span style="color:#2D9C6D">${recipient.firstName}</span>,</p>
+                <p>Dear <span style="color:#2D9C6D">${recipient.firstName}</span>,</p>
 
                 <div>
-                    <p>Thanks again for being a part of the Big Thinker family!</p>
+                    <p>We’re excited to invite you to <strong>Episode 4</strong> of our Mental Health Program, happening
+                        tonight at 8:00
+                        PM (May 31, 2025).</p>
+                    <p>🔍 Topic: Conversion Disorder – Understanding the Deep Connection Between Stress and Physical
+                        Symptoms</p>
+                    <p style="text-wrap:none;">Click to join via
+                        <a style="color: #2D9C6D; font-weight: 800; text-decoration:none;"
+                            href="https://www.thinkbig.org.np/joinevent"> Google Meet</a>
 
-                    <p>If you haven’t followed us on Facebook or LinkedIn yet, we’d love to see you there. We regularly
-                        share:</p>
+                    </p>
 
-                    <ul>
-                        <li>Upcoming events</li>
-                        <li>Scholarship opportunities</li>
-                        <li>Program updates</li>
-                        <li>And everything happening within our community</li>
-                    </ul>
-                    <table role="presentation" cellpadding="0" cellspacing="0"
-                        style=" text-align: center; margin: auto; margin-bottom: 10px;">
-                        <tbody>
-                            <tr>
-                                <td style="padding: 5px;  text-align: center;">
-                                    <a href="https://www.facebook.com/thinkbigbig18" target="_blank"
-                                        style="display: inline-block; padding: 8px 16px; background-color: rgb(66, 103, 178); color: rgb(255, 255, 255); border-radius: 5px; text-decoration: none; font-size: 14px; font-family: Arial, sans-serif">Facebook</a>
-
-                                </td>
-                                <td style="padding: 5px;  text-align: center;">
-                                    <a href="https://www.linkedin.com/company/think-big-org" target="_blank"
-                                        style="display: inline-block; padding: 8px 16px; background-color: rgb(0, 119, 181); color: rgb(255, 255, 255); border-radius: 5px; text-decoration: none; font-size: 14px; font-family: Arial, sans-serif">
-                                        LinkedIn
-                                    </a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
                     <table cellspacing="0" cellpadding="0" style="  color: #333; line-height: 1.2;">
                         <tr>
-                            <td style="padding-bottom: 0px;">
-                                Let’s grow and learn together.<br>
-                                Stay inspired, stay curious!
-                            </td>
+                            <td style="padding-bottom: 0px;">We look forward to having you with us!</td>
                         </tr>
                     </table>
                 </div>
