@@ -4,7 +4,7 @@ import eventsList from "./Events.json";
 import { useNavigate } from "react-router-dom";
 const Events_banner2 = () => {
   const navigate = useNavigate();
-  const events3 = eventsList.filter((data) => data.id < 12).sort((a, b) => b.id - a.id);
+  const events3 = eventsList.filter((data) => data.id < 13).sort((a, b) => b.id - a.id);
 
   return (
     <>
