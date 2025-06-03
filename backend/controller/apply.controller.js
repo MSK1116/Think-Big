@@ -90,7 +90,7 @@ export const applicationReg = async (req, res) => {
         <!-- email body -->
         <div style="color: #333; font-size: 15px;">
             <div style="padding: 0px;">
-                <p>Dear <span style="color:#2D9C6D">${recipient.firstName}</span>,</p>
+                <p>Dear <span style="color:#2D9C6D">${firstName}</span>,</p>
 
                 <div>
                     <p>Thank you for your interest in Arjuna Scholarship-2025.</p>
