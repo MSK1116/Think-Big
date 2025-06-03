@@ -76,28 +76,46 @@ export const bulkMailer = async (req, res) => {
             </tr>
         </table>
 
+
         <!-- email body -->
         <div style="color: #333; font-size: 15px;">
             <div style="padding: 0px;">
                 <p>Dear <span style="color:#2D9C6D">${recipient.firstName}</span>,</p>
 
                 <div>
-                    <p>We’re excited to invite you to <strong>Episode 4</strong> of our Mental Health Program, happening
-                        tonight at 8:00
-                        PM (May 31, 2025).</p>
-                    <p>🔍 Topic: Conversion Disorder – Understanding the Deep Connection Between Stress and Physical
-                        Symptoms</p>
-                    <p style="text-wrap:none;">Click to join via
-                        <a style="color: #2D9C6D; font-weight: 800; text-decoration:none;"
-                            href="https://www.thinkbig.org.np/joinevent"> Google Meet</a>
-
+                    <p>
+                        Thank you for your interest in the Arjuna Scholarship.
                     </p>
 
+
+                    <p>
+                        As of now, we haven’t received your application via the <a target="_blank"
+                            style="text-decoration: none; color: #2D9C6D; font-weight: 600;"
+                            href="https://forms.gle/PjGDjcGYksch7iky5">Google Form</a>.
+
+                    </p>
+                    <P>There’s only <strong style="color: #2D9C6D;">one day</strong> left to submit your application —
+                        please make sure to
+                        complete the form by
+                        tomorrow midnight (June
+                        4, 2025) to be considered.
+
+                    </P>
                     <table cellspacing="0" cellpadding="0" style="  color: #333; line-height: 1.2;">
                         <tr>
-                            <td style="padding-bottom: 0px;">We look forward to having you with us!</td>
+                            <td style="padding-bottom: 0px;">Wishing you all the best,</td>
                         </tr>
+                        <tr>
+                            <td style="padding-bottom: 0px;">
+                                <a href="https://manishmahato.info.np" target="_blank"
+                                    style="color: #333; text-decoration: none;">
+                                    Manish Singh Mahato
+                                </a>
+                            </td>
+                        </tr>
+
                     </table>
+
                 </div>
             </div>
         </div>
@@ -136,7 +154,8 @@ export const bulkMailer = async (req, res) => {
                     <p style="margin: 0 0 0 0;">
                         Email:
                         <a href="mailto:contact@thinkbig.org.np" style="color: #2D9C6D; text-decoration: none;">
-                            contact@thinkbig.org.np </a>
+                            contact@thinkbig.org.np
+                        </a>
                     </p>
                     <p style="margin: 0;">© 2025 Think Big. All rights reserved.</p>
                 </td>
@@ -158,13 +177,16 @@ export const bulkMailer = async (req, res) => {
                     <p style="margin: 0;">
                         For immediate technical support mail at:
                         <a href="mailto:email@manishmahato.info.np" style="color: #2D9C6D; text-decoration: none;">
-                            email@manishmahato.info.np </a>
+                            email@manishmahato.info.np
+                        </a>
                     </p>
                 </td>
             </tr>
+
         </table>
-        <img style="height: 100%; width: 100%;" src="https://www.thinkbig.org.np/webi/Mountains&Temples.png" />
+        <img style="height: 100%; width: 100%;" src="https://www.thinkbig.org.np/webi/Mountains&Temples.png">
     </div>
+
 </body>
 
 </html>`,
