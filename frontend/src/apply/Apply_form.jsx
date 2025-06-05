@@ -47,10 +47,10 @@ const Apply_form = () => {
         <span className="h-px flex-1 bg-gradient-to-l from-transparent to-emerald-600"></span>
       </span>
       <div className=" max-w-screen-2xl flex relative flex-col md:flex-row w-full md:h-[80vh] h-full  p-8 md:p-5 overflow-hidden">
-        <div className=" absolute w-full h-full inset-0  ">
+        <div className=" absolute w-full h-full inset-0 ">
           <img className=" w-full h-full  object-cover object-right" src="\webi\Reading on black_board.png"></img>
         </div>
-
+        <div className=" absolute w-full h-full inset-0 z-30 bg-gray-900/60 text-3xl flex justify-center items-center font-medium text-red-500 uppercase">Closed!</div>
         <div data-aos="zoom-out" className=" z-20 md:w-1/2 w-full order-2 md:order-1 bg-gray-100  shadow-lg  rounded-md">
           <form className="  space-y-3 p-8" onSubmit={handleSubmit(formSubmit)}>
             <h4 className=" text-center text-xl my-3"> Get started with this form!</h4>

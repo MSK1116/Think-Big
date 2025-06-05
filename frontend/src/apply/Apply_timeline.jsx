@@ -24,7 +24,9 @@ const Apply_timeline = () => {
             <span className="block size-3 rounded-full bg-emerald-500"></span>
 
             <div className="mt-4 md:ml-0 ml-4">
-              <time className="text-xs/none font-medium text-gray-700">May 20, 2025</time>
+              <time className="text-xs/none font-medium text-gray-700">
+                June 4, 2025 <span>(Extended)</span>
+              </time>
 
               <h3 className="text-lg font-bold text-gray-900">Application ends</h3>
 
